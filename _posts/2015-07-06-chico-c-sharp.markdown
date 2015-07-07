@@ -1,26 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "¡El chico C#!"
 date:   2015-07-06 18:31:38
-categories: es update
+categories: blog es
 lang: es
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+He decididio "matar" el blog anterior, si por casualidad llegan a [blog.fferegrino.org], encontrarán que ya no es lo que era antes. He decidido dividir el contenido y si llegaron acá buscando cosas técnicas este es el lugar indicado.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+#### ¿Por qué cambiar de blog?
+En realidad ya no estaba muy a gusto con la vista que tenía el anterior, comenzó en blogger por allá de septiembre de 2010 con mis pocos conocimientos de html y con las limitaciones que presentaba blogger en ese momento. A marchas forzadas fue saliendo, pero también arrastrando muchos problemas, código duro, "hacks" de css que con el tiempo se volvieron obsoletos y demás atrocidades que sinceramente hoy no volvería a cometer. Intenté moverlo a WordPress, pero mientras que las cosas nuevas se veían mediánamente bien las antiguas se veían horrendo, hasta me desmotiviaba a escribir nuevas cosas.
 
-Jekyll also offers powerful support for code snippets:
+#### ¿Qué va a pasar con la información anterior?
+Trataré de mantener todo el blog a flote tanto como pueda, pero por lo mientras me propuse rescatar algunas de las entradas más populares y repostearlas de alguna manera aquí o en mi blog personal, segun sea el caso.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+#### ¿C#, ya no escribirás sobre nada más?
+Es solo el nombre del blog, y es que muchos me conocen por saber más de C#, pero no significa que esté obsesionado con una sola tecnología y el hecho de que este blog esté hecho en Jekyll es prueba de ello. Acá habrá de todo, así suele ser la vida de un desarrollador (y más si trabajas en una empresea pequeña).
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+[blog.fferegrino.org]: http://blog.fferegrino.org
