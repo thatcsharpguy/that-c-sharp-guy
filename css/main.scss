@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: 'Asap', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -43,6 +43,7 @@ $on-laptop:        800px;
     }
 }
 
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700|Open+Sans);
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
