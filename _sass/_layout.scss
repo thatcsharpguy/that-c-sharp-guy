@@ -3,6 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
+    background-color: #364C4A;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -11,20 +12,17 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 36px;
     line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    color: #fdfdfd;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #fdfdfd;
     }
 }
 
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
@@ -232,5 +230,15 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.trigger{
+    & .link{
+        background-color: $background-color;
+        padding: 3px 5px;
+        border-radius: 2px;
+        text-decoration: none;
+        text-transform: lowercase;
     }
 }
