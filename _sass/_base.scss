@@ -14,13 +14,19 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    /*
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    */
+
+  font-family: Consolas, monaco, monospace;
+  color: #dcdcdc;
+  background: #1e1e1e;
+      -webkit-text-size-adjust: 100%;
 }
 
 
@@ -167,9 +173,6 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
-    &.title{
-        text-align: center;
     }
 }
 
