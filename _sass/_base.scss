@@ -24,8 +24,8 @@ body {
     */
 
   font-family: Consolas, monaco, monospace;
-  color: #dcdcdc;
-  background: #1e1e1e;
+  color: $text-color;
+  background: $background-color;
       -webkit-text-size-adjust: 100%;
 }
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
 }
 
 
@@ -95,11 +95,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $line-number-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($line-number-color, 15%);
     }
 
     &:hover {

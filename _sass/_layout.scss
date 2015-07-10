@@ -2,28 +2,26 @@
  * Site header
  */
 .site-header {
-    background-color: #252525;
+    background-color: $background-ui-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
     font-size: 36px;
     line-height: 56px;
-    color: #fdfdfd;
+    color: $text-color;
 
     &,
     &:visited {
-        color: #fdfdfd;
+        color: $text-color
     }
 }
 
 .site-nav {
     line-height: 0;
-    	background-color: darken($grey-color, 25%);;
+    	background-color: $background-ui-color;
     .menu-icon {
         display: none;
     }
@@ -33,9 +31,9 @@
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+        // &:not(:first-child) {
+        //     margin-left: 20px;
+        // }
     }
 
     @include media-query($on-palm) {
@@ -89,7 +87,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 5px solid #CCCEDB;
     padding: $spacing-unit 0;
 }
 
@@ -177,11 +175,11 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $comment-color;
 }
 
 .post-link {
-    display: block;
+    // display: block;  
     font-size: 24px;
 }
 
@@ -234,14 +232,34 @@
 
 .trigger{
     & .link{
-        color: #fdfdfd;
-        padding: 2px 7px;
-    	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+        color: $text-color;
+        padding: 1px 6px;
+        // margin: 0 3px;
+    	font-family: Arial, sans-serif;
+        font-size: 13px;
         text-decoration: none;
         text-transform: uppercase;
         
+        
         &:hover{
-            background-color: #3E3E40;
+            background-color: $background-ui-hover-color;
         }
     }
+}
+
+.l-number{
+    color: $line-number-color;
+    text-align: right;
+    
+        @include media-query($on-palm) {
+            display: none;
+        }
+    
+    & span{
+        padding-right: 8px;
+    }
+}
+
+.content-window{
+    // padding-left: 10px;
 }

@@ -15,12 +15,18 @@
           <a class="link page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+        <a class="link page-link" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
       </div>
     </nav>
 
   </div>
-  <div class="wrapper title">
-    <a class="site-title" href="{{ site.baseurl }}/">1: {{ site.title }}</a>
+  <div class="wrapper site-title">
+    <div class="pure-g">
+      <div class="pure-u-1-24 l-number"><span>1</span></div>
+      <div class="pure-u-23-24 content-window">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+    </div>
   </div>
   
 
