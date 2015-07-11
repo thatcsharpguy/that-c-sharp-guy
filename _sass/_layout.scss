@@ -255,8 +255,9 @@
             display: none;
         }
     
-    & span{
+    & span, & h2,& h3{
         padding-right: 8px;
+        
     }
 }
 
