@@ -1,15 +1,41 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="pure-g">
+  <div class="pure-u-1-24 l-number">
+  </div>
+  <div class="pure-u-23-24">
+    <span class="post-meta">
+      <a href="#" rel="author">{{ page.author }}</a> | {{ page.date | date: "%d/%m/%Y" }}</span>
+  </div>
 </div>
+
+<div class="pure-g post">
+  <div class="pure-u-1-24 l-number">
+    <h1>2</h1>
+  </div>
+  <div class="pure-u-23-24 post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </div>
+</div>
+
+<div class="pure-g post">
+  <div class="pure-u-1-24 l-number">
+    <span>3</span>
+  </div>
+  <div class="pure-u-23-24 post-content">
+    <article>
+      {{ content }}
+    </article>
+  </div>
+</div>
+
+<div class="pure-g post-contact">
+  <div class="pure-u-1-24 l-number">
+    <span>4</span>
+  </div>
+  <div class="pure-u-23-24">
+    Escríbeme sobre esto a <a href="mailto:{{ site.email }}?subject={{ page.title }}">{{ site.email }}</a> o a <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }} "> @{{ site.twitter_username }}</a>
+    </div>
+  </div>

@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+    padding-top: 5px;
     background-color: $background-ui-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -30,7 +31,7 @@
         color: $text-color;
         line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
+        // // Gaps between nav items, but not on the first one
         // &:not(:first-child) {
         //     margin-left: 20px;
         // }
@@ -175,7 +176,10 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $comment-color;
+    color: $source-annotations-color;
+    a {
+        color: $source-annotations-color;
+    }
 }
 
 .post-link {
@@ -193,9 +197,9 @@
 }
 
 .post-title {
-    font-size: 42px;
+//    font-size: 42px;
     letter-spacing: -1px;
-    line-height: 1;
+//    line-height: 1;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -207,6 +211,7 @@
 
     h2 {
         font-size: 32px;
+    margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -215,6 +220,7 @@
 
     h3 {
         font-size: 26px;
+    margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -223,6 +229,7 @@
 
     h4 {
         font-size: 20px;
+    margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -255,7 +262,7 @@
             display: none;
         }
     
-    & span, & h2,& h3{
+    span, h1, h2, h3{
         padding-right: 8px;
         
     }
@@ -263,4 +270,8 @@
 
 .content-window{
     // padding-left: 10px;
+}
+
+.code-comment{
+    color: $comment-color;
 }
