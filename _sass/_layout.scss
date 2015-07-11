@@ -257,14 +257,15 @@
 .l-number{
     color: $line-number-color;
     text-align: right;
-    
+    background-image: url(../assets/line-number-separator.png);
+    background-position: top right;
+    background-repeat: repeat-y;
         @include media-query($on-palm) {
             display: none;
         }
     
     span, h1, h2, h3{
-        padding-right: 8px;
-        
+        padding-right: 10px;
     }
 }
 
