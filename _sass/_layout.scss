@@ -193,7 +193,7 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit  / 3;
 }
 
 .post-title {
@@ -211,7 +211,7 @@
 
     h2 {
         font-size: 32px;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -220,7 +220,7 @@
 
     h3 {
         font-size: 26px;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -229,7 +229,7 @@
 
     h4 {
         font-size: 20px;
-    margin-top: $spacing-unit;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -257,15 +257,24 @@
 .l-number{
     color: $line-number-color;
     text-align: right;
-    background-image: url(../assets/line-number-separator.png);
-    background-position: top right;
-    background-repeat: repeat-y;
+    background: url(../assets/line-number-head.png) top right  no-repeat,
+                url(../assets/line-number-body.png) right repeat-y; 
+       &.n{
+           background:none;
+       }
+       
+       &.l{
+           
+    background: url(../assets/line-number-head.png) top right  no-repeat,
+                url(../assets/line-number-foot.png) bottom right  no-repeat,
+                url(../assets/line-number-body.png) right repeat-y; 
+       }
         @include media-query($on-palm) {
             display: none;
         }
     
     span, h1, h2, h3{
-        padding-right: 10px;
+        padding-right: 12px;
     }
 }
 
@@ -275,4 +284,8 @@
 
 .code-comment{
     color: $comment-color;
+}
+
+.pure-g div{
+    padding-top: 5px;
 }
