@@ -3,21 +3,20 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+     {% assign postCount = 2 %}
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+    <div class="pure-g">
+      <div class="pure-u-1-24 l-number">
+        <h2>{{ postCount++ }}</h2>
+      </div>
+      <div class="pure-u-23-24 content-window">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-      </li>
+        <p>{{ post.excerpt }}</p>
+        <span class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>
+      </div>
+    </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

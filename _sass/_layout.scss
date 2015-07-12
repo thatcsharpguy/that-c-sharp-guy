@@ -2,29 +2,27 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    background-color: #364C4A;
+    padding-top: 5px;
+    background-color: $background-ui-color;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
     font-size: 36px;
     line-height: 56px;
-    color: #fdfdfd;
+    color: $text-color;
 
     &,
     &:visited {
-        color: #fdfdfd;
+        color: $text-color
     }
 }
 
 .site-nav {
-    line-height: 56px;
-
+    line-height: 0;
+    	background-color: $background-ui-color;
     .menu-icon {
         display: none;
     }
@@ -33,10 +31,10 @@
         color: $text-color;
         line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
+        // // Gaps between nav items, but not on the first one
+        // &:not(:first-child) {
+        //     margin-left: 20px;
+        // }
     }
 
     @include media-query($on-palm) {
@@ -90,7 +88,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 5px solid #CCCEDB;
     padding: $spacing-unit 0;
 }
 
@@ -178,11 +176,14 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $source-annotations-color;
+    a {
+        color: $source-annotations-color;
+    }
 }
 
 .post-link {
-    display: block;
+    // display: block;  
     font-size: 24px;
 }
 
@@ -192,13 +193,13 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit  / 3;
 }
 
 .post-title {
-    font-size: 42px;
+//    font-size: 42px;
     letter-spacing: -1px;
-    line-height: 1;
+//    line-height: 1;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -210,6 +211,7 @@
 
     h2 {
         font-size: 32px;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -218,6 +220,7 @@
 
     h3 {
         font-size: 26px;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -226,6 +229,7 @@
 
     h4 {
         font-size: 20px;
+    margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -235,10 +239,53 @@
 
 .trigger{
     & .link{
-        background-color: $background-color;
-        padding: 3px 5px;
-        border-radius: 2px;
+        color: $text-color;
+        padding: 1px 6px;
+        // margin: 0 3px;
+    	font-family: Arial, sans-serif;
+        font-size: 13px;
         text-decoration: none;
-        text-transform: lowercase;
+        text-transform: uppercase;
+        
+        
+        &:hover{
+            background-color: $background-ui-hover-color;
+        }
     }
+}
+
+.l-number{
+    color: $line-number-color;
+    text-align: right;
+    background: url(../assets/line-number-head.png) top right  no-repeat,
+                url(../assets/line-number-body.png) right repeat-y; 
+       &.n{
+           background:none;
+       }
+       
+       &.l{
+           
+    background: url(../assets/line-number-head.png) top right  no-repeat,
+                url(../assets/line-number-foot.png) bottom right  no-repeat,
+                url(../assets/line-number-body.png) right repeat-y; 
+       }
+        @include media-query($on-palm) {
+            display: none;
+        }
+    
+    span, h1, h2, h3{
+        padding-right: 12px;
+    }
+}
+
+.content-window{
+    // padding-left: 10px;
+}
+
+.code-comment{
+    color: $comment-color;
+}
+
+.pure-g div{
+    padding-top: 5px;
 }

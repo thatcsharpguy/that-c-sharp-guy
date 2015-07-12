@@ -13,10 +13,14 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color:                #1E1E1E;
+$background-color:          #FFF;
+$background-ui-color:       #EEEEF2;
+$source-annotations-color:  darken($background-color, 30%);
+$background-ui-hover-color: rgb(201,222,245);
+$line-number-color:         #2B91AF;
 
+$comment-color:        #008000;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -52,3 +56,9 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+  font-family: Consolas, monaco, monospace;
+}
