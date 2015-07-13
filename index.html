@@ -9,12 +9,12 @@ layout: default
       <div class="pure-u-1-24 l-number">
         <h2>{{ postCount++ }}</h2>
       </div>
-      <div class="pure-u-23-24 content-window">
+      <div class="pure-u-23-24 content-window" style="padding-bottom: 10px;">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p>{{ post.excerpt }}</p>
-        <span class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>
+        <span  class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>
       </div>
     </div>
     {% endfor %}

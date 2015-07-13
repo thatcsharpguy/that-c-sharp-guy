@@ -235,6 +235,14 @@
             font-size: 18px;
         }
     }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 10));
+        border: 5px solid $background-ui-color;
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 10));
+    }
 }
 
 .trigger{
@@ -257,17 +265,17 @@
 .l-number{
     color: $line-number-color;
     text-align: right;
-    background: url(../assets/line-number-head.png) top right  no-repeat,
-                url(../assets/line-number-body.png) right repeat-y; 
+    background: url(../assets/site/line-number-head.png) top right  no-repeat,
+                url(../assets/site/line-number-body.png) right repeat-y; 
        &.n{
            background:none;
        }
        
        &.l{
            
-    background: url(../assets/line-number-head.png) top right  no-repeat,
-                url(../assets/line-number-foot.png) bottom right  no-repeat,
-                url(../assets/line-number-body.png) right repeat-y; 
+    background: url(../assets/site/line-number-head.png) top right  no-repeat,
+                url(../assets/site/line-number-foot.png) bottom right  no-repeat,
+                url(../assets/site/line-number-body.png) right repeat-y; 
        }
         @include media-query($on-palm) {
             display: none;
@@ -288,4 +296,21 @@
 
 .pure-g div{
     padding-top: 5px;
+}
+
+table{
+    margin: $spacing-unit auto;
+    thead {
+        td{
+            font-weight: bold;
+        }    
+    }
+    td {
+      text-align: left; 
+      vertical-align: top; 
+      border: 2px solid $background-ui-color;
+      border-collapse: collapse;
+      padding: ($spacing-unit / 4) ($spacing-unit / 3);
+    }
+
 }
