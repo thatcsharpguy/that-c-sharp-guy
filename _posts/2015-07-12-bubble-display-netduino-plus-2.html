@@ -131,4 +131,18 @@ Para terminar de cablear el circuito debemos conectar el pin 1 de los cuatro tra
 </table>
 <img src="/postimages{{ page.url }}final-wiring.jpg" />
 <h2>Código</h2>
-Para el código, cree una clase llamada Bubble7, que envuelve la lógica para encender los segmentos individuales así como para indicar cuál debe estar encendido en qué momento, la clase es la siguiente
+Para el código, cree una clase llamada, que envuelve la lógica para encender los segmentos individuales así como para indicar cuál debe estar encendido en qué momento, la clase es la siguiente
+
+{% highlight csharp %}
+public Bubble7(Cpu.Pin a, Cpu.Pin b, Cpu.Pin c, 
+      Cpu.Pin d, Cpu.Pin e, Cpu.Pin f, 
+      Cpu.Pin g, Cpu.Pin d1, Cpu.Pin d2, 
+      Cpu.Pin d3, Cpu.Pin d4)
+{
+  A = new OutputPort(a, false);
+  B = new OutputPort(b, false);
+  // ... más asignaciones
+  D3 = new OutputPort(d3, false);
+  D4 = new OutputPort(d4, false);
+}
+{% endhighlight %}
