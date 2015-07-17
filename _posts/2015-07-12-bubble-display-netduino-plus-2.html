@@ -9,10 +9,13 @@ excerpt: He decididio "matar" el blog anterior, si por casualidad llegan a blog.
 lang: es
 ---
 Para un proyecto Instrumentación en la escuela decidí desempolvar mi Netduino Plus 2, en el proyecto decesitábamos mostrar las mediciones de tres distintos sensores en un par de displays de 7 segmentos, para ello decidí comprar un Bubble Display que no trae 2 sino 4 displays de 7 segmentos en un encapsulado muy estético. Al principio no tenía ni la menor idea de cómo cablearlo, pero siguiendo estas indicaciones, fue sencillo.
-<h1>Material</h1>
-Además del Bubble Display, también usé 7 resistencias de 330 Ω, 4 de 1kΩ y un demultiplexor 74LS
+<h3>Material</h3>
+Además del Bubble Display, también usé 7 resistencias de 330 Ω, 4 de 1kΩ y 4 transistores BC557.
+El bubble display no necesita explicación, en México lo compré  <a href="http://www.330ohms.com/Display-de-Burbuja--7-Segmentos-4-dgitos_p_345.html">aquí</a> aunque también <a href="https://www.sparkfun.com/products/12710">acá</a> se consigue. Las resistencias de 330 son para no dañar el display (se conectan entre este y la tarjeta del Netduino), las resistencias de 1k se usan para la misma razón pero conectado a los transistores mientras que los transistores se emplean como switches que permiten el flujo de la corriente a tierra ya que el display es de cátodo común. Al final de este post puedes ver una galería con imágenes de cómo conecté el mío.
 
-<h1>Programación</h1>
-La parte que más me agrada de esto es la programación, para hacer uso del display, cree una clase llamada Bubble7 a través de la cual se pude interactuar con el display y cada uno de sus segmentos. El constructor de la clase recibe como parámetros los pines a los que está conectado display y el demultiplexor.
+<h3>Programación</h3>
+La parte que más me agrada de esto es la programación, para hacer uso del display, cree una clase llamada Bubble7 a través de la cual se pude interactuar con el display y cada uno de sus segmentos. El constructor de la clase recibe como parámetros los pines a los que está conectado display y los transistores.
 
-Expone varios métodos, entre ellos el de display 
+Expone varios métodos, entre ellos el de display imprimir un dígito <code>PrintDigit</code>, también es importante el método <code>TurnOnDisplay</code> ya que con este se indica qué display estará activo y mostrará datos. Para crear el efecto de que todos los displays están encendidos a la vez, debe existir un retardo muy pequeño entre que se enciende un display mostrando un número y otro, como se muestra en el método <code>ShowNumber</code>.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/qaOH1" data-context="false"><a href="//imgur.com/a/qaOH1">Bubble Display set up</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
