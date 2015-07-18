@@ -209,6 +209,14 @@
 .post-content {
     margin-bottom: $spacing-unit;
     line-height: $spacing-unit;
+    
+    article{
+        text-align: justify;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
 
     h2 {
         font-size: 32px;
