@@ -4,7 +4,7 @@
 .site-header {
     padding-top: 5px;
     background-color: $background-ui-color;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 2px solid #007acc;
     min-height: 56px;
     position: relative;
 }
@@ -22,7 +22,7 @@
 
 .site-nav {
     line-height: 0;
-    	background-color: $background-ui-color;
+    background-color: $background-ui-color;
     .menu-icon {
         display: none;
     }
@@ -89,6 +89,7 @@
  */
 .site-footer {
     border-top: 5px solid #CCCEDB;
+    background: $background-ui-color url(../assets/site/footer-dots.png) top right repeat-x;
     padding: $spacing-unit 0;
 }
 
