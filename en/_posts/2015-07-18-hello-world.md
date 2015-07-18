@@ -4,7 +4,7 @@ title:  "Hello World"
 date:   2015-07-18 18:31:38
 author: Antonio Feregrino Bolaños
 categories: blog
-excerpt: He decididio "matar" el blog anterior, si por casualidad llegan a blog.fferegrino.org, encontrarán que ya no es lo que era antes. He decidido dividir el contenido y si llegaron acá buscando cosas técnicas este es el lugar indicado.
+excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
 lang: en
 ---
 I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
