@@ -11,4 +11,4 @@ github_username: fferegrino
 # Build settings
 markdown: kramdown
 highlighter: pygments
-permalink: /:title/
+permalink: /:lang/:title/
