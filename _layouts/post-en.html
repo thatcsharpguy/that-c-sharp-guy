@@ -1,0 +1,13 @@
+---
+layout: default-en
+---
+<a href="#" rel="author">{{ page.author }}</a> | {{ page.date | date: "%d/%m/%Y" }}</span>
+<h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-content">
+    <article>
+      {{ content }}
+    </article>
+  <div class="pure-u-23-24">
+    Ping me about this at <a href="mailto:{{ site.email }}?subject={{ page.title }}">{{ site.email }}</a> o a <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }} "> @{{ site.twitter_username }}</a>
+    </div>
+  </div>
