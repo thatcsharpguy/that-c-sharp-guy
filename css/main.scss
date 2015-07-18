@@ -47,7 +47,7 @@ $on-laptop:        800px;
     }
 }
 
-@import url(http://fonts.googleapis.com/css?family=Asap:400,700|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700|Open+Sans|Inconsolata);
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -60,5 +60,5 @@ $on-laptop:        800px;
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-  font-family: Consolas, monaco, monospace;
+  font-family: monaco, "Open Sans", monospace;
 }

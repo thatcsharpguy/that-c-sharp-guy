@@ -4,7 +4,7 @@
 .site-header {
     padding-top: 5px;
     background-color: $background-ui-color;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 2px solid #007acc;
     min-height: 56px;
     position: relative;
 }
@@ -22,7 +22,7 @@
 
 .site-nav {
     line-height: 0;
-    	background-color: $background-ui-color;
+    background-color: $background-ui-color;
     .menu-icon {
         display: none;
     }
@@ -89,6 +89,7 @@
  */
 .site-footer {
     border-top: 5px solid #CCCEDB;
+    background: $background-ui-color url(../assets/site/footer-dots.png) top right repeat-x;
     padding: $spacing-unit 0;
 }
 
@@ -208,10 +209,19 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    line-height: $spacing-unit;
+    
+    article{
+        text-align: justify;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
 
     h2 {
         font-size: 32px;
-    margin-top: $spacing-unit / 2;
+        margin-top: $spacing-unit / 2;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -235,6 +245,14 @@
             font-size: 18px;
         }
     }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 10));
+        border: 5px solid $background-ui-color;
+        max-width:         calc(#{$content-width} - (#{$spacing-unit} * 10));
+    }
 }
 
 .trigger{
@@ -257,17 +275,17 @@
 .l-number{
     color: $line-number-color;
     text-align: right;
-    background: url(../assets/line-number-head.png) top right  no-repeat,
-                url(../assets/line-number-body.png) right repeat-y; 
+    background: url(../assets/site/line-number-head.png) top right  no-repeat,
+                url(../assets/site/line-number-body.png) right repeat-y; 
        &.n{
            background:none;
        }
        
        &.l{
            
-    background: url(../assets/line-number-head.png) top right  no-repeat,
-                url(../assets/line-number-foot.png) bottom right  no-repeat,
-                url(../assets/line-number-body.png) right repeat-y; 
+    background: url(../assets/site/line-number-head.png) top right  no-repeat,
+                url(../assets/site/line-number-foot.png) bottom right  no-repeat,
+                url(../assets/site/line-number-body.png) right repeat-y; 
        }
         @include media-query($on-palm) {
             display: none;
@@ -288,4 +306,25 @@
 
 .pure-g div{
     padding-top: 5px;
+}
+
+table{
+    margin: $spacing-unit auto;
+    thead {
+        td{
+            font-weight: bold;
+        }    
+    }
+    td {
+      text-align: left; 
+      vertical-align: top; 
+      border: 2px solid $background-ui-color;
+      border-collapse: collapse;
+      padding: ($spacing-unit / 4) ($spacing-unit / 3);
+    }
+
+}
+
+.highlight{
+    padding: $spacing-unit;
 }
