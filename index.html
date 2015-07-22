@@ -6,7 +6,7 @@ layout: default
     {% for post in site.posts %}
       <div class="content-window" style="padding-bottom: 10px;">
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> // {{ post.lang }}
         </h2>
         <p>{{ post.excerpt }}</p>
         <span  class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>

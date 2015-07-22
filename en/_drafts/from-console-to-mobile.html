@@ -1,0 +1,60 @@
+---
+layout: post-en
+title:  "From console to mobile"
+date:   2015-07-20 18:31:38
+author: Antonio Feregrino Bolaños
+categories: xamarin
+excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
+lang: en
+---
+At school I was often asked to write small console apps to practice programming concepts, and some teachers even wanted a fully functional project in such at way.  
+<br />
+But what happens when we face real people/world problems? for sure, there are still console apps out in the wild, but nowadays all the successful applications have a mobile version, why yours shouldn't have one.
+
+In this post I'll try to show you how to go from console to mobile (using Xamarin.Forms) with a simple example, it's a bit long but I'll make it worth the reading.
+
+<h3>Console</h3>
+I'd like to start by introducing the app that we'll transform to mobile, this app takes two strings and returns a number indicating the "distance" between them using the <a href="http://www.dotnetperls.com/levenshtein" target="_blank">Levenshtein distance algorithm</a>, for example:
+<table>
+	<thead>
+		<tr>
+			<td>str1</td>
+			<td>str2</td>
+			<td>Distance</td>	
+		</tr>
+	</thead>
+	<tr>
+		<td>ant</td>
+		<td>aunt</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Samantha</td>
+		<td>Sam</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>Xamarin</td>
+		<td>Samaryn</td>
+		<td>2</td>
+	</tr>
+</table>
+I'll use the implementation from Dot Net Perls, which is a nice static method that we can easily call in our program. Now, in a console app we ask the user for input with <code>Console.ReadLine()</code> in this case we'd use something like this: 
+{% highlight csharp	%}
+static void Main()
+{
+	Console.WriteLine("First string:");
+	string str1 = Console.ReadLine();
+	Console.WriteLine("Second string:");
+	string str2 = Console.ReadLine();
+	int distance = Compute(str1, str2);
+	Console.WriteLine("Distance: " + distance);
+}
+{% endhighlight %}
+<h3>Important differences</h3>
+<h4>Entry point</h4>
+As we have seen before, our program has an entry point (the <code>Main</code> method) whereas for mobile every platform has its own entry point, not necesarily a Main method. Other important thing is that  for a console app we tend to write most of the application logic inside the entry method, while the entry method for a mobile application runs code that usually isn't user provided code.
+<h4>Controls</h4>
+A thing that our users are looking for is having a nice UI to interact with the app, in the console user must interact secuentially, in our example a user that has entered the first string cannot go back to modify it. Or what happens if for some reason the user wants to type the second string before the first one? In a mobile app we can solve this problem by using controls, with them we can forget about Console writing or reading.
+<br />
+A control is one of the many ways to receive user interaction or to provide feedback to the user about what is happening. In our example we will replace both <code>Console.ReadLine</code> for a pair of <code>Entry</code> controls and the <code>Console.WriteLine</code>s for <code>Label</code>s. The controls are available for user interaction at any time.

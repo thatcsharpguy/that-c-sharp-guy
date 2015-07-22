@@ -160,6 +160,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: $background-color;
 }
 
 .page-heading {
@@ -221,7 +222,7 @@
 
     h2 {
         font-size: 32px;
-        margin-top: $spacing-unit / 2;
+        margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -230,7 +231,7 @@
 
     h3 {
         font-size: 26px;
-    margin-top: $spacing-unit / 2;
+        margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -239,7 +240,7 @@
 
     h4 {
         font-size: 20px;
-    margin-top: $spacing-unit / 2;
+        margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 18px;
