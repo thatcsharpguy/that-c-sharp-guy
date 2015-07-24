@@ -327,5 +327,9 @@ table{
 }
 
 .highlight{
-    padding: $spacing-unit;
+    padding: 10px;
+    line-height: 20px;
+    tab-size:4;
+	-moz-tab-size: 4;
+	-o-tab-size:  4;
 }
