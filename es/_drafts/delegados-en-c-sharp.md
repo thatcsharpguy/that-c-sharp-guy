@@ -4,11 +4,11 @@ title:  "Delegados en C#"
 date:   2015-07-21 18:31:38
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
+excerpt: Podemos ver un delegado en C# como un tipo de dato que apunta a un método permitiéndonos así extender las capacidades de nuestro código o permitir que otros lo hagan.
 lang: es
 ideone: http://ideone.com/fork/sXcTgo
 ---
-Para comenzar la explicación debemos comprender qué es un delegado. Podemos ver un delegado en C# como un tipo de dato que apunta a un método permitiéndonos así extender las capacidades de nuestro código, la forma de declarar un delegado es de la siguiente manera: ```<modificador de acceso> delegate <tipo de retorno> <nombre del delegado> (<lista de parámetros>)```. Podríamos, por ejemplo, tener un delegado que realice una operación con dos números enteros y devuelva un solo número entero. La defnición de este sería algo como:
+Para comenzar la explicación debemos comprender qué es un delegado. Podemos ver un delegado en C# como un tipo de dato que apunta a un método permitiéndonos así extender las capacidades de nuestro código o permitir que otros lo hagan. La forma de declarar un delegado es de la siguiente manera: ```<modificador de acceso> delegate <tipo de retorno> <nombre del delegado> (<lista de parámetros>)```. Podríamos, por ejemplo, tener un delegado que realice una operación con dos números enteros y devuelva un solo número entero. La defnición de este sería algo como:
 {% highlight csharp %}
 public delegate int Operacion(int a, int b);
 {% endhighlight %}
@@ -69,7 +69,7 @@ Otra función útil de los delegados es la posiblidad de combinarlos, lo cual se
 	int r4 = combinado(4,5); // r4 es igual a 20
 }
 {% endhighlight %}
-De ejecutarse el código anterior, en la consola se vería el texto: "Ejecutando Suma" seguido de "Ejecutando Multiplicacion" ya que ambos se ejecutan y el valor de r4 es 20 porque siempre se respeta el valor devuelto por el último delegado ejecutado.  
+De ejecutarse el código anterior, en la consola se vería el texto: "Ejecutando Suma" seguido de "Ejecutando Multiplicacion" ya que ambos se ejecutan y el valor de <code>r4</code> es <code>20</code> porque siempre se respeta el valor devuelto por el último delegado ejecutado. 
 
 #### Pasos siguientes
-C# nos otorga plantillas para crear delegados con una serie personalizable de parámetros de entrada y de salida, llamados <code>Func</code> y <code>Action</code>, pero de ellos les hablaré en el siguiente post.
+C# nos otorga plantillas para crear delegados con una serie personalizable de parámetros de entrada y de salida, a estos se les conoce como <code>Func</code> y <code>Action</code>, pero de ellos les hablaré en el siguiente post. Recuerda que el código de este post está disponible para que lo descargues, lo edites y juegues con él, búscalo en la <a href="#post-meta">información del post</a>
