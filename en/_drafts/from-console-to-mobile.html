@@ -51,11 +51,17 @@ static void Main()
 	Console.WriteLine("Distance: " + distance);
 }
 {% endhighlight %}
-<h3>Important differences</h3>
+<h3>Some differences</h3>
 <h4>Entry point</h4>
 As we have seen before, our program has an entry point (the <code>Main</code> method) whereas for mobile every platform has its own entry point, not necesarily a Main method. Other important thing is that  for a console app we tend to write most of the application logic inside the entry method, while the entry method for a mobile application runs code that usually isn't user provided code.
 <h4>Controls</h4>
-A thing that our users are looking for is having a nice UI to interact with the app, in the console user must interact secuentially, in our example a user that has entered the first string cannot go back to modify it. Or what happens if for some reason the user wants to type the second string before the first one? In a mobile app we can solve this problem by using controls, with them we can forget about Console writing or reading.
+A thing that our users are looking for is having a nice UI to interact with the app, in the console user must interact secuentially, in our example a user that has entered the first string cannot go back to modify it. Or think about what happens if for some reason the user wants to type the second string before the first one? In a mobile app we can solve this problem by using controls, with them we can forget about Console writing or reading.
 <br />
 A control is one of the many ways to receive user interaction or to provide feedback to the user about what is happening. In our example we will replace both <code>Console.ReadLine</code> for a pair of <code>Entry</code> controls and the <code>Console.WriteLine</code>s for <code>Label</code>s. The controls are available for user interaction at any time.
- 
+<h4>Event oriented programming</h4>
+There are few user interactions that we can handle when programming a console applications, the user can only enter text, use the keyboard arrows or press the enter key. On the other hand if we use controls in our mobile app a whole lot of user interactions can be made. When a user interacts with a control an event is fired, we as programmers provide code to handle such events. We call that "event oriented programming" since the behaviour of our app is driven by the events we choose to handle.
+<h3>Xamarin.Forms</h3>
+So, what is Xamarin.Forms? in a few words it is a tool provided by the Xamarin Platforms that allows us to share even more code when writing an app. Xamarin.Forms (I'll be calling it just "Forms" from now on) provides a set of common controls to write our application interface once and have it work on the three major mobile platforms. The controls we create using Forms are rendered to platform specific controls in order to take advantage of each operating system capabilities. For example: if we develop using the traditional approach we must work on the UI three times (each for every operating system).  
+  
+As I mentioned before, the Levenshtein app will have two text input boxes, three labels and one button. If we had choosen the traditional approach we'll had to write six text input boxes
+<h3>Actual code</h3>
