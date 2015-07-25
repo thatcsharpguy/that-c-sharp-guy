@@ -62,6 +62,35 @@ A control is one of the many ways to receive user interaction or to provide feed
 There are few user interactions that we can handle when programming a console applications, the user can only enter text, use the keyboard arrows or press the enter key. On the other hand if we use controls in our mobile app a whole lot of user interactions can be made. When a user interacts with a control an event is fired, we as programmers provide code to handle such events. We call that "event oriented programming" since the behaviour of our app is driven by the events we choose to handle.
 <h3>Xamarin.Forms</h3>
 So, what is Xamarin.Forms? in a few words it is a tool provided by the Xamarin Platforms that allows us to share even more code when writing an app. Xamarin.Forms (I'll be calling it just "Forms" from now on) provides a set of common controls to write our application interface once and have it work on the three major mobile platforms. The controls we create using Forms are rendered to platform specific controls in order to take advantage of each operating system capabilities. For example: if we develop using the traditional approach we must work on the UI three times (each for every operating system).  
-  
-As I mentioned before, the Levenshtein app will have two text input boxes, three labels and one button. If we had choosen the traditional approach we'll had to write six text input boxes
+<br />
+<br />
+As I mentioned before, the Levenshtein app will have two text input boxes, three labels and one button. If we had choosen the traditional approach we'll had to write six text input boxes (two for each platform), three buttons (again, one for each platform). Look at the table below to see what the controls we'll be using render to:
+<table>
+	<thead>
+		<tr>
+			<td>Forms</td>
+			<td>Android</td>
+			<td>iOS</td>	
+			<td>Windows Phone</td>	
+		</tr>
+	</thead>
+	<tr>
+		<td>Button</td>
+		<td>Button (View)</td>
+		<td>UIButton (UIControl)</td>	
+		<td>Button (Control)</td>	
+	</tr>
+	<tr>
+		<td>Label</td>
+		<td>TextView (View)</td>
+		<td>UILabel (UIControl)</td>	
+		<td>TextBlock (Control)</td>	
+	</tr>
+	<tr>
+		<td>Entry</td>
+		<td>EditText (View)</td>
+		<td>UITextField (UIControl)</td>	
+		<td>TextBox (Control)</td>	
+	</tr>
+</table>
 <h3>Actual code</h3>
