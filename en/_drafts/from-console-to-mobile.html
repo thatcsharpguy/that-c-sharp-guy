@@ -1,10 +1,10 @@
 ---
 layout: post-en
 title:  "From console to mobile"
-date:   2015-07-20 18:31:38
+date:   2015-07-26 16:00:00
 author: Antonio Feregrino Bolaños
 categories: xamarin
-excerpt: But what happens when we face real people/world problems? for sure, there are still console apps out in the wild, but nowadays all the successful applications have a mobile version, why yours shouldn't have one.
+excerpt: What happens when we face real people/world problems? for sure, there are still console apps out in the wild, but nowadays all the successful applications have a mobile version, why yours shouldn't have one?
 lang: en
 ---
 At school I was often asked to write small console apps to practice programming concepts, and some teachers even wanted a fully functional project in such way.  
@@ -179,3 +179,18 @@ Our controls are created now! but they don't appear on the page if we run the ap
     xevenshteinMainPage.Content = mainLayout;
     MainPage = xevenshteinMainPage;
 {% endhighlight %}
+By this point the controls we've created appear when running the app, when we interact with them some events get fired, it is time for us to handle an event and add behaviour to the app. In particular, we want to know when the user presses the "Compute" button, thus we must add an event handler to the cliick event, inside the event handler we will perform the calculation and show the result on the screen. We do so by creating a method that receives two parameters (<code>object</code> and <code>EventArgs</code>), after that using the <code>+=</code> operator we add it to the <code>Clicked</code> check out the following piece of code.
+{% highlight csharp %}
+//
+	computeButton.Clicked += ComputeButton_Clicked;
+}
+
+void ComputeButton_Clicked (object sender, EventArgs e)
+{
+	string str1 = firstStringEntry.Text;
+	string str2 = secondStringEntry.Text;
+	int distance = Xevenshtein.Algorithm.LevenshteinDistance.Compute(str1, str2);
+	computationResultLabel.Text = "Distance: " + distance;
+}
+{% endhighlight %}
+Run the project and that's it! you have now created your first Xamarin.Fors app, if you ever need help with any of the steps above please let me know. I'm uploading all the code to <a href="http://github.com/fferegrino/Xevenshtein">GitHub</a> so you can check my working solution.

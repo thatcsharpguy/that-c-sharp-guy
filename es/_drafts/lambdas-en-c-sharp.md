@@ -4,7 +4,7 @@ title:  "Lambdas en C#"
 date:   2015-07-20 18:31:38
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
+excerpt: Post acerca de Lambdas en C#
 lang: es
 ---
 De entre las muchas herramientas que provee C# hay una que me parece de las más útiles que posee, esta herramenta se llama Expresiones Lambda (que de ahora en adelante llamaré simplemente "lambdas"), en este post trataré de explicarlas. Pero para que se den una idea, comenzaré por presentarles uno de los ejemplos de lo que se puede hacer con el uso de las lambdas:
