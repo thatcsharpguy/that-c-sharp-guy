@@ -4,10 +4,10 @@ title:  "From console to mobile"
 date:   2015-07-20 18:31:38
 author: Antonio Feregrino Bolaños
 categories: xamarin
-excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
+excerpt: But what happens when we face real people/world problems? for sure, there are still console apps out in the wild, but nowadays all the successful applications have a mobile version, why yours shouldn't have one.
 lang: en
 ---
-At school I was often asked to write small console apps to practice programming concepts, and some teachers even wanted a fully functional project in such at way.  
+At school I was often asked to write small console apps to practice programming concepts, and some teachers even wanted a fully functional project in such way.  
 <br />
 But what happens when we face real people/world problems? for sure, there are still console apps out in the wild, but nowadays all the successful applications have a mobile version, why yours shouldn't have one.
 
@@ -93,4 +93,16 @@ As I mentioned before, the Levenshtein app will have two text input boxes, three
 		<td>TextBox (Control)</td>	
 	</tr>
 </table>
-<h3>Actual code</h3>
+<h3>Hands on code</h3>
+Since I want to show all three platforms I'll be using Visual Studio 2013 to create the project but this could be easily replicated using Xamarin Studio if you only want to deploy to certain platform.
+<h4>Creating the project</h4>
+To create the project we'll use the Mobile Apps template that comes with Xamarin Platform installation. To do this once Visual is open go to <code>File &gt; New &gt; Project</code> and select Mobile Apps and then Blank App (the one that says "portable"). Assign your project a name and let VS do its magic. It shouldn't take long, after it finishes we'll end up with a structure like the one below.
+<img src='{{ "project-structure.png" | prepend: page.url | prepend: site.images_url }}' />
+You can see that there are 4 projects, three of them ending with a suffix indicating the platform they are specific to. The other one is a portable class library (from now on "PCL") which will contain most of our code. You also must notice that the name of the PCL is highlighted with a bold font, it means that the PCL is set as the <strong>startup project</strong>.
+<h4>Running the startup project</h4>
+The startup project is the project that will get executed once we click the "Play" button o the upper part of our IDE, we can change the startup project by right-clicking on the project we want to set and choosing the corresponding option.
+<br />
+<br />
+Depending on what kind of project have we selected as startup, a different set of options will be available to run our project, let's keep it simple and set the Windows Phone project as the startup one. Set the emulator as the target device and hit Play to build and run the app.
+<h4>What's inside a Xamarin.Forms app</h4>
+<h4>Adding controls</h4>

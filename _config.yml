@@ -6,7 +6,9 @@ description: > # this means to ignore newlines until "baseurl:"
 description-en: > # this means to ignore newlines until "baseurl:"
   Blog about computer science, mainly focused on application programming, emphasizing C# development, my favourite language. Sometimes I write about technology in general too. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://thatcsharpguy.com" # the base hostname & protocol for your site
+# url: "http://thatcsharpguy.com" # the base hostname & protocol for your site
+url: "http://127.0.0.1:4000"
+images_url: "http://127.0.0.1:4000/postimages"
 twitter_username: io_exception
 github_username: fferegrino
 
