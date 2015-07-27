@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lambdas en C#"
-date:   2015-07-20 18:31:38
+date:   2015-07-2 18:31:38
 author: Antonio Feregrino Bolaños
 categories: c-sharp
 excerpt: Post acerca de Lambdas en C#
