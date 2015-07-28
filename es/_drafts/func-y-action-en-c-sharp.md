@@ -53,3 +53,34 @@ public static bool SoloConU(string s)
 	return s.StartsWith("u");
 }
 {% endhighlight %}
+El resultado de la ejecución es el siguiente, y es que está usando como filtros la función que le estamos pasando:
+<pre>
+Palabras mayores a 3 caracteres
+uno
+dos
+TRES
+CUATRO
+Palabras que comienzan con u
+UNO
+dos
+tres
+cuatro
+</pre>
+
+#### Action  
+Ahora, supongamos que además de dejarnos escoger el filtro, también nos deja especificar la acción a realizar, en este caso utilizando un delegado que tenga **void** como tipo de retorno. Un delegado con un tipo de retorno <code>void</code> puede ser reemplazado con un molde llamado <code>Action</code>. De tal manera que la implementación del nuevo método podría ser la siguiente:
+{% highlight csharp %}
+public static void RealizaOperacionSecreta(List<string> palabras, Func<string, bool> filtro, Action<string> accion)
+{
+	foreach(string s in palabras)
+	{
+		if(filtro(s))
+			accion(s);
+		else
+			Console.WriteLine(s);
+	}			
+}
+{% endhighlight %}
+#### En resumen
+<code>Func</code> es un molde para crear delegados de manera rápida, especificando los parámetros de entrada y el tipo de retorno mediante el uso de los ```< >```, <code>Action</code> cumple con la misma tarea, salvo que no tiene un tipo de retorno. En el siguiente post hablaré de las expresiones lambda una forma más elegante y simple de definir la implementación de delegados. Recuerda nuevamente que el enlace al código está en <a href="#post-meta">información del post</a>.
+
