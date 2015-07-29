@@ -44,10 +44,12 @@ public static void Main()
 	Console.WriteLine("Palabras que comienzan con u");
 	RealizaOperacionSecreta(palabras, SoloConU);
 }
+
 public static bool PorTamano(string s)
 {
 	return s.Length > 3; 
 }
+
 public static bool SoloConU(string s)
 {
 	return s.StartsWith("u");
