@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "Func y Action en C#"
-date:   2015-07-27 13:00:00
+date:   2015-07-29 18:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: Post acerca de Func y Action en C#
+excerpt: Func y Action son moldes para crear delegados, podemos usarlos para evitarnos la fatiga de declarar un delegado para cada ocasión que sea necesario.
 lang: es
+ideone: http://ideone.com/fork/VmDLay
+featured_image: "featured.jpg"
 ---
 Hace muy poco les hablaba de los <a href="/delegados-en-c-sharp">delegados en C#</a>, aprovechando este post quisiera hablarles un poco de la utilidad de estos. Como lo mencionaba, los delegados permiten a un desarrollador "inyectar" su propio código dentro de los métodos de el código escrito  por un tercero.   
   
@@ -84,5 +86,5 @@ public static void RealizaOperacionSecreta(List<string> palabras, Func<string, b
 }
 {% endhighlight %}
 #### En resumen
-<code>Func</code> es un molde para crear delegados de manera rápida, especificando los parámetros de entrada y el tipo de retorno mediante el uso de los ```< >```, <code>Action</code> cumple con la misma tarea, salvo que no tiene un tipo de retorno. En el siguiente post hablaré de las expresiones lambda una forma más elegante y simple de definir la implementación de delegados. Recuerda nuevamente que el enlace al código está en <a href="#post-meta">información del post</a>.
+<code>Func</code> es un molde para crear delegados de manera rápida, especificando los parámetros de entrada y el tipo de retorno mediante el uso de los ```< >```, <code>Action</code> cumple con la misma tarea, salvo que no tiene un tipo de retorno. En el siguiente post hablaré de las expresiones lambda una forma más elegante y simple de definir la implementación de delegados. Recuerda nuevamente que el enlace al código está en <a href="#post-meta">información del post</a>. En un post siguiente les hablaré de las expresiones lambda, otra manera de trabajar con delegados.
 

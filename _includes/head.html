@@ -24,7 +24,7 @@
   <!-- Twitter cards just the beggining of -->
   {% if page.featured_image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg">
+    <meta name="twitter:image" content={{ page.featured_image | prepend: page.url | prepend: site.images_url }}>
   {% else %}
     <meta name="twitter:card" content="summary" />
   {% endif %}

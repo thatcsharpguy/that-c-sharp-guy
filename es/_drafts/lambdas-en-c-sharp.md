@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Lambdas en C#"
-date:   2015-07-2 18:31:38
+title: "Lambdas en C#"
+date: 2015-07-2 18:31:38
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: Post acerca de Lambdas en C#
+excerpt: Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Podría muchas veces resultarnos bastante engorroso tener que escribir los métodos para poder usar el delegado. 
 lang: es
 ---
 Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Podría muchas veces resultarnos bastante engorroso tener que escribir los métodos para poder usar el delegado. 
@@ -31,7 +31,8 @@ RealizaOperacionSecrete(palabras, (s) => { return s.StartsWith("u"); });
 // O simplemente por:
 RealizaOperacionSecrete(palabras, s => s.StartsWith("u"));
 {% endhighlight %}
-Por definición, las expresiones lambda son "métodos anónimos para crear tipos delegados y árboles de expresión", nos enfocaremos en lo primero. Me gusta imaginar la creación de expresiones lambda como una especie mutlación de los métodos tradicionales, y es que lo podemos ver como una serie de pasos:
+Por definición, las expresiones lambda son "métodos anónimos para crear tipos delegados y árboles de expresión", nos enfocaremos en lo primero. Me gusta imaginar la creación de expresiones lambda como una especie mutlación de los métodos tradicionales, y es que lo podemos ver como una serie de pasos:  
+
 <ol>
 	<li>Quitamos todo lo que esté antes del primer paréntesis de apertura</li>
 	<li>Agregamos el operador <code>=&gt;</code></li>

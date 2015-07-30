@@ -4,7 +4,8 @@ layout: default
 <div id="post-meta">
   <a href="#" rel="author">{{ page.author }}</a> 
   | {{ page.date | date: "%d/%m/%Y" }} 
-  {% if page.ideone %}| <a href="{{ page.ideone }}" target="_blank"> Ver código de este post</a> {% endif %}
+  {% if page.ideone %}| <a href="{{ page.ideone }}" target="_blank"> Ver código de este post en ideone</a> {% endif %}
+  {% if page.github %}| <a href="{{ page.github }}" target="_blank"> Ver código de este post en GitHub</a> {% endif %}
 </div>
 <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-content">
