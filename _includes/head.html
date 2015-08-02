@@ -3,8 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" 
-        type="image/png" 
+  <link rel="icon" type="image/png" 
         href='{{ "/assets/site/favicon.png" | prepend: site.url }}'>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -25,15 +24,22 @@
     ga('send', 'pageview');
   </script>
     
-  <!-- Twitter cards just the beggining of -->
+  <!-- Twitter cards  -->
   {% if page.featured_image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content={{ page.featured_image | prepend: page.url | prepend: site.images_url }}>
+    <meta name="twitter:image" content='{{ page.featured_image | prepend: page.url | prepend: site.images_url }}'>
   {% else %}
     <meta name="twitter:card" content="summary" />
   {% endif %}
-  
   <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  
+  <!-- Facebook open graph tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="article:author" content="https://www.facebook.com/antonio.feregrino" />
+  <meta property="article:publisher" content="https://www.facebook.com/antonio.feregrino" />
 </head>

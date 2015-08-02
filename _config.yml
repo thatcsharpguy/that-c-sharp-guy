@@ -1,6 +1,6 @@
 # Site settings
 title: That C# guy
-email: antonio.feregrino@hotmail.es
+email: feregrino@thatcsharpguy.com
 description: > # this means to ignore newlines until "baseurl:"
   Escribo sobre ciencias computacionales, principalmente enfocado a la programación de aplicaciones, pero con énfasis en C#, mi lenguaje favorito. A veces me da por escribir sobre tecnología también. 
 description-en: > # this means to ignore newlines until "baseurl:"
@@ -19,3 +19,39 @@ permalink: /:title/
 
 
 excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
+
+
+
+defaults:
+  -
+    scope:
+      path: "en"
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      lang: "en" # overrides previous default layout
+  -
+    scope:
+      path: "en"
+      type: "drafts" # previously `page` in Jekyll 2.2.
+    values:
+      lang: "en" # overrides previous default layout
+  -
+    scope:
+      path: "es"
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      lang: "es" # overrides previous default layout
+  -
+    scope:
+      path: "es"
+      type: "drafts" # previously `page` in Jekyll 2.2.
+    values:
+      lang: "es" # overrides previous default layout
+  -
+    scope:
+      path: ""
+      type: "posts" # previously `page` in Jekyll 2.2.
+    values:
+      author: Antonio Feregrino Bolaños
+
+
