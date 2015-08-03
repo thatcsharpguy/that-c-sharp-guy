@@ -4,10 +4,9 @@ title: "Lambdas en C#"
 date: 2015-07-2 18:31:38
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Podría muchas veces resultarnos bastante engorroso tener que escribir los métodos para poder usar el delegado. 
-lang: es
+excerpt: "Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las expresiones lambda."
 ---
-Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Podría muchas veces resultarnos bastante engorroso tener que escribir los métodos para poder usar el delegado. 
+Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Comenzaré por dar un ejemplo de su uso: 
   
 Es decir, suponiendo que tenemos el método del ejemplo pasado.
 {% highlight csharp %}
@@ -31,11 +30,58 @@ RealizaOperacionSecrete(palabras, (s) => { return s.StartsWith("u"); });
 // O simplemente por:
 RealizaOperacionSecrete(palabras, s => s.StartsWith("u"));
 {% endhighlight %}
-Por definición, las expresiones lambda son "métodos anónimos para crear tipos delegados y árboles de expresión", nos enfocaremos en lo primero. Me gusta imaginar la creación de expresiones lambda como una especie mutlación de los métodos tradicionales, y es que lo podemos ver como una serie de pasos:  
+Por definición, las expresiones lambda son "métodos anónimos para crear tipos delegados y árboles de expresión", nos enfocaremos en lo primero. El método <code>SoloConU</code> es usado solamente una vez en nuestro programa y es por eso que es un buen candidato a ser reemplazado por un método anónimo (entre otras cosas, sin nombre). Y es que podría muchas veces resultarnos bastante engorroso tener que escribir le método completo para hacer referencia a él solamente una vez dentro de todo nuestro código.
+
+#### Crear una expresión lambda  
+Me gusta imaginar la creación de expresiones lambda como una especie de recorte de los métodos tradicionales, y es que lo podemos ver como una serie de pasos que funcionan tanto para métodos con tipo de dato de retorno o para los que no lo tienen:  
 
 <ol>
 	<li>Quitamos todo lo que esté antes del primer paréntesis de apertura</li>
 	<li>Agregamos el operador <code>=&gt;</code></li>
 	<li>... listo</li>
 </ol>  
-Funciona tanto para métodos con tipo de dato de retorno o para los que no lo tienen. En el fragmento anterior de...
+
+#### Consideraciones extras  
+Existen otras consideraciones que podemos tomar en cuenta si queremos reducir aún más la cantidad de código escrito. Por ejemplo si a la expresión lambda recibe **un solo parámetro** se pueden omitir los paréntesis:
+
+<div class="pure-g">
+    <div class="pure-u-1-2">
+{% highlight csharp %}
+// Versión normal
+(a) => { return a.ToString(); }
+{% endhighlight %}
+	</div>
+    <div class="pure-u-1-2">
+{% highlight csharp %}
+// Versión "simplificada"
+a => { return a.ToString(); }
+{% endhighlight %}
+	</div>
+</div>
+Si la expresión lambda consta de una **única sentencia**, y esta es una **operación de retorno**, podemos omitir los corchetes, la palabra clave ```return``` y el ```;``` de fin de sentencia: 
+
+<div class="pure-g">
+    <div class="pure-u-1-2">
+{% highlight csharp %}
+a => { return a.ToString(); }
+{% endhighlight %}
+	</div>
+    <div class="pure-u-1-2">
+{% highlight csharp %}
+a => a.ToString()
+{% endhighlight %}
+	</div>
+</div>  
+
+#### Usos más frecuentes  
+{% highlight csharp %}
+// Eventos
+accessButton.Clicked += (sender, args) => { DoAccess(); };
+
+// Linq
+var solteros = 	personas
+				.Where(persona => persona.EsSoltero)
+				.OrderBy(persona => persona.Nombre)
+				.Select (persona => new Soltero { Nombre = persona.Nombre });
+{% endhighlight %}
+De los usos más frecuentes de las expresiones lambda, podemos encontrar la asignación de manejadores de evento y en conjunto con Linq. Herramientas de las que les hablaré más adelante.
