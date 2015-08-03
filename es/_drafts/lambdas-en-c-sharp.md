@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lambdas en C#"
-date: 2015-07-2 18:31:38
+date: 2015-08-3 18:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
 excerpt: "Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las expresiones lambda."
