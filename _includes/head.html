@@ -36,6 +36,10 @@
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   
   <!-- Facebook open graph tags -->
+  {% if page.featured_image %}
+  <meta property="og:image"
+content='{{ page.featured_image | prepend: page.url | prepend: site.images_url }}' />
+  {% endif %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}"/>
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

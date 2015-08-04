@@ -5,6 +5,8 @@ date: 2015-08-3 18:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
 excerpt: "Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las expresiones lambda."
+ideone: http://ideone.com/fork/7dfMEC
+featured_image: "featured.png"
 ---
 Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Comenzaré por dar un ejemplo de su uso: 
   
@@ -85,3 +87,5 @@ var solteros = 	personas
 				.Select (persona => new Soltero { Nombre = persona.Nombre });
 {% endhighlight %}
 De los usos más frecuentes de las expresiones lambda, podemos encontrar la asignación de manejadores de evento y en conjunto con Linq. Herramientas de las que les hablaré más adelante.
+
+**Este es el fin de la serie de posts** que comenzó con <a href="/delegados-en-c-sharp" target="_blank">delegados en C#</a> continuando con <a href="/func-y-action-en-c-sharp" target="_blank">func y action en C#</a>. Hay otro tema en el tintero, que son los árboles de expresiones, pero aún está en preparación.
