@@ -1,0 +1,62 @@
+---
+layout: post-en
+title:  "Of Xamarin, Netduino and IoT"
+date:   2015-07-18 18:31:38
+author: Antonio Feregrino Bolaños
+categories: xamarin netduino iot sockets xamarin.forms poc
+excerpt: I want to start this post by telling you how far is the light switch in my bedroom from my bed
+---
+I want to start this post by telling you how far is the light switch in my bedroom from my bed: <strong>VERY FAR</strong>. Sometimes I'm all tired, lying in my bed thinking "wouldn't it be awesome if I could control that switch from here?", of course I can always use a broom stick or something like that, but when you have other options this kind of posts are born.
+<br />
+<br />
+Now, the actual post: I decided to create an app to easily turn on or off my bedroom's light not only from my Windows Phone but from my iPod or any other device in my house. I'll try to explain how I did it. 
+
+<h3>Server (Netduino)</h3>
+The system consists of two parts: Server and client. The server will be responsible of controlling the lightswitch and of always be listening for incoming requests.
+<br />
+<br />
+Speaking of hardware, I used a Netduino Plus 2, a <a href="http://www.seeedstudio.com/depot/Grove-Relay-p-769.html" target="_blank">Groove Relay</a> (to handle high voltages), some resistors and of course wire. I won't dig a lot on the wiring but if you want I could help you with that, just ask.
+<br />
+<br />
+Speaking of software, this is really a simple app, I created a class that works as an interface, it abstracts the usage of stream sockets.
+<h3>Client (Xamarin.Forms app)</h3>
+The client only has a single purpose: replace the mechanical switch. It isn't very hard to think of the UI of an app to do that. 
+
+<h4>UI</h4>
+I didn't burn my brain out thinking of the UI, after all it is just a switch, and that is precisely what I used, a <code>Switch</code> that will trigger a request to the Netduino on every toggle.
+
+<h4>Using Sockets in a Xamarin.Forms app</h4>
+Like the server, the client has a kind of "interface" that abstracts the usage of sockets in our app. Let's stop for a minute, when I first thought of this app I was wondering of how to manage sockets from a Forms application. I'd create a plugin and handle each platform indepently, but searching I came along with this <i>really, really</i> cool plugin (rda.SocketsForPcl https://github.com/rdavisau/sockets-for-pcl ). It is great to have a community creating stuff that you can use in your projects.
+<br />
+<br />
+There are two important methods whithin the "interface" class: 
+{% highlight csharp %}
+public async Task<bool> GetLampstatus()
+{
+    using (var s = new Sockets.Plugin.TcpSocketClient())
+    {
+        await s.ConnectAsync(NetduinoIp, Port);
+        byte[] data = new byte[2];
+        data[0] = ReadLampState;
+        data[1] = ReadLampState;
+        s.WriteStream.Write(data, 0, 2);
+        s.ReadStream.Read(data, 0, 1);
+        return data[0] == ByteTrue;
+    }
+}
+{% endhighlight %}
+The above piece of code request the switch status from the server and returns true or false, depending on the status of the light switch.
+{% highlight csharp %}
+public async Task SetLampStatus(bool on)
+{
+    using (var s = new Sockets.Plugin.TcpSocketClient())
+    {
+        await s.ConnectAsync(NetduinoIp, Port);
+        byte[] data = new byte[2];
+        data[0] = WriteLampState;
+        data[1] = (byte)(on ? ByteTrue : ByteFalse);
+        s.WriteStream.Write(data, 0, 2);
+    }
+}
+{% endhighlight %}
+And the above piece of code sends to the server a request telling which state the light swich shoud be set to. Note how all the exchange of information is done via bytes, the first byte tells the server which operation is requestad while the second one contains data when necessary.
