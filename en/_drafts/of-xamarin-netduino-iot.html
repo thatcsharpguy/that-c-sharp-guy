@@ -5,7 +5,8 @@ date:   2015-07-18 18:31:38
 author: Antonio Feregrino Bolaños
 categories: xamarin netduino iot sockets xamarin.forms poc
 excerpt: I decided to create an app to easily turn on or off my bedroom's light not only from my Windows Phone but from my iPod or any other device in my house. I'll try to explain how I did it. 
-github: 
+github: https://github.com/fferegrino/MyLightbulb
+featured_image: featured.jpg
 ---
 I want to start this post by telling you how far is the light switch in my bedroom from my bed: <strong>VERY FAR</strong>. Sometimes I'm all tired, lying in my bed thinking "wouldn't it be awesome if I could control that switch from here?", of course I can always use a broom stick or something like that, but when you have other options this kind of posts are born.
 <br />
@@ -52,9 +53,8 @@ while (true)
 The client only has a single purpose: replace the mechanical switch. It isn't very hard to think of the UI of an app to do that. 
 <h4>UI</h4>
 I didn't burn my brain out thinking of the UI, after all it is just a switch, and that is precisely what I used, a <code>Switch</code> that will trigger a request to the Netduino on every toggle.
-
 <h4>Using Sockets in a Xamarin.Forms app</h4>
-Like the server, the client has a kind of "interface" that abstracts the usage of sockets in our app. Let's stop for a minute, when I first thought of this app I was wondering of how to manage sockets from a Forms application. I'd create a plugin and handle each platform indepently, but searching I came along with this <i>really, really</i> cool plugin: <a href="https://github.com/rdavisau/sockets-for-pcl">rda.SocketsForPcl</a>. It is great to have a community creating stuff that you can use in your projects. With that issue solved, let's move on.
+Like the server, the client has a kind of "interface" that abstracts the usage of sockets in our app. Let's stop for a minute, when I first thought of this app I was wondering of how to manage sockets from a Forms application. I'd create a plugin and handle each platform indepently, but searching I came along with this <i>really, really</i> cool plugin: <a target="_blank" href="https://github.com/rdavisau/sockets-for-pcl">rda.SocketsForPcl</a>, it provides a fully functional set of classes to deal with sockets in every platform (even on iOS!). It is great to have a community creating stuff that you can use in your projects. With the socket issue solved, let's move on.
 <br />
 <br />
 There are two important methods whithin the "interface" class: 
@@ -87,6 +87,8 @@ public async Task SetLightSwitchStatus(bool on)
     }
 }
 {% endhighlight %}
-This piece of code sends a request to the server telling which state the light swich shoud be set to. Note how all the exchange of information is done via bytes, the first byte tells the server which operation is requested while the second one contains data when necessary.
+This piece of code sends a request to the server telling which state the light swich shoud be set to. Note how all the exchange of information is done via bytes, the first byte tells the server which operation is requested while the second one contains data when necessary. In the following vídeo I show the system working, though I still haven't wired the actual light bulb (since I'm scared of the high voltage), so I placed a 12V led instead for the demo.
+
+
 <h4>What next?</h4>
-Well, this isn't really IoT as you may know it because this has little to do with the internet since the traffic is local, but I consider it to be a good starting point to build something more complex. For the next Netduino+Xamarin post I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door, for that I'll use Parse, please fill in the <a href="/signup">sign up</a> if you want me to keep you updated.
+Well, this isn't really IoT as you may know it because this has little to do with the internet since the traffic is local, but I consider it to be a good starting point to build something more complex. For the next Netduino + Xamarin post I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door, for that I'll use Parse, please fill in the <a href="/signup">sign up</a> if you want me to keep you updated.
