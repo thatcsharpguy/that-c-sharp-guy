@@ -1,7 +1,7 @@
 ---
 layout: post-en
 title:  "Of Xamarin, Netduino and IoT"
-date:   2015-07-18 18:31:38
+date:   2015-08-07 18:31:38
 author: Antonio Feregrino Bolaños
 categories: xamarin netduino iot sockets xamarin.forms poc
 excerpt: I decided to create an app to easily turn on or off my bedroom's light not only from my Windows Phone but from my iPod or any other device in my house. I'll try to explain how I did it. 
@@ -88,7 +88,10 @@ public async Task SetLightSwitchStatus(bool on)
 }
 {% endhighlight %}
 This piece of code sends a request to the server telling which state the light swich shoud be set to. Note how all the exchange of information is done via bytes, the first byte tells the server which operation is requested while the second one contains data when necessary. In the following vídeo I show the system working, though I still haven't wired the actual light bulb (since I'm scared of the high voltage), so I placed a 12V led instead for the demo.
+<br />
+<br />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tLuWTyCHQ1w" frameborder="0" allowfullscreen></iframe>
 
 <h4>What next?</h4>
 Well, this isn't really IoT as you may know it because this has little to do with the internet since the traffic is local, but I consider it to be a good starting point to build something more complex. For the next Netduino + Xamarin post I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door, for that I'll use Parse, please fill in the <a href="/signup">sign up</a> if you want me to keep you updated.
