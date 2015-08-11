@@ -13,7 +13,7 @@
     font-size: 36px;
     line-height: 56px;
     color: $text-color;
-    padding-left: 10px;
+
     &,
     &:visited {
         color: $text-color
@@ -281,7 +281,8 @@
 .l-number{
     color: $line-number-color;
     text-align: right;
-    background: url(../assets/site/header-detail.png) center right  no-repeat;
+    background: url(../assets/site/line-number-head.png) top right  no-repeat,
+                url(../assets/site/line-number-body.png) right repeat-y; 
        &.n{
            background:none;
        }
