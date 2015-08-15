@@ -1,7 +1,7 @@
 ---
 layout: post
 title: La importancia de programar con estilo
-date:   2015-08-15 18:31:38
+date:   2015-08-15 17:00:00
 author: Antonio Feregrino Bolaños
 categories: ['programming', 'professional development', 'es']
 excerpt: Y al decir "programar con estilo" no me refiero a que estén todo el tiempo con los meñiques levantados, o sólo hacerlo las tardes a las 5 p.m. No.
@@ -20,9 +20,9 @@ Creo que el problema viene desde las escuelas, por lo general al momento de entr
 Ayudará bastante cuando en un momento dado entramos al mundo laboral en el cual sí se desarrolla constantemente sobre un mismo programa, el cual debería estar bien documentado y ser entendible para que pueda ser trabajado por varias manos, manos a las cuales les resulte sencillo manipularlo y no se pierda tiempo en preguntarle al de al lado "¿y esto qué hace?" o quedarnos rascando la cabeza un buen rato preguntándonos "¿para qué usé esto?".  
 
 ### Una brillante solución
-Para nuestra fortuna existen algunas guías de estilo que nos muestran algunas de las convenciones acordadas, las cuales podemos no aceptar por completo desde el inicio, pero sí es importante tenerlas en cuenta. Claro que uno puede inventar sus propias normas, **lo importante es respetarlas siempre**.  
+Para nuestra fortuna existen algunas guías de estilo que nos muestran algunas de las convenciones acordadas, las cuales podemos no aceptar por completo desde el inicio, pero sí es importante tenerlas en cuenta. Claro que uno puede inventar sus propias normas, **lo importante es aplicarlas consistentemente**.  
 <br />
-Amigo programador, te dejo unas guías de estilo que me encontré por ahí (en internet), recuerda que seguro hay alguna para tu lenguaje favorito. Además, aprovecho además para promocionar **una guía que estoy haciendo para C#**, está en GitHub y todos pueden contribuír (sí, tú también) a desarrollarla.
+Amigo programador, te dejo unas guías de estilo que me encontré por ahí (en internet), recuerda que seguro hay alguna para tu lenguaje favorito y si no, puedes crear la tuya. Como pequeño comercial, **decidí crear una guía de estilo para C#**, está en GitHub y todos pueden contribuír (sí, tú también) a desarrollarla.
 <br />  
 	
 #### [Otra guía de estilo *cool* para C#](https://github.com/fferegrino/cool-sharp/)
