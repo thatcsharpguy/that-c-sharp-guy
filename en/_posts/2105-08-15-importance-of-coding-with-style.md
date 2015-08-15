@@ -10,7 +10,7 @@ featured_image: "featured.jpg"
 ---  
 And with "coding with style" I don't mean to keep your pinkies up while doing it or just write code every evening at 5:00 pm. No. Coding with style is to make our code legible, documented as much as we can an following some conventions that other coders adopt to make our programs "universal".  
 <br />
-They say that every programmer has its own way to do its thing (I agree on that), but this sometimes becomes a problem when it comes to terms of optimization, review or scale the code. In the best of cases we might remember everything what that *asdflkj* variable means in our code, but imagine if you couldn't remember and you have to look here and there lo find what you meant to do with that variable. OR EVEN WORSE: Imagine that the code you wrote a long time ago is now a responsibility for other person, poor him!  
+They say that every programmer has its own way to do its thing (I agree on that), but this sometimes becomes a problem when it comes to terms of optimization, review or scale the code. In the best of cases we might remember everything what that *asdflkj* variable means in our code, but imagine if you couldn't remember and you have to look here and there to find what you meant to do with that variable. OR EVEN WORSE: Imagine that the code you wrote a long time ago is now a responsibility for other person, poor him!  
 <br />
 "It works", yeah, you could say that. There are times when a quick fix is needed but at the end of the day we always forget to come back and do it right. But trust me, that will make the life easier for you and your colleagues.
 
