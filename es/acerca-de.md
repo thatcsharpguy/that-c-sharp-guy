@@ -5,7 +5,7 @@ permalink: /acerca-de/
 lang: es
 ---
 #### Antonio Feregrino Bolaños
-Casi ingeniero en sistemas computacionales de la Escuela Superior de Cómputo del Instituto Politécnico Nacional, apasionado de las ciencias computacionales y de la programación aplicada al desarrollo de aplicaciones (APIs en la web y aplicaciones móviles). Sobre esto último me agrada en particular el lenguaje C# pero soy un firme creyente de que la cosa es tener buenas ideas, el lenguaje en el que se escriban es lo de menos. Actualmente soy Embajador Estudiantil de Xamarin y analista prorgramador en Heurística Soluciones.
+Casi ingeniero en sistemas computacionales de la Escuela Superior de Cómputo del Instituto Politécnico Nacional, apasionado de las ciencias computacionales y de la programación aplicada al desarrollo de aplicaciones (APIs en la web y aplicaciones móviles). Sobre esto último me agrada en particular el lenguaje C# pero soy un firme creyente de que la cosa es tener buenas ideas, el lenguaje en el que se escriban es lo de menos. Actualmente soy Xamarin Student Partner y analista prorgramador en Heurística Soluciones.
 
 
 #### Sobre el blog
