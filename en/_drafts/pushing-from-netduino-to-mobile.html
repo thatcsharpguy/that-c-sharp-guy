@@ -21,7 +21,11 @@ To consume Parse's REST Api features from a Netduino 3 I decided to create a cli
 
 
 ### The `CrossParse` plugin  
-Whe we want to deliver platform specific experiences from a Xamarin.Forms app we can use or create a plugin that will let us abstract that functionalities away from each platform to interact with each platform via a common API. As with the `parse-dotnetmf` library this plugin only supports a very few features of Parse, but again, it can be extended according to your needs.
+Whe we want to deliver platform specific experiences from a Xamarin.Forms app we can use or create a plugin that will let us abstract that functionalities away from each platform to interact with each platform via a common API. I tried to do a plugin to handle all interactions with Parse push but turns out that this isn't as easy as I thought at first. I mean the Parse's Xamarin Components for each platform already support push notifications but there is no abstraction layer to be used with Forms, not to mention that there are some required special steps for each platform that you must manage explicictly in each platform specific project (such as creating an extra class in the Android project, for example).  
+
+So this plugin isn't as useful as I wanted it to be at first but it still helps by providing the mentioned abstraction layer. With this plugin you can subscribe/unsubscribe to channels and handling notifications while the user is in the app. I really hope Parse release a plugin for Forms soon as it is fairly easy to do given they have already have the components.  
+  
+The Doorduino app uses my plugin.
 
 ## What's next?
 I just got a nice 37-in-1 sensor box from China so hopefully this kind of posts won't stop. Anyway, feel free to reach out letting me know what topics do you want me to blog about, below is my contact information.
