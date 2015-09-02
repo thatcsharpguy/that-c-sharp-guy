@@ -3,10 +3,11 @@ layout: post
 title:  "Pushing with Parse from Netduino to Xamarin.Forms"
 date:   2015-08-31 21:00:00
 author: Antonio Feregrino Bolaños
+featured_image: featured.jpg
 categories: xamarin netduino parse parse.com iot sockets xamarin.forms poc xamarin
 excerpt: It's been a while since I took my Netduino out of its box and I did something with it, back then I promised to do a slightly more complex system using a push notification service.
 ---
-It's been a while since I took my Netduino out of its box and I did something with it, back then I promised to do a slightly more complex system using a push notification service. I quote my own words: *"I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door"*. Well, here it is (and it's called Doorduino <s1all>such an awful name, I know</small>).
+It's been a while since I took my Netduino out of its box and I did something with it, back then I promised to do a slightly more complex system using a push notification service. I quote my own words: *"I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door"*. Well, here it is (and it's called Doorduino <small>such an awful name, I know</small>).
 
 ### On Parse  
 Parse is a BaaS (Backend as a service) providers that amongst its set of features, offers a Push Notifications service. I will be using that service to send the push notifications to my devices. It was pretty straight forward to get started, first of all, I created a new app, grabbed the keys (for both REST API and .NET), wrote some code and start sending pushes.
