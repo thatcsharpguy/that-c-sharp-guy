@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="pure-g">
-      <div class="pure-u-8-24">
+      <div id="links" class="pure-u-8-24">
         <ul class="social-media-list">
         {% if site.github_username %}
           <li>
@@ -33,7 +33,7 @@
         {% if site.email %}
         <li>
           <a href="mailto:{{ site.email }}">
-            <span class="icon  icon--twitter">
+            <span class="icon  icon--email">
               <svg viewBox="0 0 16 16">
                 <path fill="#828282" d="m 13.307858,2.6921419 -10.6157164,0 c -0.7298305,0 -1.3203298,0.5971341 -1.3203298,1.3269646 l -0.00663,7.9617875 c 0,0.729831 0.5971341,1.326964 1.3269646,1.326964 l 10.6157166,0 c 0.729831,0 1.326965,-0.597133 1.326965,-1.326964 l 0,-7.9617875 c 0,-0.7298305 -0.597134,-1.3269646 -1.326965,-1.3269646 z m 0,2.6539291 -5.3078582,3.3174114 -5.3078582,-3.3174114 0,-1.3269645 5.3078582,3.3174114 5.3078582,-3.3174114 0,1.3269645 z" />
               </svg>
@@ -44,10 +44,9 @@
         {% endif %}
         </ul>
       </div>
-      <div class="pure-u-16-24 content-window">
-        <p class="text">{{ site.description }}</p>
+      <div id="description" class="pure-u-16-24 content-window">
         <p class="licence">
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> A menos de que se indique lo contrario, todo el contenido de este blog está <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
+          A menos de que se indique lo contrario, todo el contenido de este blog está bajo una  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Licencia Creative Commons Atribución 4.0 Internacional</a>.
         </p>
       </div>
     </div>
