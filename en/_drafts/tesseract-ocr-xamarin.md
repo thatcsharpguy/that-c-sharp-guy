@@ -15,4 +15,9 @@ In this post I'll show you how to create a simple iOS and Android application th
 #### Creating the solution  
 For this post I used Xamarin Studio on a Mac, but as you know, you can create it regardless of the OS or IDE. Go to New solution > Cross-platform > App > Blank Xamarin.Forms app. Give it any name you want and select Use Portable Class Library.
 
- {% post_image project-creation-1.png Creación del proyecto %}
+{% post_image project-creation-1.png Creación del proyecto %}  
+ 
+{% post_image project-creation-2.png Creación del proyecto %}  
+
+#### NuGets and NuGets
+Then proceed to add the XLabs NuGet package (´XLabs.Forms´) to the three projects, we'll use the IoC features that it provides. Add also the TinyIoC package (´XLabs.IoC.TinyIoC´) to both the iOS and Android projects.
