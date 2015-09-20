@@ -9,7 +9,7 @@ lang: es
 featured_image: "featured.jpg"
 github: https://gist.github.com/fferegrino/a81cd436e4d631f1cf4d
 ---
-Hace poco vimos que existen alias en C# para los tipos predefinidos de datos, y hasta ahí todo claro. Pero nosotros como programadores también podemos beneficiarnos de crear nuestros propios alias. Hay dos maneras de hacer uso de los alias:  
+Hace poco vimos que existen <a href="/string-vs-system-string-es" target="_blank">alias en C# para los tipos predefinidos</a> de datos, y hasta ahí todo claro. Pero nosotros como programadores también podemos beneficiarnos de crear nuestros propios alias. Hay dos maneras de hacer uso de los alias:  
 
 ### Para tipos de dato  
 ¿No sería fabuloso poder "cambiarle" (entre comillas porque en realidad solamente le estamos dando otro nombre) el nombre a <code>int</code>? tal vez sea mejor ponerle algo como <code>Entero</code>. Lo podemos hacer con una sentencia <code>using</code> de la siguiente manera:
@@ -48,8 +48,8 @@ public static Ents.Person MapPerson(Edt.Person person)
 	// ...
 {% endhighlight %}  
 ### Gran, gran desventaja  
-Dejé lo peor para el final: Los alias creados por nosotros solamente son válidos dentro del bloque de código en el que los definamos, ya sea dentro de un <code>namespace</code> o dentro de un archivo completo lo cual significa que tenemos que repetirlo para cada archivo en el que lo usemos. Sería muy útil poderlos definir una sola vez a nivel global y después poder usarlas en toda nuestra aplicación.
+Dejé lo peor para el final: Los alias creados por nosotros solamente son válidos dentro del bloque de código en el que los definamos, ya sea dentro de un <code>namespace</code> o dentro de un archivo completo, lo cual significa que tenemos que repetirlo para cada archivo en el que lo usemos. Sería muy útil poderlos definir una sola vez a nivel global y después poder usarlas en toda nuestra aplicación.
 
 #### Mi consejo 
-Estos alias existen, pero yo procuro no usarlas salvo en casos extremos y es que si no se usan con moderación pueden complicar muchísimo el código. 
+Estos alias existen, pero yo procuro no usarlas salvo en casos extremos y es que si no se usan con moderación pueden complicar mucho la lectura del código. 
 
