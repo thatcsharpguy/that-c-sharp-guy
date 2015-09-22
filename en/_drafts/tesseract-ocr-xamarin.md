@@ -20,4 +20,10 @@ For this post I used Xamarin Studio on a Mac, but as you know, you can create it
 {% post_image project-creation-2.png Creación del proyecto %}  
 
 #### NuGets and NuGets
-Then proceed to add the XLabs NuGet package (´XLabs.Forms´) to the three projects, we'll use the IoC features that it provides. Add also the TinyIoC package (´XLabs.IoC.TinyIoC´) to both the iOS and Android projects.
+Then proceed to add the XLabs NuGet package (<code>XLabs.Forms</code>) to the three projects, we'll use the IoC features that it provides and the ability to take photos right from our PCL. Add also the TinyIoC package (<code>XLabs.IoC.TinyIoC</code>) to both the iOS and Android projects, I'm using TinyIoC but you can use whatever DI tool you want.  
+  
+#### The Tesseract NuGet 
+Yay! another NuGet, but this time is the most important for our app. Add the package <code>Xamarin.Tesseract</code> to the three projects, yes, the same package for all three. This little package is <a href="http://shamsutdinov.net/2015/07/01/tesseract-orc-xamarin-part-1/" target="_blank">xxºdeveloped by Artur Shamsutdinov</a> and it is a wrapper for Tesseract OCR that provides a nice API to work with. So far so good.  
+
+#### Platform specific code  
+Now with everything else in its place, it is time to work a bit on each platofmr project. Let's start with Android
