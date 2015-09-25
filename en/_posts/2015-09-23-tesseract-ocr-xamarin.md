@@ -1,12 +1,13 @@
 ---
 layout: post-en
 title:  "Tesseract OCR in Xamarin"
-date:   2015-09-23 18:31:38
+date:   2015-09-23 19:00:00
 author: Antonio Feregrino Bolaños
 category: xamarin.forms
-excerpt: I've decided to kill my old blog, if you ever visit [blog.fferegrino.org] again you'll find that it isn't what it used to be. I decided to divide the content and if you came here looking for technical stuff, this is the right place.
+excerpt: While surfing the web for a free / open source solution to a certain OCR problem that I came across I found this pretty cool library named Tesseract OCR which, in its own words, is "probably the most accurate open source OCR engine available".
+featured_image: featured.png
 ---  
-While surfing the web for a free / open source solution to a certain OCR problem that I came across I found this pretty cool library named Tesseract OCR which, in its own words, is: *"probably the most accurate open source OCR engine available"*. Along with the library (written in C/C++) there are an entire world of wrappers, including some for Xamarin... so, why not?  
+While surfing the web for a free / open source solution to a certain OCR problem that I came across I found this pretty cool library named Tesseract OCR which, in its own words, is *"probably the most accurate open source OCR engine available"*. Along with the library (written in C/C++) there are an entire world of wrappers, including some for Xamarin... so, why not?  
 
 ### Application
 In this post I'll show you how to create a simple iOS and Android application that allows the user to take a picture and identify the characters that got captured on the picture. Nothing too complicated. It'll be a Xamarin.Forms app, code sharing at its best!  
@@ -15,8 +16,6 @@ In this post I'll show you how to create a simple iOS and Android application th
 For this post I used Xamarin Studio on a Mac, but as you know, you can create it regardless of the OS or IDE. Go to New solution > Cross-platform > App > Blank Xamarin.Forms app. Give it any name you want and select Use Portable Class Library.
 
 {% post_image project-creation-1.png Creación del proyecto %}  
- 
-{% post_image project-creation-2.png Creación del proyecto %}  
 
 #### NuGets and NuGets
 Then proceed to add the XLabs NuGet package (<code>XLabs.Forms</code>) to the three projects, we'll use the IoC features that it provides and the ability to take photos right from our PCL. Add also the TinyIoC package (<code>XLabs.IoC.TinyIoC</code>) to both the iOS and Android projects, I'm using TinyIoC but you can use whatever DI tool you want.  
@@ -24,7 +23,7 @@ Then proceed to add the XLabs NuGet package (<code>XLabs.Forms</code>) to the th
 #### The Tesseract NuGet 
 Yay! another NuGet, but this time is the most important for our app. Add the package <code>Xamarin.Tesseract</code> to the three projects, yes, the same package for all three. This little package is <a href="http://shamsutdinov.net/2015/07/01/tesseract-orc-xamarin-part-1/" target="_blank">developed by Artur Shamsutdinov</a> and it is a wrapper for Tesseract OCR that provides a nice API to work with. So far so good.  
   
-Tesseract relay on some data files to work, for each language symbols you want to recognize you must add a set of files. For example, this app recognizes english characters so only the <code>eng.*</code> files are needed, these files must be placed in a folder named <code>tessdata</code> inside the AndroidAssets folder for Android and the Resources folder for iOS.   
+Tesseract relay on some data files to work, for each language symbols you want to recognize you must add a set of files. For example, this app recognizes english characters so only the <code>eng.*</code> files are needed, these files must be placed in a folder named <code>tessdata</code> inside the AndroidAssets folder for Android and the Resources folder for iOS. You can download the <a href="https://code.google.com/p/tesseract-ocr/downloads/list" target="_blank">symbol files for each language here</a>.
 
 #### Configuring TinyIoC  
 As Tesseract and XLabs require platform specific code to work, we must find a way to allow a the shared PCL to execute such code, there are many options but I choose to implement IoC with TinyIoC. To use it we must configure each project separately.  
@@ -34,7 +33,7 @@ First of all, grab a reference to the container with
 {% highlight csharp %}
 var container = TinyIoCContainer.Current;
 {% endhighlight %}
-The container is like a bucket where we "put" pieces of code that will be used wihtin our application. Then, we must put code in that bucket, we do so by calling the <code>Register</code> method of the container:  
+The container is like a bucket where we "put" pieces of code that will be used within our application. Then, we must put code in that bucket, we do so by calling the <code>Register</code> method of the container:  
 {% highlight csharp %}
 container.Register<IDevice>(AndroidDevice.CurrentDevice);
 container.Register<ITesseractApi>((cont, parameters) =>
@@ -42,7 +41,7 @@ container.Register<ITesseractApi>((cont, parameters) =>
 	return new TesseractApi(ApplicationContext, AssetsDeployment.OncePerInitialization);
 });
 {% endhighlight %}
-With the first line the device where the app is running gets registered (alongside with all its available features), whereas with the second line we are registering the implementation of the Tesseract API, for Android we must pass in the constructor a reference to the application context where the application is running. For this exaple it is set to <code>ApplicationContext</code> in the <code>MainActivity.cs</code>.  
+With the first line the device where the app is running gets registered (alongside with all its available features), whereas with the second line we are registering the implementation of the Tesseract API, for Android we must pass in the constructor a reference to the application context where the application is running. For this example it is set to <code>ApplicationContext</code> in the <code>MainActivity.cs</code>.  
 Finally we have yet to register our <code>container</code> in the XLabs <code>Resolver</code>:
 {% highlight csharp %}
 Resolver.SetResolver(new TinyResolver(container));
@@ -139,9 +138,12 @@ async void TakePictureButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}  
 
 #### Wrapping up
+Here are some photos I took of the app running on an iPod touch:
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/FFi7b"><a href="//imgur.com/FFi7b">Tesseract OCR in Xamarin</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 And that's pretty much it. Now your Xamarin.Forms app can see! but everything has its drawbacks... this works well as a proof of concept but I have some final thoughts on it:  
 
- - You may want to perform some preprocessing techiques on the image to improve the accuracy of Tesseract's results  
+ - You may want to perform some preprocessing techniques on the image to improve the accuracy of Tesseract's results  
  - Be aware of the size of your app as *tessdata* files aren't small  
  - Consider the memory of the device yout app will be running on.  
  

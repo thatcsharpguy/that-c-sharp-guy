@@ -244,11 +244,20 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 19px;
         margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
             font-size: 18px;
+        }
+    }
+
+    h5 {
+        font-size: 22px;
+        margin-top: $spacing-unit;
+
+        @include media-query($on-laptop) {
+            font-size: 20px;
         }
     }
     
