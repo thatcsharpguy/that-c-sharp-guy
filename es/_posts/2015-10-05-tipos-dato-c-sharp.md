@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Tipos de dato en C#
-date:   2015-10-05 18:31:38
+date: 2015-10-05 22:00:00
 author: Antonio Feregrino Bolaños
 categories: aprende-csharp
-excerpt: Para un proyecto Instrumentación en la escuela decidí desempolvar mi Netduino Plus 2, en el proyecto decesitábamos mostrar las mediciones de tres distintos sensores en un par de displays de 7 segmentos.
+excerpt: Para la mayoría de sus aplicaciones, C# es un lenguaje fuertemente tipado, en este post presento dos categorías de tipos que nos podemos encontrar cuando trabajamos con este lenguaje.
 lang: es
+featured_image: featured.jpg
 ---  
-Para fines de este post, diremos que C# es un lenguaje fuertemente tipado (aunque ya permite tipado dinámico), lo que significa que cada variable, literal o constante debe tener un tipo declarado y dicho tipo no cambiará con el flujo del programa. Dentro de los tipos que ofrece C#, podemos encontrar dos grandes categorías:  
+Para fines de este post, diremos que C# es un lenguaje fuertemente tipado (aunque ya permite tipado dinámico y eso po palticaré en otro post), lo que significa que cada variable, literal o constante debe tener un tipo declarado y dicho tipo no cambiará con el flujo del programa. Dentro de los tipos que ofrece C#, podemos encontrar dos grandes categorías:  
 
 ### Predefinidos  
 Son los tipos que el lenguaje incorpora para almacenar valores comunes, entre ellos:  
@@ -70,7 +71,7 @@ Tiempo t2 = t1;
 </div>  
 </div>  
 <br />
-Las imagenes debajo de los códigos tienen la intención de mostrar una simple representación de lo que pasa al ejecutar el código. Al hacer `t2 == t1` sobre la estructura de Tiempo, al ser un un *tipo por valor* se crea una copia, lo cual significa que cualquier modificación que se haga a `t1` no provocará ningùn cambio sobre `t2`.  
+Las imagenes debajo de los códigos tienen la intención de mostrar una simple representación de lo que pasa al ejecutar el código. Al hacer `t2 == t1` sobre la estructura de Tiempo, al ser un un *tipo por valor* se crea una copia, lo cual significa que cualquier modificación que se haga a `t1` no provocará ningún cambio sobre `t2`.  
 Por otro lado, en el caso de la clase Tiempo, si se hiciera alguna modificación sobre `t2`, `t1` también se vería afectado al ser un *tipo de referencia*.  
   
 <br />
