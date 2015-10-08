@@ -244,7 +244,7 @@
     }
 
     h4 {
-        font-size: 19px;
+        font-size: 23px;
         margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
@@ -253,7 +253,7 @@
     }
 
     h5 {
-        font-size: 22px;
+        font-size: 20px;
         margin-top: $spacing-unit;
 
         @include media-query($on-laptop) {
@@ -345,4 +345,10 @@ table{
     tab-size:4;
 	-moz-tab-size: 4;
 	-o-tab-size:  4;
+}
+
+
+dd {
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
