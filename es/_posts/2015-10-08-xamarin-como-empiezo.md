@@ -1,11 +1,12 @@
 ---
 layout: post
 title: ¿Cómo empiezo con Xamarin?
-date:   2015-10-07 22:00:00
+date:   2015-10-08 21:00:00
 author: Antonio Feregrino Bolaños
 categories: Xamarin
 excerpt: ¿Quieres iniciar a desarrollar con Xamarin y no sabes por donde empezar? Acá te digo.
 lang: es
+featured_image: featured_true.jpg
 ---  
 ¿Quieres iniciar a desarrollar con Xamarin y no sabes por donde empezar? Acá te digo. Este post está dividido entre hardware y software cada sección con sus respectivos links y al final un pequeño FAQ. Mi recomendación es que lo leas todo y luego regreses a las secciones que apliquen para tu caso.
 
@@ -55,7 +56,7 @@ Al igual que con Windows, necesitarás el  <a href="https://developer.android.co
 ### FAQ (o algo parecido)
 <dl>
 
-<dt><b>Son muchas descargas, hay algo más sencillo</b><dt>
+<dt><b>Son muchas descargas, ¿no hay algo más sencillo?</b><dt>
 <dd>Hay muchos componente que vienen agrupados en paquetes, por ejemplo: cuando descargas Xamarin este te dará la opción de instalar el SDK de Android. O cuando instalas Visual Studio este te preguntará si deseas instalar el SDK de Windows Phone. O cuando instalas Xcode, también podrás instalar el SDK de iOS.</dd>
 
 <dt><b>No tengo Mac pero quiero desarrollar para iOS</b><dt>
