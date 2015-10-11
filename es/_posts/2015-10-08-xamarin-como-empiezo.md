@@ -11,7 +11,7 @@ featured_image: featured_true.jpg
 ¿Quieres iniciar a desarrollar con Xamarin y no sabes por donde empezar? Acá te digo. Este post está dividido entre hardware y software cada sección con sus respectivos links y al final un pequeño FAQ. Mi recomendación es que lo leas todo y luego regreses a las secciones que apliquen para tu caso.
 
 ### Hardware  
-Para empezar, la primera duda que muchos tienen es respecto al hardware. Me basaré en los requerimientos "mínimos" para desarrollar y publicar apps para las tres plataformas móviles (iOS, Android y Windows) y a pesar de que algunos de los requerimientos en hardware tienen mucho que ver con los emuladores de dispositivos no puden pasar desapercibidos.  
+Para empezar, la primera duda que muchos tienen es respecto al hardware. Me basaré en los requerimientos "mínimos" para desarrollar y publicar apps para las tres plataformas móviles (iOS, Android y Windows) y a pesar de que algunos de los requerimientos en hardware tienen mucho que ver con los emuladores de dispositivos, no puden pasar desapercibidos.  
 
 #### Dispositivos
 No necesitas tener el dispositivos físicos para la mayor parte de desarrollo de las apps, para ello tenemos los emuladores ;). Pero, si lo que quieres es que tu producto final tenga mejor calidad, definitivamente debes tratar de conseguir un dispositivo de la plataforma que vas a desarrollar. Nunca está de más.  
