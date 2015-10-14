@@ -6,6 +6,7 @@ author: Antonio Feregrino Bolaños
 categories: c#
 excerpt: Para un proyecto Instrumentación en la escuela decidí desempolvar mi Netduino Plus 2, en el proyecto decesitábamos mostrar las mediciones de tres distintos sensores en un par de displays de 7 segmentos.
 lang: es
+ideone: http://ideone.com/fork/9UsOI7
 tags:
 - aprende csharp
 ---
@@ -47,7 +48,6 @@ Para obtener el valor contenido dentro de un *nullable*, tenemos a nuestra dispo
 enteroNullable = null;
 // int enteroExcepcional = enteroNullable.Value; 
 // Este código lanza una excepcion ^
-
 
 enteroNullable = 5;
 int sinExcepciones = enteroNullable.Value;
