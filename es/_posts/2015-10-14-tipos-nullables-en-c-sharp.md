@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Tipos nullables en C#
-date:   2015-07-17 18:31:38
+date:   2015-10-14 20:30:00
 author: Antonio Feregrino Bolaños
 categories: c#
-excerpt: Para un proyecto Instrumentación en la escuela decidí desempolvar mi Netduino Plus 2, en el proyecto decesitábamos mostrar las mediciones de tres distintos sensores en un par de displays de 7 segmentos.
+excerpt: Los tipos por referencia son nullables por definición. ¿Qué implica que sean nullables? pues nada más y nada menos que puedan tener un valor null o en términos prácticos, nungún valor.
 lang: es
 ideone: http://ideone.com/fork/9UsOI7
+featured_image: featured.png
 tags:
 - aprende csharp
 ---
@@ -20,15 +21,13 @@ Por otro lado, los **tipos por valor siempre tienen un valor** (valga la redunda
   
 Muchas veces esta limitante nos lleva a inventarnos *números mágicos* como por ejemplo usar el <code>-1</code> para decir que un entero no tiene valor, o lógicas extrañas dentro de nuestro programa como decir que si un `DateTime` vale `DateTime.MinValue` es porque no tiene valor.  También nos complica un poco la vida cuando se trabaja con bases de datos en donde los datos pueden tener un valor o estar indefinidos.
   
-### La estructura Nullable<T>  
+### La estructura Nullable&lt;T&gt;  
 Para nuestra fortuna, C# nos ofrece los *nullable types*, que son instancias de la estructura `Nullable<T>` (si no estás familiarizado con la sintaxis `<>` pronto la explicaré en un post, es maravillosa), donde `T` es un tipo por valor.  
 
-Podemos ver esta estructura como una especie de caja para nuestros tipos por valor, dicha caja provee métodos para saber si contiene un valor y obtener el valor que contiene.
-
-imagen de una caja xD  
+Podemos ver esta estructura como una especie de caja para nuestros tipos por valor, dicha caja provee métodos para saber si contiene un valor y obtener el valor que contiene.  
 
 
-#### Trabajando con Nullable<T>
+#### Trabajando con Nullable&lt;T&gt;  
 La sintaxis de estos tipos no es muy complicada, y es que además de la declaración convencional:  
 {% highlight csharp %}
 Nullable<int> enteroNullable = null;
