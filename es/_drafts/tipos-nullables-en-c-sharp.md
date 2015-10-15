@@ -42,8 +42,11 @@ double? puedeValerNull = 9.9;
 Aunque en este punto debemos ser cuidadosos, ya que la sintaxis es un poco confusa, ya sabemos, <code>Nullable</code> es una estructura y las estructuras no pueden tener un valor `null`...  ¿entonces qué sucede al momento de asignar un valor a `enteroNullable` en  el código anterior?  
 Como dije anteriormente, los tipos nullables son como una caja, al asignarle <code>null</code> estamos creando una caja que puede contener un <code>int</code> pero que al momento estamos dejando vacía. Podemos entonces trabajar con nuestra variable:  
 
+
+{% post_image boxes.png Tipos por valor %}
+
 ##### Obteniendo un el valor (o una excepción)  
-Para obtener el valor contenido dentro de un *nullable*, tenemos a nuestra disposición la propiedad <code>Value</code>, que debemos usar con cuidado, puesto que en caso de que el *nullable* no tenga un valor asignado, lanzará una exepción del tipo `InvalidOperationException` 
+Para obtener el valor contenido dentro de un *nullable*, tenemos a nuestra disposición la propiedad <code>Value</code>, que debemos usar con cuidado, puesto que en caso de que el *nullable* no tenga un valor asignado, lanzará una exepción del tipo `InvalidOperationException`. 
 {% highlight csharp %}
 enteroNullable = null;
 // int enteroExcepcional = enteroNullable.Value; 
@@ -84,5 +87,8 @@ int noTanDefaultValue = enteroNullable.GetValueOrDefault(8);
 enteroNullable = 100; // Le asignamos un valor a la variable
 int realValue = enteroNullable.GetValueOrDefault();
 // realValue == 100
-{% endhighlight %}    
+{% endhighlight %}      
+  
+<br />
+Ahora sí: en futuros post seguré explorando algunos detalles escenciales de C#, como arreglos, métodos y clases.
 
