@@ -7,6 +7,8 @@ categories: c-sharp
 excerpt: He de aceptarlo, una de las cosas que más dudas me causaba cuando inicié a programar usando C# era sobre cuál era la diferencia entre usar string o System.String, la idea que yo tenía al respecto que estaba totalmente equivocada.
 lang: es
 featured_image: "featured.jpg"
+tags:
+- aprende-csharp
 ---
 He de aceptarlo, una de las cosas que más dudas me causaba cuando inicié a programar usando C# era sobre cuál era la diferencia entre usar string o System.String, la idea que yo tenía al respecto que estaba totalmente equivocada. Tenía la mala creencia de que `string` y `String` (sí, la diferencia es la mayúscula inicial) eran cosas un tanto distintas cuando resulta que no es así.  
 

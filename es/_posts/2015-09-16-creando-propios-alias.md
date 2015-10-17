@@ -8,6 +8,8 @@ excerpt: Hace poco vimos que existen alias en C# para los tipos predefinidos de 
 lang: es
 featured_image: "featured.jpg"
 github: https://gist.github.com/fferegrino/a81cd436e4d631f1cf4d
+tags:
+- aprende-csharp
 ---
 Hace poco vimos que existen <a href="/string-vs-system-string-es" target="_blank">alias en C# para los tipos predefinidos</a> de datos, y hasta ahí todo claro. Pero nosotros como programadores también podemos beneficiarnos de crear nuestros propios alias. Hay dos maneras de hacer uso de los alias:  
 

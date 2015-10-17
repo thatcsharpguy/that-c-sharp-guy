@@ -7,6 +7,8 @@ categories: aprende-csharp
 excerpt: Para la mayoría de sus aplicaciones, C# es un lenguaje fuertemente tipado, en este post presento dos categorías de tipos que nos podemos encontrar cuando trabajamos con este lenguaje.
 lang: es
 featured_image: featured.jpg
+tags:
+- aprende-csharp
 ---  
 Para fines de este post, diremos que C# es un lenguaje fuertemente tipado (aunque ya permite tipado dinámico y eso po palticaré en otro post), lo que significa que cada variable, literal o constante debe tener un tipo declarado y dicho tipo no cambiará con el flujo del programa. Dentro de los tipos que ofrece C#, podemos encontrar dos grandes categorías:  
 
