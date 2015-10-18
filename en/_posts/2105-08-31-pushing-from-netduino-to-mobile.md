@@ -6,6 +6,10 @@ author: Antonio Feregrino Bolaños
 featured_image: featured.jpg
 categories: xamarin netduino parse parse.com iot sockets xamarin.forms poc xamarin
 excerpt: It's been a while since I took my Netduino out of its box and I did something with it, back then I promised to do a slightly more complex system using a push notification service.
+alias: /pushing-from-netduino-to-mobile/index.html
+tags:
+- xamarin
+- netduino
 ---
 It's been a while since I took my Netduino out of its box and I did something with it, back then I promised to do a slightly more complex system using a push notification service. I quote my own words: *"I'll create a system that sends a notification over to my phone everytime someone opens my bedroom door"*. Well, here it is (and it's called Doorduino <small>such an awful name, I know</small>).
 

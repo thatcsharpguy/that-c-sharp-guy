@@ -7,8 +7,9 @@ categories: c-sharp
 excerpt: "Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las expresiones lambda."
 ideone: http://ideone.com/fork/7dfMEC
 featured_image: "featured.png"
+alias: /lambdas-en-c-sharp/index.html
 tags:
-- aprende-csharp
+- aprende-c-sharp
 ---
 Una vez que conocemos lo que es un delegado, y lo que son Func y Action, es momento de llegar a un tema que se convierte en algo muy sencillo, además es de mis cosas favoritas en C#: Las **expresiones lambda**. Comenzaré por dar un ejemplo de su uso: 
   

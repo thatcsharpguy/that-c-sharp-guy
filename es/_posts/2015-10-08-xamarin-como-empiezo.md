@@ -6,7 +6,10 @@ author: Antonio Feregrino Bolaños
 categories: Xamarin
 excerpt: ¿Quieres iniciar a desarrollar con Xamarin y no sabes por donde empezar? Acá te digo.
 lang: es
+alias: /xamarin-como-empiezo/index.html
 featured_image: featured_true.jpg
+tags:
+- xamarin
 ---  
 ¿Quieres iniciar a desarrollar con Xamarin y no sabes por donde empezar? Acá te digo. Este post está dividido entre hardware y software cada sección con sus respectivos links y al final un pequeño FAQ. Mi recomendación es que lo leas todo y luego regreses a las secciones que apliquen para tu caso.
 

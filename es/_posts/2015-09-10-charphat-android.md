@@ -8,6 +8,10 @@ github: http://github.com/fferegrino/CharpHat/
 excerpt: Con CharpHat toma una foto y muéstrale al mundo que te gusta C#, CharpHat te permite colocarte un birrete con mucho estilo.
 lang: es
 featured_image: featured.png
+alias: /charphat-android/index.html
+tags:
+- xamarin-forms
+- xamarin
 ---
 <div class="pure-g">
 	<div class="pure-u-24-24">

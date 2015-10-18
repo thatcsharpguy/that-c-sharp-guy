@@ -8,8 +8,9 @@ excerpt: Los tipos por referencia son nullables por definición. ¿Qué implica 
 lang: es
 ideone: http://ideone.com/fork/9UsOI7
 featured_image: featured.png
+alias: /tipos-nullables-en-c-sharp/index.html
 tags:
-- aprende csharp
+- aprende-c-sharp
 ---
 En un post anterior hablaba acerca de los tipos de dato en C#, y me doy cuenta que se me olvidó mencionar una característica importante de los tipos de dato, y para rectificar mi error voy a tomar la clasificación por referencia y valor de la que les platicaba.  
 
