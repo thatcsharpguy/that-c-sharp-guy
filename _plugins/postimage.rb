@@ -10,7 +10,9 @@ module Jekyll
 
     def render(context)
       @page_url = context.environments.first["page"]["url"]
-      "<img src='/postimages#{@page_url}#{@image_file}' alt='#{@alt_text}' />"
+      @r = @page_url.split("/", 3)
+      @pg = @r.last
+      "<img src='/postimages/#{@pg}#{@image_file}' alt='#{@alt_text}' />"
     end
   end
 end
