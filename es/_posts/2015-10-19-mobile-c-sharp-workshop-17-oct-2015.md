@@ -8,7 +8,8 @@ excerpt: Este es un post de recapitulación del evento Mobile C# developer kick-
 lang: es
 alias: /bubble-display-netduino-plus-2/index.html
 tags:
-- netduino
+- xamarin
+- events
 ---
 Este es un post para recapitular lo visto en el evento llevado a cabo en la Escuela Superior de Cómputo.  
 <br />
@@ -25,6 +26,10 @@ De los plugins y extensiones:
 <li><a href="https://github.com/jamesmontemagno/Xamarin.Plugins/tree/master/TextToSpeech" target="_blank">Plugin TextToSpeech</a></li>
 <li><a href="https://github.com/XLabs/Xamarin-Forms-Labs" target="_blank">XLabs</a></li>
 </ul>
-Por cierto, me acabo de enterar que existe una versión de prueba de la <a href="https://blog.xamarin.com/want-to-try-xamarin-university-now-you-can/" target="_blank">Xamarin Uiniversity</a>.  
 <br />
-De nuevo no olviden consultarme si tienen dudas o problemas. Ah, y no olviden el reto de la <i>Sharpuladora</i> ;)
+Para la gran mayoría que se quedó sin libro, no olviden el reto de la <a href="https://github.com/fferegrino/sharpuladora" target="_blank">Sharpuladora</a> y si aún así no se resisten las ganas de tenerlo, acá está la <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/creating-mobile-apps-xamarin-forms/preview-2/" target="_blank">versión electrónica</a>.  
+
+<br />
+Por cierto, pueden acceder a la <a href="https://blog.xamarin.com/want-to-try-xamarin-university-now-you-can/" target="_blank">Xamarin University</a> a tomar unas clases de prueba.  
+<br />
+De nuevo no olviden consultarme si tienen dudas o problemas.
