@@ -7,6 +7,7 @@ categories: aprende-csharp
 excerpt: Los arreglos escalonados (o jagged arrays) son los tipos de arreglos multidimensionales más conocidos, y es que también son compunes en otros lenguajes de programación. Un arreglo escalonado no es más que un arreglo de arreglos.
 lang: es
 featured_image: featured.png
+ideone: http://ideone.com/fork/0AAvgK
 tags:
 - aprende-c-sharp
 ---  
@@ -40,7 +41,7 @@ for(int i = 0; i < 3; i++)
 	}
 }
 {% endhighlight %}  
-Con los arreglos escalonados no hay nada que nos prohíba crear arreglos internos de dimensiones iguales a la de arreglo que las contiene, es más, **podemos crear arreglos internos de distintos tamaños**, hagamos algo con nuestro arreglo `escalera`:   
+Con los arreglos escalonados no hay nada que nos prohíba crear arreglos internos de dimensiones iguales a la de arreglo que las contiene, es más, **podemos crear arreglos internos de distintos tamaños en la misma dimensión**, hagamos algo con nuestro arreglo `escalera`:   
 {% highlight csharp %}			
 escalera [0] = new int[1] { 1 };
 escalera [1] = new int[2] { 2, 3 };
@@ -70,4 +71,4 @@ for (int i = 0; i < escalera.Length; i++)
 {% endhighlight %}  
 
 #### Lo que sigue
-En el post siguiente les platicaré sobre los arreglos rectangulares, que son lo más parecido a matrices que podemos encontrar en C#.
+En el post siguiente les platicaré sobre los arreglos rectangulares, que son lo más parecido a matrices que podemos encontrar en C#. Estos son similares a los arreglos rectangulares con la pequeña diferencia de que no pueden contener arreglos de distintos tamaños dentro de la misma dimensión.
