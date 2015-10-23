@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Arreglos en C#
-date: 2015-10-21 22:00:00
+title: Arreglos en C# (multidimensionales rectangulares)
+date: 2015-10-23 22:00:00
 author: Antonio Feregrino Bolaños
 categories: aprende-csharp
 excerpt: Para la mayoría de sus aplicaciones, C# es un lenguaje fuertemente tipado, en este post presento dos categorías de tipos que nos podemos encontrar cuando trabajamos con este lenguaje.
@@ -10,27 +10,15 @@ featured_image: featured.png
 tags:
 - aprende-c-sharp
 ---  
-En C# llamamos arreglo a una colección de objetos, dicha colección tiene longitud definida y esta no puede cambiar con el flujo del programa, esto podrá sonar limitante, pero al trabajar con arreglos se obtiene un mejor desempeño que con cualquier otra colección. Usando el lenguaje podemos crear, recorrer y manipular arreglos de cualquier tipo de objeto. Sin embargo, además de arreglos también podemos crear matrices (que dicho sea de paso, no son arreglos como veremos más adelante).  
-
-Sin importar su contenido, los arreglos siempre son tratados como tipos por referencia, por lo que es posible tener las siguientes líneas de código:  
-  
-### Unidimensionales  
-Comenzando por lo más básico, los arreglos unidimensionales son colecciones lineales, que nos pueden ayudar a representar una secuencia numérica, letras del alfabeto o un cromosoma dentro de un programa de algoritmos genéticos, entre muchas otras otras.  
+Después de conocer los <a href="/post/arreglos-en-c-sharp-parte-2">arreglos multidimensionales escalonados</a> esta vez toca el turno de conocer otro tipo de arrelgos multidimensionales en C#: Los rectangulares. En pocas palabras podríamos decir que estos no son "arreglos de arreglos", sino que en realidad son matrices dado que no es posible declarar arreglos dentro de ellos como con los escalonados.  
   
 #### Instanciación  
-Para crear un arreglo haremos uso de la palabra reservada `new` y los corchetes cuadrados `[ ]`, también es necesario conocer el tamaño que necesitaremos, puesto que como ya lo mencioné, no es posible cambiar el tamaño una vez creado: 
+Para crear un arreglo haremos uso de la palabra reservada `new` y los corchetes cuadrados `[ ]` pero ojo que aquí se introduce una nueva notación, para separar las dimensiones de nuestra matriz no debemos usar `[ ]` consecutivamente, sino emplear una coma `,` dentro de ellos.
 {% highlight csharp %}
-char [] vocales = new char[5];
+char [,] gato = new char[3,3];
 
-int [] conteo = new int[10];
-
-object [] misObjetos = new object[3];
+int [,,] rubik = new int[3,3,3];
 {% endhighlight %}  
-Si creamos arreglos de esa manera, cada posición tendrá el valor por default del tipo de dato del arreglo... bueno, mejor usamos nuestro ejemplo:  
-
-- El arreglo de `vocales` contendrá 5 `\0`, que es el valor por default de un `char`.    
-- El arreglo `conteo` contendrá 10 `0`, que es el valor por default de un entero.  
-- El arreglo `misObjetos` contendrá 3 `null`, que es el valor por default de un `object`.  
 
 <br />  
 Además de la instanciación tradicional, también podemos emplear la instanciación de colecciones, la cual nos permite inicializar un arreglo asignándole valores inmediatamente:  
