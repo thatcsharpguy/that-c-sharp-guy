@@ -27,7 +27,7 @@
   <!-- Twitter cards  -->
   {% if page.featured_image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='{{ page.featured_image | prepend: page.url | prepend: site.images_url }}'>
+    <meta name="twitter:image" content="{{ page.featured_image | prepend: page.url | replace:'post/','' | prepend: site.images_url }}">
   {% else %}
     <meta name="twitter:card" content="summary" />
   {% endif %}

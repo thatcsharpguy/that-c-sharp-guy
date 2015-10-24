@@ -67,4 +67,4 @@ Console.WriteLine( "D3: " + laMatrix.GetLength(3) ); // 7
 {% endhighlight %}  
 
 #### Lo que sigue  
-En siguientes posts seguiré hablando sobre C#, en particular de clases, métodos y parámetros, ¿quieres conocer sobre algo en específico? mándame un tweet o un correo electrónico ;)
+En siguientes posts conitnuaré hablando sobre C#, en particular de clases, métodos y parámetros, ¿quieres conocer sobre algo en específico? mándame un tweet o un correo electrónico ;)
