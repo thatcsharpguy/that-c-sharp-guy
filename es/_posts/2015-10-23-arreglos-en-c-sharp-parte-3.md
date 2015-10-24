@@ -6,6 +6,7 @@ author: Antonio Feregrino Bolaños
 categories: aprende-csharp
 excerpt: Para la mayoría de sus aplicaciones, C# es un lenguaje fuertemente tipado, en este post presento dos categorías de tipos que nos podemos encontrar cuando trabajamos con este lenguaje.
 lang: es
+ideone: http://ideone.com/fork/8C2iOj
 featured_image: featured.png
 tags:
 - aprende-c-sharp
@@ -13,83 +14,57 @@ tags:
 Después de conocer los <a href="/post/arreglos-en-c-sharp-parte-2">arreglos multidimensionales escalonados</a> esta vez toca el turno de conocer otro tipo de arrelgos multidimensionales en C#: Los rectangulares. En pocas palabras podríamos decir que estos no son "arreglos de arreglos", sino que en realidad son matrices dado que no es posible declarar arreglos dentro de ellos como con los escalonados.  
   
 #### Instanciación  
-Para crear un arreglo haremos uso de la palabra reservada `new` y los corchetes cuadrados `[ ]` pero ojo que aquí se introduce una nueva notación, para separar las dimensiones de nuestra matriz no debemos usar `[ ]` consecutivamente, sino emplear una coma `,` dentro de ellos.
+Como con todos los tipos por referencia podemos usar la palabra reservada `new` para instanciar estos arreglos, aunque esta vez es necesario incluír una coma `,` para separar las dimensiones en lugar de los corchetes cuadrados de manera consecutiva, es decir, si quiero algo de dos dimensiones en lugar de `[][]` debemos escribir `[,]`:
 {% highlight csharp %}
-char [,] gato = new char[3,3];
+char [,] gato = new char[3, 3];
 
-int [,,] rubik = new int[3,3,3];
+string [,,] rubik = new string[3, 3 ,3];
+
+int [,,,] laMatrix = new int[8, 2, 7, 6];
 {% endhighlight %}  
-
-<br />  
-Además de la instanciación tradicional, también podemos emplear la instanciación de colecciones, la cual nos permite inicializar un arreglo asignándole valores inmediatamente:  
+Para este tipo de arreglos **siempre es necesario precisar el tamaño de todas las dimensiones**, ya que el espacio es asignado durante la asignación, a diferencia de los arreglos escalonados. El compilador nos indicará algún error si no utilizamos la misma cantidad de elementos para cada dimensión:
 {% highlight csharp %}
-char [] vocales = new char[5] { 'a', 'e', 'i', 'o', 'u' };
+char [,] gato = // new char[3, 3] // El new es opcional
+{
+	{ 'x', 'o', 'x' },
+	{ 'o', 'x', '-' },
+	{ 'x', 'o', 'x' },
+};
 
-int [] conteo = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
-
-object [] misObjetos = { "3", 1, 99.99 };
-{% endhighlight %}
-Como podemos ver, tenemos varias opciones para inicializar arreglos unidimensionales:  
-
-1. `new char[5] { ...`, nos permite indicar el tamaño y el tipo explícitamente y posteriormente indicar los valores, si cambiáramos el `5` por un `7`sin aumentar la cantidad de valores obtendríamos un error de compilación.  
-2. `new int[] { 1, 2, ...`, nos permite indicar solamente el tipo de dato, la cantidad es inferida por el compilador, en este caso podemos incrementar o reducir la cantidad de elementos al momento de inicializar sin ningún problema.
-3. `{ "3", 1, 99.99 }`, al inicializar de esta manera estamos dejandole al compilador la tarea de inferir tanto el tipo de dato del arreglo como la cantidad de elementos que contiene. Dicho sea de paso, el declarar un arreglo así puede resultar un poco confuso de leer.  
-
+// Error de compilación, para 'gatoMalo' los arreglos internos deben ser de 2 elementos
+char [,] gatoMalo = 
+{
+	{ 'x', 'x' },
+	{ 'o', 'x', 'x' },
+	{ 'o', 'x' },
+};
+{% endhighlight %}  
+  
 #### Acceso a los elementos  
-Una vez instanciado, podemos acceder a los elementos del arreglo usando nuevamente los corchetes cuadrados `[ ]` y el índice del elemento al que queremos acceder. Nota importante **los arreglos están indizados en 0** es decir, el primer elemento de un arreglo está en el índice 0.  
+Para acceder a los elementos debemos recurrir a la combinación de `[]` y `,`, también es importante recordar que los arreglos están indizados en `0`.
+{% highlight csharp %}
+Console.WriteLine( gato[0,0] ); // 'x'
 
-Retomemos los arreglos del ejemplo pasado. Para acceder a la `a` dentro del arreglo `vocales` debemos acceder a la posición `0`:  
-{% highlight csharp %}
-Console.WriteLine(vocales[0]); // a
-{% endhighlight %}
-O, digamos que queremos reemplazar la `i` por una `t`:  
-{% highlight csharp %}
-vocales[2] = 't';
-Console.WriteLine(vocales[2]); // t
+gato[1,2] = 'y';
+Console.WriteLine( gato[1,2] ); // 'y'
 {% endhighlight %}  
 
 #### Propiedades y métodos  
-A pesar de que los arreglos implementan la interfaz `IList`, con todo y sus propiedades, la única rescatable para los arreglos unidimensionales es la propiedad `Length`, que nos devuelve la longitud del arreglo:
+Al contrario de los otros arreglos, en este caso una llamada a la propiedad `Length` nos devolverá la cantidad **total** de elementos dentro del arreglo, en lugar de la cantidad de elementos dentro de esa dimensión, por ejemplo:
 {% highlight csharp %}
-Console.WriteLine(vocales.Length); // 5
+Console.WriteLine(gato.Length); // 9 = 3 x 3
 
-Console.WriteLine(conteo.Length); // 10
+Console.WriteLine(rubik.Length); // 27 = 3 x 3 x 3
 
-Console.WriteLine(misObjetos.Length); // 3
-{% endhighlight %} 
-  
-### Multidimensionales escalonados
-Los arreglos escalonados (o *jagged arrays*) son los tipos de arreglos multidimensionales más conocidos, y es que también son compunes en otros lenguajes de programación. Un arreglo escalonado no es más que un arreglo de arreglos.
-
-#### Instanciación  
-Para crear estos arreglos de arreglos, tenemos una sintaxis similar a la creación de arreglos unidimensionales, con `[ ]` para cada dimensión: 
-{% highlight csharp %}			
-char[][] gato = new char[3][];
-
-string [][][] rubik = new string[3][][];
-
-int[][] escalera = new int[3][];
+Console.WriteLine(laMatrix.Length); // 672 = 8 x 2 x 7 x 6
 {% endhighlight %}  
-Acá es importante notar que al instanciar un arraglo multidimensional de esta manera **únicamente estamos indicando el tamaño de la primera dimensión**, 3 en el caso de `gato`, 3 también para `rubik` y 2 para `escalera`. Es tarea nuestra inicializar los arreglos interiores: 
-{% highlight csharp %}			
-for(int i = 0; i < 3; i++)
-{
-	gato[i] = new char[3]; // gato[i] hace referencia a un arreglo
-}
-{% endhighlight %}   
-{% highlight csharp %}			
-for(int i = 0; i < 3; i++)
-{
-	rubik[i] = new string[3][];
-	for(int j = 0; j < 3; j++)
-	{
-		rubik[i][j] = new string[3];
-	}
-}
+Si lo que queremos es conocer el tamaño de determinada dimensión, es necesario hacer una llamada al método `GetLength` e indicando la dimensión a consultar
+{% highlight csharp %}
+Console.WriteLine( "D0: " + laMatrix.GetLength(0) ); // 8
+Console.WriteLine( "D1: " + laMatrix.GetLength(1) ); // 2
+Console.WriteLine( "D2: " + laMatrix.GetLength(2) ); // 6
+Console.WriteLine( "D3: " + laMatrix.GetLength(3) ); // 7
 {% endhighlight %}  
-Con los arreglos escalonados no hay nada que nos prohíba crear arreglos internos de dimensiones iguales a la de arreglo que las contiene, es más, **podemos crear arreglos internos de distintos tamaños**, hagamos algo con nuestro arreglo `escalera`:   
-{% highlight csharp %}			
-escalera [0] = new int[1] { 1 };
-escalera [1] = new int[2] { 2, 3 };
-escalera [2] = new int[3] { 4, 5, 6 };
-{% endhighlight %}  
+
+#### Lo que sigue  
+En siguientes posts seguiré hablando sobre C#, en particular de clases, métodos y parámetros, ¿quieres conocer sobre algo en específico? mándame un tweet o un correo electrónico ;)
