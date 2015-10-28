@@ -4,7 +4,7 @@ title: Arreglos en C# (multidimensionales rectangulares)
 date: 2015-10-23 22:00:00
 author: Antonio Feregrino Bolaños
 categories: aprende-csharp
-excerpt: Para la mayoría de sus aplicaciones, C# es un lenguaje fuertemente tipado, en este post presento dos categorías de tipos que nos podemos encontrar cuando trabajamos con este lenguaje.
+excerpt: A diferencia de los arreglos escalonados, los rectangulares son lo más parecido a matrices que podemos encontrar en C#.
 lang: es
 ideone: http://ideone.com/fork/8C2iOj
 featured_image: featured.png
