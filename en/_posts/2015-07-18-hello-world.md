@@ -1,5 +1,5 @@
 ---
-layout: post-en
+layout: en_post
 title:  "Hello World"
 date:   2015-07-18 18:31:38
 author: Antonio Feregrino Bolaños

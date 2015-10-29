@@ -67,3 +67,15 @@ html, button, input, select, textarea,
     text-align: right;
     font-size: 14px;
 }
+.card {
+    padding: 20px;
+    height: 130px;
+    overflow: hidden;
+    margin:10px;
+    box-shadow:  1px 1px 5px #aaa;
+    border-radius: 10px;
+}
+.card:hover {
+    box-shadow:  1px 1px 5px #888888;
+    border-radius: 10px;
+}

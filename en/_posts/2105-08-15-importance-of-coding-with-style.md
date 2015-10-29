@@ -1,5 +1,5 @@
 ---
-layout: post-en
+layout: en_post
 title: The importance of coding with style
 date:   2015-08-15 17:00:00
 author: Antonio Feregrino Bolaños
