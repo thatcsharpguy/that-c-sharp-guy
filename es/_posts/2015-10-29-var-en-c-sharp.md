@@ -1,14 +1,16 @@
 ---
 layout: post
 title:  "¿Qué es var en C#?"
-date:   2015-10-28 18:31:38
+date:   2015-10-29 20:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: Usar la palabra reservada var significa que estamos dejándole al compilador la tarea de asignar un tipo a nuestras variables.
+excerpt: Usar la palabra var significa que estamos dejándole al compilador la tarea de asignar un tipo a nuestras variables.
+featured_image: featured.jpg
 lang: es
 ideone: http://ideone.com/fork/iu3Pni
 tags:
 - aprende-c-sharp
+featured_tag: aprende-c-sharp
 ---  
 Como programadores hay muchas ventajas que nos otorga C#, ya sea a la hora de escribir nuestros programas o a la hora de ponerlos a funcionar. En este post les voy a hablar acerca de una de las ventajas al escribir nuestros programas, pero para eso, veamos antes este código:  
 {% highlight csharp %}
@@ -23,7 +25,7 @@ var buenEstudiante =  new Persona("Estudiante");
 **¿Uhhhh?** ¿entonces qué significa `var`?  
 
 ### var  
-Pues bien, usar la palabra reservada `var` significa que estamos dejándole al compilador la tarea de asignar un tipo a nuestras variables. Llamamos a esto *tipado implícito*, así nos quitamos de encima la tarea de escribir los tipos completos. Entonces:  
+Pues bien, usar la palabra <strike>reservada</strike> `var` significa que estamos dejándole al compilador la tarea de asignar un tipo a nuestras variables. Llamamos a esto *tipado implícito*, así nos quitamos de encima la tarea de escribir los tipos completos. Entonces:  
 
 - `var numeroElementos = 5;` &#8594; `int numeroElementos = 5;`  
 - `var otroNumero = 5l;` &#8594; `long otroNumero = 5l;`
@@ -76,6 +78,8 @@ Personalmente siempre uso `var` para declaraciones de tipos de dato simples como
 
 ### Importante  
 Es importante repetir esto: **C# sigue siendo fuertemente tipado, con var lo único que hacemos es dejarle la tarea al compilador de asignar un tipo para nuestra variable al momento de la compilación**.  
+<br />
+En el post original había mencionado que `var` es una palabra reservada, cuando en realdad, no lo es. Depende del contexto.
 
 ### Lo que sigue  
 En este post hablamos de dos nuevos conceptos: LINQ y tipos anónimos, y sobre uno de ellos dos será el post siguiente, ¿tienes preferencia sobre alguno? házmelo saber vía <a href="https://twitter.com/intent/tweet?text=@io_exception">Twitter</a> o por <a href="mailto:{{ site.email }}?subject={{ page.title }}">correo electrónico</a>.
