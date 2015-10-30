@@ -18,6 +18,12 @@ layout: default
     <article>
       {{ content }}
     </article>
+    {% if page.featured_tag %}
+    <br />
+    <div>
+      ¿Quieres leer más posts como este? ve los demás en este enlace: <a class="tag" href="/tag/{{ page.featured_tag }}">{{ page.featured_tag }}</a>.
+    </div>
+    {% endif %}
   <div class="post-contact">
     ¿Dudas o comentarios? escríbeme sobre esto a <a href="mailto:{{ site.email }}?subject={{ page.title }}">{{ site.email }}</a> o a <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }} ">@{{ site.twitter_username }}</a>. <strong>¿Quieres estar al tanto de mis posts? <a href="/registro">regístrate aquí</a>.</strong>
     </div>
