@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="344.55557mm"
+   height="148.41112mm"
+   viewBox="0 0 1220.8662 525.86616"
+   id="svg5414"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="C:\Users\fferegrino\Documents\GitHub\Blogs\that-c-sharp-guy\postimages\que-son-portable-class-library\caracteristicas.png"
+   inkscape:export-xdpi="35.380001"
+   inkscape:export-ydpi="35.380001"
+   sodipodi:docname="caracteristicas.svg">
+  <defs
+     id="defs5416">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7412"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7414"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7186"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7188"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6285"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker7000"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path7002"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="DiamondSstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DiamondSstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6234"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 0,-7.0710768 Z"
+         style="fill:#323232;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="DiamondSend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DiamondSend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6243"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 0,-7.0710768 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6161"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="DiamondSstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DiamondSstart-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6234-3"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 0,-7.0710768 Z"
+         style="fill:#323232;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="DiamondSstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="DiamondSstart-8-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path6234-3-7"
+         d="M 0,-7.0710768 -7.0710894,0 0,7.0710589 7.0710462,0 0,-7.0710768 Z"
+         style="fill:#323232;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.2,0,0,0.2,1.2,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="151.51849"
+     inkscape:cy="219.44616"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="false" />
+  <metadata
+     id="metadata5419">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(55.866142,-577.36222)">
+    <rect
+       style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect5962"
+       width="300"
+       height="120"
+       x="0"
+       y="932.36218"
+       ry="24"
+       rx="0"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <rect
+       rx="0"
+       ry="24"
+       y="932.36218"
+       x="320"
+       height="120"
+       width="300"
+       id="rect5964"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <rect
+       style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect5966"
+       width="300"
+       height="120"
+       x="640"
+       y="932.36218"
+       ry="24"
+       rx="0"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5968"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-33.127197,20.374085)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion5970"><rect
+           id="rect5972"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         id="flowPara5974"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Plataforma 1</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5968-6"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(283.98889,20.374085)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion5970-0"><rect
+           id="rect5972-8"
+           width="402.28571"
+           height="78.857178"
+           x="62.857143"
+           y="943.79077" /></flowRegion><flowPara
+         id="flowPara5974-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Plataforma 2</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5968-6-1"
+       style="font-style:normal;font-weight:normal;font-size:56.25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(604.42682,20.363404)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion5970-0-8"><rect
+           id="rect5972-8-6"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077"
+           style="font-size:56.25px" /></flowRegion><flowPara
+         id="flowPara5974-5-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Plataforma 3</flowPara></flowRoot>    <rect
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       rx="0"
+       ry="12"
+       y="852.79529"
+       x="0"
+       height="60"
+       width="300"
+       id="rect7971"
+       style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1" />
+    <rect
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect7973"
+       width="300"
+       height="60"
+       x="320"
+       y="852.79529"
+       ry="12"
+       rx="0" />
+    <rect
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       rx="0"
+       ry="12"
+       y="852.79529"
+       x="640"
+       height="60"
+       width="300"
+       id="rect7975"
+       style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1" />
+    <flowRoot
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       transform="translate(-35.739502,-85.091437)"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot7983"
+       xml:space="preserve"><flowRegion
+         id="flowRegion7985"><rect
+           y="943.79077"
+           x="62.857143"
+           height="102.85723"
+           width="294.28571"
+           id="rect7987"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff"
+         id="flowPara7989">Característica 1</flowPara></flowRoot>    <flowRoot
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       transform="translate(284.2605,-85.091437)"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot7983-4"
+       xml:space="preserve"><flowRegion
+         id="flowRegion7985-2"><rect
+           y="943.79077"
+           x="62.857143"
+           height="102.85723"
+           width="294.28571"
+           id="rect7987-9"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff"
+         id="flowPara7989-6">Característica 1</flowPara></flowRoot>    <flowRoot
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       transform="translate(604.2605,-85.091437)"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot7983-4-3"
+       xml:space="preserve"><flowRegion
+         id="flowRegion7985-2-1"><rect
+           y="943.79077"
+           x="62.857143"
+           height="102.85723"
+           width="294.28571"
+           id="rect7987-9-6"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff"
+         id="flowPara7989-6-3">Característica 1</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect8072"
+       width="300"
+       height="60"
+       x="0"
+       y="772.79529"
+       ry="12"
+       rx="0"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <rect
+       rx="0"
+       ry="12"
+       y="772.79529"
+       x="320"
+       height="60"
+       width="300"
+       id="rect8074"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <rect
+       style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect8076"
+       width="300"
+       height="60"
+       x="640"
+       y="772.79529"
+       ry="12"
+       rx="0"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8078"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-35.739502,-165.09144)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion8080"><rect
+           style="font-size:37.5px"
+           id="rect8082"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077" /></flowRegion><flowPara
+         id="flowPara8084"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Característica 2</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8086"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(284.2605,-165.09144)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion8088"><rect
+           style="font-size:37.5px"
+           id="rect8090"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077" /></flowRegion><flowPara
+         id="flowPara8092"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Característica 2</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8094"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(604.2605,-165.09144)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion8096"><rect
+           style="font-size:37.5px"
+           id="rect8098"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077" /></flowRegion><flowPara
+         id="flowPara8100"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Característica 2</flowPara></flowRoot>    <rect
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       rx="0"
+       ry="12"
+       y="692.79529"
+       x="0"
+       height="60"
+       width="300"
+       id="rect8129"
+       style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1" />
+    <flowRoot
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       transform="translate(-35.739502,-245.09144)"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot8131"
+       xml:space="preserve"><flowRegion
+         id="flowRegion8133"><rect
+           y="943.79077"
+           x="62.857143"
+           height="102.85723"
+           width="294.28571"
+           id="rect8135"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff"
+         id="flowPara8137">Característica 3</flowPara></flowRoot>    <rect
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       rx="0"
+       ry="12"
+       y="692.79529"
+       x="640"
+       height="60"
+       width="300"
+       id="rect8141"
+       style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1" />
+    <flowRoot
+       inkscape:export-ydpi="28.719999"
+       inkscape:export-xdpi="28.719999"
+       transform="translate(604.2605,-245.09144)"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot8143"
+       xml:space="preserve"><flowRegion
+         id="flowRegion8145"><rect
+           y="943.79077"
+           x="62.857143"
+           height="102.85723"
+           width="294.28571"
+           id="rect8147"
+           style="font-size:37.5px" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff"
+         id="flowPara8149">Característica 3</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#008080;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:0;stroke-dasharray:40, 10;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect8151"
+       width="300"
+       height="60"
+       x="640"
+       y="612.79529"
+       ry="12"
+       rx="0"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8153"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(604.2605,-325.09144)"
+       inkscape:export-xdpi="28.719999"
+       inkscape:export-ydpi="28.719999"><flowRegion
+         id="flowRegion8155"><rect
+           style="font-size:37.5px"
+           id="rect8157"
+           width="294.28571"
+           height="102.85723"
+           x="62.857143"
+           y="943.79077" /></flowRegion><flowPara
+         id="flowPara8159"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';fill:#ffffff">Característica 4</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:9.18740463;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect8161"
+       width="1140.8126"
+       height="300.81256"
+       x="-15.839369"
+       y="762.38904"
+       ry="10.938641" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#ff0000;stroke-width:13.84873009;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:18;stroke-opacity:1"
+       id="rect8163"
+       width="136.15128"
+       height="296.15128"
+       x="986.49127"
+       y="764.7196"
+       ry="11.101515" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8165"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0,-1,1,0,257.57338,1141.0302)"><flowRegion
+         id="flowRegion8167"><rect
+           id="rect8169"
+           width="336"
+           height="200"
+           x="60"
+           y="741.20728"
+           style="text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara8171"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'">Alcance de </flowPara><flowPara
+         id="flowPara8173"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.75px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI'">la <flowSpan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold'"
+   id="flowSpan8175">PCL</flowSpan></flowPara></flowRoot>  </g>
+</svg>

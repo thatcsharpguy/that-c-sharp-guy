@@ -265,7 +265,6 @@
         display: block;
         margin: 0 auto;
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 10));
-        border: 5px solid $background-ui-color;
         max-width:         calc(#{$content-width} - (#{$spacing-unit} * 10));
     }
 }
