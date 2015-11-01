@@ -1,0 +1,16 @@
+---
+layout: default_video
+---
+
+    {% for post in site.posts %}
+        {% if post.isTv %}
+    
+    <div class="pure-u-1-2 video">
+        <div>
+            <img src="http://placehold.it/400x210" />
+            <br />
+            {{ post.title }}
+        </div>
+    </div>
+        {% endif %}
+    {% endfor %}

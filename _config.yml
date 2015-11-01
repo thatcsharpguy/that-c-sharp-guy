@@ -52,6 +52,9 @@ defaults:
       path: ""
       type: "posts" # previously `page` in Jekyll 2.2.
     values:
-      author: Antonio Feregrino Bolaños
-
-
+      author: Antonio Feregrino Bolaños  
+  -
+    scope:
+      path: "tv"
+    values:
+      isTv: "true"
