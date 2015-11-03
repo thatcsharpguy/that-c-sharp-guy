@@ -4,7 +4,7 @@ title:  "¿Qué es una Portable Class Library?"
 date:   2015-11-02 10:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
-excerpt: Podemos ver un delegado en C# como un tipo de dato que apunta a un método permitiéndonos así extender las capacidades de nuestro código o permitir que otros lo hagan.
+excerpt: Las bibliotecas de clases portables nos permiten compartir código entre distintas plataformas de .NET
 lang: es
 ideone: http://ideone.com/fork/sXcTgo
 tags:
@@ -18,7 +18,7 @@ Supongamos que es nuestra tarea desarrollar una calculadora (que suma dos númer
 - Consola de Windows  
 - Sitio Web  
 
-Como podemos ver son pataformas radicalmente distintas, cada una tiene características que son únicas para ella y es por eso que hasta hasta hace poco tiempo, nuestra única opción para desarrollar nuestra calculadora era escribirla una vez para cada plataforma, una librería para cada uno... algo así:  
+Estas tres son plataformas radicalmente distintas, cada una tiene características que son únicas para ella y es por eso que hasta hasta hace poco tiempo, nuestra única opción para desarrollar nuestra calculadora era escribirla una vez para cada plataforma, una librería para cada uno... algo así:  
 
 {% post_image multiplelibs.png Múltiples librerías %}  
   
@@ -53,4 +53,6 @@ La *biblioteca portable* siempre tomará la menor cantidad de características p
 ### Usos  
 En el ejemplo de este post usé una calculadora (que suma únicamente dos números) pero en realidad pude haber puesto en una PCL cualquier cosa, desde la llamada a un web service hasta un cálculo matemático más complejo. Por cierto, <a href="" target="_blank">el código de este post está en GitHub</a>.
 
-Las posibilidades de uso son muchísimas, diversos paquetes de NuGet se benefician de estar hechos en PCLs permitiéndoles así poder ser instalados en varias plataformas usando un mismo ensablado. Entre los diversos usos que se le pueden dar a una PCL está el de contener nuestras vistas en Xamarin.Forms, en este caso, la librería se comparte entre los proyectos de Xamarin.Android, Xamarin.iOS y Windows Phone.
+Las posibilidades de uso son muchísimas, diversos paquetes de NuGet se benefician de estar hechos en PCLs permitiéndoles así poder ser instalados en varias plataformas usando un mismo ensablado.  
+
+Entre los diversos usos que se le pueden dar a una PCL está el de contener nuestras vistas en Xamarin.Forms, en este caso, la librería se comparte entre los proyectos de Xamarin.Android, Xamarin.iOS y Windows Phone.
