@@ -6,7 +6,8 @@ author: Antonio Feregrino Bolaños
 categories: c-sharp
 excerpt: Las bibliotecas de clases portables nos permiten compartir código entre distintas plataformas de .NET
 lang: es
-ideone: http://ideone.com/fork/sXcTgo
+github: https://github.com/fferegrino/pcls
+featured_image: featured.png
 tags:
 - aprende-c-sharp
 ---  
@@ -44,14 +45,14 @@ Y listo, solo queda referenciar a nuestra biblioteca desde nuestros proyectos.
 
 
 ### Limitaciones  
-Como podemos ver, al momento de crear una *biblioteca portable* debemos elegir sobre qué plataformas queremos que funcione y es quen es mediante esta selección estamos limitando la cantidad de características a las que vamos a tener acceso desde ella, en esta imagen se explica un poco mejor:
+Como podemos ver, al momento de crear una *biblioteca portable* debemos elegir sobre qué plataformas queremos que funcione y es quen es mediante esta selección estamos limitando la cantidad de características del framework .NET a las que vamos a tener acceso desde ella, en esta imagen se explica un poco mejor:
 
 {% post_image caracteristicas.png Características entre múltiples PCL %}
   
 La *biblioteca portable* siempre tomará la menor cantidad de características posibles para funcionar en todas las plataformas elegidas.
 
 ### Usos  
-En el ejemplo de este post usé una calculadora (que suma únicamente dos números) pero en realidad pude haber puesto en una PCL cualquier cosa, desde la llamada a un web service hasta un cálculo matemático más complejo. Por cierto, <a href="" target="_blank">el código de este post está en GitHub</a>.
+En el ejemplo de este post usé una calculadora (que suma únicamente dos números) pero en realidad pude haber puesto en una PCL cualquier cosa, desde la llamada a un web service hasta un cálculo matemático más complejo. Por cierto, <a href="https://github.com/fferegrino/pcls" target="_blank">el código de este post está en GitHub</a>.
 
 Las posibilidades de uso son muchísimas, diversos paquetes de NuGet se benefician de estar hechos en PCLs permitiéndoles así poder ser instalados en varias plataformas usando un mismo ensablado.  
 
