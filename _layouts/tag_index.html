@@ -11,7 +11,7 @@ layout: default
                         <a href="{{ post.url }}">
                                 <div class="inner-card">
 				{% if post.featured_image %}
-                                        <img src="http://placehold.it/300x157" />
+                                        <img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_157,w_300/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
 				{% endif %}
                                         <div class="card-content">
                                                 <h5 class="archive_list_header">{{post.title}}</h5>
@@ -26,15 +26,21 @@ layout: default
 		{% endif %}
 	{% endfor %}
 {% endfor %}
+        <div class="grid-item item-post">
+                        <div class="card">
+                                <div class="inner-card">
+                                        <img src="/assets/site/more-tags.png" />
+                                        <div class="card-content">
+                                                <h5 class="archive_list_header">{{post.title}}</h5>
+                                                <!--
+                                                <p class="summary">{{ post.excerpt | truncate:70 }}</p>
+                                                -->
+                                        </div>
+                                </div>
+                        </div>
+                </div>
 </div>
 <h1><span>#endregion</span></h1>
 
 
 
-
-
-				{% if post.featured_image %}
-                                <!--
-							<img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_105,w_200/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
-                                                        -->
-				{% endif %}
