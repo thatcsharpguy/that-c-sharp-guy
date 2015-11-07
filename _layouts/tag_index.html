@@ -1,36 +1,20 @@
 ---
 layout: default
 ---
-
-<!--<div class="home">
-    {% for post in site.posts %}
-        {% if post.lang == "en" %}
-          <div class="content-window" style="padding-bottom: 10px;">
-            <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <p>{{ post.excerpt }}</p>
-            <span  class="post-meta code-comment">// By {{post.author }} on {{ post.date | date: "%d/%m/%Y" }}</span>
-          </div>
-          <br />
-          <br />
-        {% endif %}
-    {% endfor %}
-</div>-->
-
-<h1 class="post_title">#region {{page.title}}</h1>
-<div class="pure-g">
+<h1><span>#region</span> {{page.title}}</h1>
+<div class="grid js-isotope" data-isotope-options='{ "itemSelector": ".grid-item", "layoutMode": "masonry" }'>
 {% for post in site.posts %}
 	{% for tag in post.tags %}
 		{% if tag == page.tag %}
-		
-        <div class="pure-u-1-2">
+        <div class="grid-item item-post">
             <div class="card">
 				{% if post.featured_image %}
-							<img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_210,w_400/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
+                                <!--
+							<img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_105,w_200/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
+                                                        -->
 				{% endif %}
                 <div class="card-content">
-                    <h3 class="archive_list_header"><a href='{{post.url}}'>{{post.title}}</a></h3>
+                    <h4 class="archive_list_header"><a href='{{post.url}}'>{{post.title}}</a></h4>
                     <p class="summary">{{ post.excerpt | truncate:100 }}</p>
                 </div>
             </div>
@@ -39,4 +23,4 @@ layout: default
 	{% endfor %}
 {% endfor %}
 </div>
-<h1 class="post_title">#endregion</h1>
+<h1><span>#endregion</span></h1>

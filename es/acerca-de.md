@@ -4,8 +4,11 @@ title: Acerca de
 permalink: /acerca-de/
 lang: es
 ---
-#### Antonio Feregrino Bolaños
-Casi ingeniero en sistemas computacionales de la Escuela Superior de Cómputo del Instituto Politécnico Nacional, apasionado de las ciencias computacionales y de la programación aplicada al desarrollo de aplicaciones (APIs en la web y aplicaciones móviles). Sobre esto último me agrada en particular el lenguaje C# pero soy un firme creyente de que la cosa es tener buenas ideas, el lenguaje en el que se escriban es lo de menos. Actualmente soy Xamarin Student Partner y analista prorgramador en Heurística Soluciones.
+#### Antonio Feregrino Bolaños  
+Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, comencé en 2008 con C# y no he parado, me hice 6 años de universidad a la par de trabajar escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y actualmente soy Xamarin Student Partner.  
+<br />
+
+**Esto es importante: Me gusta C# pero siempre he creído que lo importante es tener buenas ideas y saber expresarlas, el lenguaje es lo de menos.**
 
 
 #### Sobre el blog

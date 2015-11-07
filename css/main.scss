@@ -67,10 +67,12 @@ html, button, input, select, textarea,
     text-align: right;
     font-size: 14px;
 }
+
+.grid-item { width: 33%; }
 .card {
     overflow: hidden;
     margin:0 auto;
-    width: 400px;
+    //width: 300px;
     box-shadow:  1px 1px 5px #aaa;
     border:  1px solid #eee ;
     border-radius: 10px;
