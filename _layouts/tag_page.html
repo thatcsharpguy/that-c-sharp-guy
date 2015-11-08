@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<h1><span>#region</span> <strong>{{page.title}}</strong></h1>
+<div class="grid js-isotope" data-isotope-options='{ "itemSelector": ".grid-item", "layoutMode": "masonry" }'>
+    
+    <div class="grid-item item-more">
+        <div class="card">
+            <div class="inner-card">
+                <div class="card-content">
+                    <h5 class="archive_list_header">¿Tienes una sugerencia de tema? ¿necesitas ayuda con algo? cuéntame en</h5>
+        <ul class="social-media-list">
+        {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/intent/tweet?text=Hey, @{{ site.twitter_username }} sobre %23{{ page.title }}%20">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+        {% endif %}
+        
+        {% if site.email %}
+        <li>
+          <a href="mailto:{{ site.email }}?subject={{ page.title }}">
+            <span class="icon  icon--twitter">
+              <svg viewBox="0 0 16 16">
+                <path d="m 13.307858,2.6921419 -10.6157164,0 c -0.7298305,0 -1.3203298,0.5971341 -1.3203298,1.3269646 l -0.00663,7.9617875 c 0,0.729831 0.5971341,1.326964 1.3269646,1.326964 l 10.6157166,0 c 0.729831,0 1.326965,-0.597133 1.326965,-1.326964 l 0,-7.9617875 c 0,-0.7298305 -0.597134,-1.3269646 -1.326965,-1.3269646 z m 0,2.6539291 -5.3078582,3.3174114 -5.3078582,-3.3174114 0,-1.3269645 5.3078582,3.3174114 5.3078582,-3.3174114 0,1.3269645 z" />
+              </svg>
+            </span>
+            <span class="username">Email</span>
+          </a>
+        </li>
+        {% endif %}
+        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% for post in site.posts %}
+    {% for tag in post.tags %}
+        {% if tag == page.tag %}
+    <div class="grid-item item-post">
+        <div class="card">
+            <a href="{{ post.url }}">
+                <div class="inner-card">
+                    {% if post.featured_image %}
+                    <img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_157,w_300/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
+                    {% endif %}
+                    <div class="card-content">
+                        <h5><b>{{ post.title }}</b></h5>
+                        <small>{{ post.excerpt | truncate: 70 }}</small>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</div>
+<h1><span>#endregion</span></h1>
+
+
+

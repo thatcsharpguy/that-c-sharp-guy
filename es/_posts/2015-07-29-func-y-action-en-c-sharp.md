@@ -9,6 +9,7 @@ lang: es
 ideone: http://ideone.com/fork/VmDLay
 alias: /func-y-action-en-c-sharp/index.html
 featured_image: "featured.jpg"
+featured_tag: aprende-c-sharp
 tags:
 - aprende-c-sharp
 ---
