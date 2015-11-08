@@ -32,8 +32,6 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-// Check this palette: http://www.colourlovers.com/web/trends/websites/7797/2009_Pygmalion_Music_Festival
-
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -55,11 +53,23 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "cards"
+        "cards",
+        "regions"
 ;
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
   font-family: monaco, "Open Sans", monospace;
+}
+
+
+.sc-icon{
+    svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        fill: #2B91AF;
+    }
 }

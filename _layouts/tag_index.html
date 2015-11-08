@@ -1,46 +1,9 @@
 ---
 layout: default
 ---
-<h1><span>#region</span> {{page.title}}</h1>
-<div class="grid js-isotope" data-isotope-options='{ "itemSelector": ".grid-item", "layoutMode": "masonry" }'>
-{% for post in site.posts %}
-        {% for tag in post.tags %}
-		{% if tag == page.tag %}
-        <div class="grid-item item-post">
-                <div class="card">
-                        <a href="{{ post.url }}">
-                                <div class="inner-card">
-				{% if post.featured_image %}
-                                        <img src="http://res.cloudinary.com/thatcsarpguy/image/fetch/c_limit,h_157,w_300/{{ post.featured_image | prepend: post.url | replace:'post/','' | prepend: site.images_url }}" />
-				{% endif %}
-                                        <div class="card-content">
-                                                <h5 class="archive_list_header">{{post.title}}</h5>
-                                                <!--
-                                                <p class="summary">{{ post.excerpt | truncate:70 }}</p>
-                                                -->
-                                        </div>
-                                </div>
-                        </a>
-                </div>
-        </div>
-		{% endif %}
+<h1>Etiquetas</h1>
+<ul class="regions">
+	{% for tag in page.tags %}
+	<li><a href="{{ tag }}">{{ tag }}</a></li>
 	{% endfor %}
-{% endfor %}
-        <div class="grid-item item-post">
-                        <div class="card">
-                                <div class="inner-card">
-                                        <img src="/assets/site/more-tags.png" />
-                                        <div class="card-content">
-                                                <h5 class="archive_list_header">{{post.title}}</h5>
-                                                <!--
-                                                <p class="summary">{{ post.excerpt | truncate:70 }}</p>
-                                                -->
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-</div>
-<h1><span>#endregion</span></h1>
-
-
-
+</ul>
