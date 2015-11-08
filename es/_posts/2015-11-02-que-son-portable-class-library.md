@@ -3,13 +3,13 @@ layout: post
 title:  "¿Qué es una Portable Class Library?"
 date:   2015-11-02 10:00:00
 author: Antonio Feregrino Bolaños
-categories: c-sharp
+categories: c-sharp visual-studio
 excerpt: Las bibliotecas de clases portables nos permiten compartir código entre distintas plataformas de .NET
 lang: es
 github: https://github.com/fferegrino/pcls
 featured_image: featured.png
 tags:
-- aprende-c-sharp
+- aprende-visual-studio
 ---  
 Imaginémonos esto:  
 

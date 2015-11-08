@@ -8,6 +8,7 @@ excerpt: He de aceptarlo, una de las cosas que más dudas me causaba cuando inic
 lang: es
 featured_image: "featured.jpg"
 alias: /string-vs-system-string-es/index.html
+featured_tag: aprende-c-sharp
 tags:
 - aprende-c-sharp
 ---
