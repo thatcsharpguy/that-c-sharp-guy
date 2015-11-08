@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1200"
+   height="630"
+   viewBox="0 0 1200 630.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="event.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.25"
+     inkscape:cx="553.78916"
+     inkscape:cy="365.10935"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-422.36216)">
+    <rect
+       style="display:inline;opacity:0.98000004;fill:#eeeef2;fill-opacity:1"
+       id="rect4729"
+       width="1200"
+       height="630"
+       x="0"
+       y="422.36218"
+       rx="0"
+       ry="0" />
+    <g
+       id="g6009"
+       transform="translate(-80.610666,0)">
+      <g
+         transform="matrix(1.3010127,0,0,1.3010127,-99.996954,-221.95536)"
+         id="g5958">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 550.66905,737.36216 -32.8873,0 0,-32.8873 32.8873,0 0,32.8873 z m 65.7746,-32.8873 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m 65.7746,0 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m -131.5492,49.33095 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m 65.7746,0 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m 65.7746,0 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m -131.5492,49.33095 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z m 65.7746,0 -32.8873,0 0,32.8873 32.8873,0 0,-32.8873 z M 534.2254,655.14391 c 9.081,0 16.44365,-7.35494 16.44365,-16.44365 l 0,-16.44366 c 0,-9.08922 -7.36265,-16.44365 -16.44365,-16.44365 -9.08101,0 -16.44365,7.35494 -16.44365,16.44365 l 0,16.44366 c 0,9.08922 7.36264,16.44365 16.44365,16.44365 z m 197.32381,-16.44365 0,230.21111 -263.09842,0 0,-230.21111 41.10913,0 c 0,13.60146 11.06401,24.66547 24.66548,24.66547 13.60147,0 24.66547,-11.06401 24.66547,-24.66547 l 82.21826,0 c 0,13.60146 11.064,24.66547 24.66547,24.66547 13.60147,0 24.66548,-11.06401 24.66548,-24.66547 l 41.10913,0 z m -16.44365,49.33095 -230.21112,0 0,164.43651 230.21112,0 0,-164.43651 z m -49.33096,-32.8873 c 9.08923,0 16.44365,-7.35494 16.44365,-16.44365 l 0,-16.44366 c 0,-9.08922 -7.35493,-16.44365 -16.44365,-16.44365 -9.08871,0 -16.44365,7.35494 -16.44365,16.44365 l 0,16.44366 c 0,9.08922 7.35494,16.44365 16.44365,16.44365 z"
+           id="path5395"
+           style="fill:#000000;fill-opacity:1" />
+      </g>
+      <g
+         style="fill:#007acc;fill-opacity:1"
+         id="g5993"
+         transform="matrix(1.3010127,0,0,1.3010127,320.02399,-234.68328)">
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path5995"
+           transform="matrix(0.768632,0,0,0.768632,-245.98068,505.02615)"
+           d="m 744.79102,336.39258 0,42.78711 42.78515,0 0,-42.78711 z"
+           style="fill:#007acc;fill-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>
