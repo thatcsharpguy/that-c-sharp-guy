@@ -54,7 +54,7 @@ layout: default
                     {% endif %}
                     <div class="card-content">
                         <h5><b>{{ post.title }}</b></h5>
-                        <small>{{ post.excerpt }}</small>
+                        <small>{{ post.excerpt | truncate: 70 }}</small>
                     </div>
                 </div>
             </a>
