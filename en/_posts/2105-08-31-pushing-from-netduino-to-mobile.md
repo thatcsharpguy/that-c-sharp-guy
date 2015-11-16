@@ -1,5 +1,5 @@
 ---
-layout: en_post
+layout: post
 title:  "Pushing with Parse from Netduino to Xamarin.Forms"
 date:   2015-08-31 21:00:00
 author: Antonio Feregrino Bolaños

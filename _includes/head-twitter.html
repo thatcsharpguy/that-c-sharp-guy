@@ -1,0 +1,16 @@
+  <!-- Twitter cards  -->
+	{% if page.featured_image or page.custom_image %} 
+	<meta name="twitter:card" content="summary_large_image">
+	{% if page.featured_image %}
+	<meta name="twitter:image" content="{{ page.featured_image | prepend: page.url | replace:'post/','' | prepend: site.images_url }}">
+	{% endif %}
+	{% if page.custom_image %}
+	<meta name="twitter:image" content="{{ page.custom_image | prepend: site.assets_url }}">
+	{% endif %}
+	
+	{% else %}
+	<meta name="twitter:card" content="summary" />
+	{% endif %}
+	<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />

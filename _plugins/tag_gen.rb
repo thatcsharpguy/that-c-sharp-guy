@@ -14,7 +14,7 @@ module Jekyll
     end
   end
   
-  class TagIndexPage < Page
+  class TagIndex < Page
     def initialize(site, base, dir, tags)
       @site = site
       @base = base
@@ -24,6 +24,8 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
       self.data['tags'] = tags
+      
+      
     end
   end
 
@@ -43,7 +45,7 @@ module Jekyll
     end
   
     def write_tag_index(site, dir, tags)
-      index = TagIndexPage.new(site, site.source, dir, tags)
+      index = TagIndex.new(site, site.source, dir, tags)
       index.render(site.layouts, site.site_payload)
       index.write(site.dest)
       site.pages << index

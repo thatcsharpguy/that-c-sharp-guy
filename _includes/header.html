@@ -1,6 +1,6 @@
-<header class="site-header">
+<header class="site-header ui">
 
-<div class="wrapper">
+  <div class="wrapper menu">
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -11,24 +11,20 @@
       </a>
       <div class="trigger">
         {% for page in site.pages %}
-          {% if page.title and page.lang == 'es' %}
+          {% if page.title and page.indexed %}
           <a class="link page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-        <!-- <a class="link page-link" href="{{ "/tag" | prepend: site.baseurl }}">Tags</a> -->
-        <a class="link page-link" href="{{ "/en" | prepend: site.baseurl }}">English</a>
+          <a class="link page-link" href="/tag">Tags</a>
       </div>
     </nav>
-    {{ content.lang }}
   </div>
-  <div class="wrapper site-title">
+  <div class="wrapper title">
     <div class="pure-g">
-      <div class="pure-u-1-24 l-number"><span>1</span></div>
+      <div class="pure-u-1-24 title-number"><span>1</span></div>
       <div class="pure-u-23-24 content-window">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a class="site-title" href="/">{{ site.title }}</a>
       </div>
     </div>
-  </div>
-  
 
 </header>

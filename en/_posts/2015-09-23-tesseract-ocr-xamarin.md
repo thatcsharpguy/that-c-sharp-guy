@@ -1,5 +1,5 @@
 ---
-layout: en_post
+layout: post
 title:  "Tesseract OCR in Xamarin"
 date:   2015-09-23 19:00:00
 author: Antonio Feregrino Bolaños

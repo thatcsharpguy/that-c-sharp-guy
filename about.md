@@ -3,6 +3,7 @@ layout: page
 title: Acerca de
 permalink: /acerca-de/
 lang: es
+indexed: true
 ---
 #### Antonio Feregrino Bolaños  
 Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, comencé en 2008 con C# y no he parado, me hice 6 años de universidad a la par de trabajar escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y actualmente soy Xamarin Student Partner.  

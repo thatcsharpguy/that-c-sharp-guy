@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://thatcsharpguy.com" # the base hostname & protocol for your site
 url: "http://thatcsharpguy.com"
 images_url: "http://thatcsharpguy.com/postimages"
-assets_url: "http://thatcsharpguy.com/assets/"
+assets_url: "http://thatcsharpguy.com/assets"
 twitter_username: io_exception
 github_username: fferegrino
 

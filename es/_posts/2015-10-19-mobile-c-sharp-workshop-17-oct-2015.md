@@ -6,7 +6,6 @@ author: Antonio Feregrino Bolaños
 categories: netduino c#
 excerpt: Este es un post de recapitulación del evento Mobile C# developer kick-off del 17 de octubre en la ESCOM
 lang: es
-alias: /bubble-display-netduino-plus-2/index.html
 tags:
 - xamarin
 - events

@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-
-<div class="home">
+<div class="pure-g">
     {% for post in site.posts %}
-      <div class="content-window" style="padding-bottom: 10px;">
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> // {{ post.lang }}
-        </h2>
-        <p>{{ post.excerpt }}</p>
-        <span  class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>
-      </div>
-      <br />
-      <br />
+        <div class="listed-post pure-u-1">
+            <div class="post-meta">{{post.author }} | {{ post.date | date: "%d/%m/%Y" }}</div>
+            <h2 class="post-title">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-excerpt">{{ post.excerpt }}</div>
+        </div>
     {% endfor %}
 </div>

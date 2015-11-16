@@ -11,11 +11,20 @@ ideone: http://ideone.com/fork/iu3Pni
 tags:
 - aprende-c-sharp
 featured_tag: aprende-c-sharp
----  
-En el post pasado cuando habé de la palabra var, mencioné rápidamente que era útil para la declaración de tipos anónimos. El objetivo de este post es explicar de lo que estos se tratan.  
+---
+En el post pasado 
+Cuando tenemos una clase definida, como por ejemplo:
+{% highlight csharp %}
+class Student
+{
+    public string Name { get; set; }
+    public string Surname { get; set; }
+}
+{% endhighlight %}
+ 
 
 ### Problema  
-Supongamos que tenemos dos listas de perros, y queremos formar parejas de nombres con ellos:
+
 {% highlight csharp %}
 var perros 
 {% endhighlight %}
