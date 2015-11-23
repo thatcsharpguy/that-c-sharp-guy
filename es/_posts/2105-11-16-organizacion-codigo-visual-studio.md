@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "¿Cómo organiza mi código Visual Studio?"
-date:   2015-11-16 21:00:00
+date:   2015-11-18 21:00:00
 author: Antonio Feregrino Bolaños
 featured_image: featured.jpg
 categories: xamarin
-excerpt: If you have ever used an IDE to develop any application you might have wondered how do these kind of programs know where are the components for each one of the things that make your app compile or run. In this post I'll try to explain how Xamarin Studio and Visual Studio keeps that control.
+excerpt: Si alguna vez has usado un IDE para desarrollar alguna aplicación tal vez te hayas preguntado cómo es que ese tipo de programas saben en dónde están los componentes para cada una de las cosas que hacen que tu app compile o funcione. 
 tags:
 - aprende-visual-studio
 - xamarin
@@ -26,15 +26,15 @@ Y así es como se ve el mismo archivo pero abierto en un editor de texto plano:
 {% post_image sln-plain-text-explained-2.png "Image of opened solutions" %}
 
 <dl>
-<dt>1. *Solución*</dt>
-<dd>El archivo como tal, el nombre que vemos en el IDE es el mismo nombre del archivo más la extensión `sln`.</dd>
+<dt>1. <i>Solución</i></dt>
+<dd>El archivo como tal, el nombre que vemos en el IDE es el mismo nombre del archivo más la extensión <code>sln</code>.</dd>
 <dt>2. Carpeta de solución</dt>
 <dd>Estas son carpetas lógicas que podemos usar para mejorar la organización de nuestro código.</dd>
 <dt>3. Proyecto compartido</dt>
 <dd>Un proyecto compartido... veremos más de el en un siguiente post.</dd>
 <dt>4. Proyecto de C#</dt>
 <dd>Un proyecto de C#, en este caso se refiere a un proyecyto de Android, en Xamarin es una convenciín usar el sufijo <code>.Droid</code> para este tipo de proyectos.</dd>
-<dt>5. C# project</dt>
+<dt>5. Proyecto de C#</dt>
 <dd>Otro proyecto de C#, en este caso se refiere a un proyecyto de iOS, en Xamarin es una convenciín usar el sufijo <code>.iOS</code> para este tipo de proyectos.</dd>
 </dl>
 
@@ -43,7 +43,7 @@ Y así es como se ve el mismo archivo pero abierto en un editor de texto plano:
 
 Como mencioné anteriormente, la *solución* lleva un control de los proyectos que componen nuestra aplicación... pero, ¿qué es exactamente un proyecto?  
 
-Bien, pues un proyecto es una manera lógica de organizar las clases, recursos imágenes necesarias para un cierto fin, este se describe en un archivo con extensión que termina en `proj`, siendo `.csproj` para proyectos C#, `.shproj` para compartidos y, por ejemplo, otros terminan en `.vbproj`, `.jsproj`, etc.
+Bien, pues un proyecto es una manera lógica de organizar las clases, recursos imágenes necesarias para un cierto fin, este se describe en un archivo con extensión que termina en `proj`, siendo `.csproj` para proyectos C#, `.shproj` para proyectos compartidos y, por ejemplo, otros terminan en `.vbproj`, `.jsproj`, etc.
 
 Como puedes ver en la imagen anterior, el archivo `.sln` contiene una especie de enlaces a esos proyectos.
 

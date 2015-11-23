@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home">
+    {% for post in site.posts %}
+        {% if post.lang == "en" %}
+      <div class="content-window" style="padding-bottom: 10px;">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.excerpt }}</p>
+        <span  class="post-meta code-comment">// Por {{post.author }} el {{ post.date | date: "%d/%m/%Y" }}</span>
+      </div>
+      <br />
+      <br />
+      {% endif %}
+    {% endfor %}
+</div>

@@ -1,16 +1,14 @@
 ---
 layout: page
-title: Acerca de
-permalink: /acerca-de/
-lang: es
-indexed: true
+title: About
+permalink: /about/
+lang: en
 ---
 #### Antonio Feregrino Bolaños  
-Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, comencé en 2008 con C# y no he parado, me hice 6 años de universidad a la par de trabajar escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y actualmente soy Xamarin Student Partner.  
+Programmer, eager to teach but most to learn. Passionate about what I do, I started back in 2008 with Cand I have not stop since then, I did 6 years of career while working writing code for Heurística Soluciones. I used to be Microsoft Student Partner and I'm currently a Xamarin Student Partner.  
 <br />
+**This is important: While I love C#, I have alwyas believed that the most important thing is to have great ideas and kn ow how to express them, the language isn't as important.**  
+  
 
-**Esto es importante: Me gusta C# pero siempre he creído que lo importante es tener buenas ideas y saber expresarlas, el lenguaje es lo de menos.**
-
-
-#### Sobre el blog
-Este es un blog dedicado a las ciencias computacionales y a la programación (más a esto último) de aplicaciones. El blog está hecho con [Jekyll en una computadora con Windows 8.1](http://jekyll-windows.juthilo.com) y utilizando [Code](https://code.visualstudio.com) como editor principal. Por alguna razón todo el código de este blog está en [GitHub](http://github.com/fferegrino/that-c-sharp-guy) por si lo quieren ver.
+#### This blog
+This is a blog about computer science and programming. It is made using [Jekyll on a Windows 8.1 machine](http://jekyll-windows.juthilo.com) y and [Code](https://code.visualstudio.com) as main editor. For some reason all the code is on [GitHub](http://github.com/fferegrino/that-c-sharp-guy) if you want to check it out.

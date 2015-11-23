@@ -10,12 +10,9 @@
         </svg>
       </a>
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title and page.indexed %}
-          <a class="link page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
+        {% for menu in site.t[page.lang].menus %}
+        <a class="link page-link" href="{{menu[1].url}}">{{ menu[1].title }}</a>
         {% endfor %}
-          <a class="link page-link" href="/tag">Tags</a>
       </div>
     </nav>
   </div>

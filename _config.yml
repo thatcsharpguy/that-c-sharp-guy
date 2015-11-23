@@ -27,35 +27,55 @@ defaults:
   -
     scope:
       path: "en"
-      type: "posts" # previously `page` in Jekyll 2.2.
-    values:
-      lang: "en" # overrides previous default layout
-  -
-    scope:
-      path: "en"
-      type: "drafts" # previously `page` in Jekyll 2.2.
     values:
       lang: "en" # overrides previous default layout
   -
     scope:
       path: "es"
-      type: "posts" # previously `page` in Jekyll 2.2.
     values:
-      lang: "es" # overrides previous default layout
-  -
-    scope:
-      path: "es"
-      type: "drafts" # previously `page` in Jekyll 2.2.
-    values:
-      lang: "es" # overrides previous default layout
+      lang: "es"
   -
     scope:
       path: ""
-      type: "posts" # previously `page` in Jekyll 2.2.
+      type: "post"
     values:
-      author: Antonio Feregrino Bolaños  
-  -
-    scope:
-      path: "tv"
-    values:
-      isTv: "true"
+      comments: true
+      
+      
+t:
+    en:
+        menus:
+            home_m:
+                title: "Home"
+                url: "/"
+            about_m:
+                title: "About"
+                url: "/about"
+            tags_m:
+                title: "Tags"
+                url: "/tag"
+            signup_m:
+                title: "Sign up"
+                url: "/signup"
+        # Texto general
+        home: "Inicio"
+        findMeOn: "Find me on"
+        postContact: Questions, comments? escríbeme sobre esto a <a href='mailto:{{ site.email }}?subject={{ page.title }}'>{{ site.email }}</a>, a <a href='https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }}'>@{{ site.twitter_username }}</a> o <a href='javascript:loadComments();'>deja un comentario</a>. <strong>¿Quieres estar al tanto de mis posts? <a href='/registro'>regístrate aquí</a>.</strong>
+    es:
+        menus:
+            home_m:
+                title: "Inicio"
+                url: "/"
+            about_m:
+                title: "Acerca de"
+                url: "/acerca-de"
+            tags_m:
+                title: "Tags"
+                url: "/tag"
+            signup_m:
+                title: "Regístrate"
+                url: "/unete"
+        # Texto general:
+        home: "Inicio"
+        findMeOn: "Encuéntrame en"
+        postContact: ¿Dudas o comentarios? escríbeme sobre esto a <a href='mailto:{{ site.email }}?subject={{ page.title }}'>{{ site.email }}</a>, a <a href='https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }}'>@{{ site.twitter_username }}</a> o <a href='javascript:loadComments();'>deja un comentario</a>. <strong>¿Quieres estar al tanto de mis posts? <a href='/registro'>regístrate aquí</a>.</strong>

@@ -18,6 +18,33 @@ layout: default
     </div>
     {% endif %}
     <div class="post-contact">
-        ¿Dudas o comentarios? escríbeme sobre esto a <a href="mailto:{{ site.email }}?subject={{ page.title }}">{{ site.email }}</a> o a <a href="https://twitter.com/intent/tweet?text=@{{ site.twitter_username }} sobre {{ page.title }} ">@{{ site.twitter_username }}</a>. <strong>¿Quieres estar al tanto de mis posts? <a href="/registro">regístrate aquí</a>.</strong>
+        {% include post-contact.html %}
     </div>
 </div>
+{% if page.comments %}
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+var disqus_developer = 1; // this would set it to developer mode
+
+var disqus_config = function () {
+this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+function loadComments() {
+        var u = "thatcharpguy",
+        s = document.createElement('script');
+        //e = document.getElementById("disqus_loader");
+	s.src = "http://" +u+ ".disqus.com/embed.js";
+	s.async = 'true';
+	document.getElementsByTagName('head')[0].appendChild(s);
+        //e.parentElement.removeChild(e);
+}
+</script>
+
+<div id="disqus_thread"></div>
+<script id="dsq-count-scr" src="//thatcsharpguy.disqus.com/count.js" async></script>
+{% endif %}
