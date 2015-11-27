@@ -39,7 +39,7 @@ defaults:
       path: ""
       type: "post"
     values:
-      comments: true
+      comments: false
       
       
 t:

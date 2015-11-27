@@ -21,7 +21,11 @@ layout: default
         {% include post-contact.html %}
     </div>
 </div>
+
 {% if page.comments %}
+
+        <div id="disqus_thread"></div>
+<script id="dsq-count-scr" src="//thatcharpguy.disqus.com/count.js" async></script>
 <script>
 /**
 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -30,8 +34,9 @@ layout: default
 var disqus_developer = 1; // this would set it to developer mode
 
 var disqus_config = function () {
-this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.title ="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}";
 };
 
 function loadComments() {
@@ -44,7 +49,4 @@ function loadComments() {
         //e.parentElement.removeChild(e);
 }
 </script>
-
-<div id="disqus_thread"></div>
-<script id="dsq-count-scr" src="//thatcsharpguy.disqus.com/count.js" async></script>
 {% endif %}
