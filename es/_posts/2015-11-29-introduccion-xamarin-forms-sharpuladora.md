@@ -8,7 +8,7 @@ excerpt: Esta es una guía que te llevará paso a paso a crear tu primera aplica
 featured_image: featured.png
 lang: es
 github: https://github.com/fferegrino/sharpuladora
-pdfguide: https://github.com/fferegrino/sharpuladora/releases/download/p1.0.0/Sharpuladora.pdf
+pdfguide: https://github.com/fferegrino/sharpuladora/releases/download/p1.0.1/guia.pdf
 codeguide: https://github.com/fferegrino/sharpuladora/releases/latest
 tags:
 - xamarin
