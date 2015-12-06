@@ -17,7 +17,12 @@ layout: default
     {% if page.featured_tag %}
     <br />
     <div class="post-featured-tag">
-        ¿Quieres leer más posts como este? ve los demás en este enlace: <a class="tag" href="/tag/{{ page.featured_tag }}">{{ page.featured_tag }}</a>.
+{% if page.lang == 'es' %}
+¿Quieres leer más posts como este? ve los demás en este enlace: <a class="tag" href="/tag/{{ page.featured_tag }}">{{ page.featured_tag }}</a>.
+{% endif %}
+{% if page.lang == 'en' %}
+Liked this post? see more in: <a class="tag" href="/tag/{{ page.featured_tag }}">{{ page.featured_tag }}</a>.
+{% endif %}
     </div>
     {% endif %}
     <div class="post-contact">

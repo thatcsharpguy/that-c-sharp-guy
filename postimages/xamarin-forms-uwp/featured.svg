@@ -17,7 +17,10 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    enable-background="new"
-   sodipodi:docname="featured.svg">
+   sodipodi:docname="featured.svg"
+   inkscape:export-filename="C:\Users\fferegrino\Documents\GitHub\Blogs\that-c-sharp-guy\postimages\xamarin-forms-uwp\featured.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <filter
@@ -38,17 +41,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="679.11881"
-     inkscape:cy="248.70126"
+     inkscape:zoom="0.5"
+     inkscape:cx="522.77703"
+     inkscape:cy="256.03428"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="false"
      units="px"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -79,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

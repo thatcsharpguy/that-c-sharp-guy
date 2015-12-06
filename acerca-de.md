@@ -5,7 +5,7 @@ permalink: /acerca-de/
 lang: es
 ---
 #### Antonio Feregrino Bolaños  
-Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, comencé en 2008 con C# y no he parado, me hice 6 años de universidad a la par de trabajar escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y actualmente soy Xamarin Student Partner.  
+Programador, con ganas de enseñar y muchas más de aprender. Apasionado de lo que hago, comencé en 2008 con C# y no he parado, llevo 6 años de universidad a la par de trabajar escribiendo código en Heurística Soluciones. También fui Microsoft Student Partner y actualmente soy Xamarin Student Partner.  
 <br />
 
 **Esto es importante: Me gusta C# pero siempre he creído que lo importante es tener buenas ideas y saber expresarlas, el lenguaje es lo de menos.**
