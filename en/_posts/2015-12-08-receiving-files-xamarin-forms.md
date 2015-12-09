@@ -11,7 +11,7 @@ tags:
 - xamarin
 - xamarin-forms
 featured_tag: xamarin-forms
----  
+---
 Do you want your app to receive files from other applications?  
 
 Let's set a practical example: I built a simple markdown viewer in Xamarin.Forms and what I wanted my app to do was to show up in the available options when a `.md` were about to be opened.  This is a pretty straightforward task when developing platform specific projects... but when using Xamarin.Forms you may not know where to start (I wasn't).  
