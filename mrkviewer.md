@@ -24,3 +24,4 @@ Speaking of markdown-to-html conversion, the CommonMark implementation for C# is
 First of all, if you are here to give feedback, I want to thank you for using MrkViewer and for helping me to improve this app, that being said:  
 
 Please use the <a href="https://github.com/fferegrino/MrkViewer/issues/new" target="_blank">issues system</a> on GitHub to report any bug or request features.  
+	
