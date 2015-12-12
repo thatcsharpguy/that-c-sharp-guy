@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 500.00001 500.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pound.svg"
+   inkscape:export-filename="/home/fferegrino/Documents/github/that-c-sharp-guy/content/pound.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="342.6798"
+     inkscape:cy="247.35035"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Background-full"
+     style="display:inline">
+    <rect
+       style="fill:#f6f6f6;fill-opacity:1"
+       id="rect4243"
+       width="500"
+       height="500"
+       x="0"
+       y="-1.0356625" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Background-pound"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <path
+       style="fill:#f6f6f6;fill-opacity:1"
+       d="m 100,40 0,60 -60,0 0,300 60,0 0,60 300,0 0,-60 60,0 0,-300 -60,0 0,-60 -300,0 z m 60,120 180,0 0,60 -180,0 0,-60 z m 0,120 180,0 0,60 -180,0 0,-60 z"
+       id="rect4219"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:label="Pound"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36216)"
+     sodipodi:insensitive="true">
+    <g
+       id="g5224"
+       transform="matrix(0.59999978,0,0,0.59999978,160.00003,320.93728)">
+      <rect
+         style="fill:#3c8a3f;fill-opacity:1"
+         id="rect5212"
+         width="100"
+         height="500"
+         x="0"
+         y="552.375" />
+      <rect
+         y="552.37518"
+         x="200"
+         height="500"
+         width="100"
+         id="rect5218"
+         style="fill:#3c8a3f;fill-opacity:1" />
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         y="-400.00009"
+         x="652.37512"
+         height="500"
+         width="100"
+         id="rect5220"
+         style="fill:#3c8a3f;fill-opacity:1" />
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         style="fill:#3c8a3f;fill-opacity:1"
+         id="rect5222"
+         width="100"
+         height="500"
+         x="852.37512"
+         y="-399.99991" />
+    </g>
+  </g>
+</svg>
