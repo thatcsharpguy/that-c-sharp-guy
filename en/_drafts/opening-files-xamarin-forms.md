@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Receiving files in Xamarin.Forms
+title: Opening files in Xamarin.Forms
 date: 2015-12-06 21:00:00
 author: Antonio Feregrino Bolaños
 excerpt: Learn how to enable your application to receive files from other apps in the same device.
@@ -230,4 +230,38 @@ We have finally handled a file receiving within the Xamarin.Android project, the
 
 {% highlight csharp %}
 application.IncomingFile = incomingFile;
-{% endhighlight %}   
+{% endhighlight %}  
+
+<br />
+
+## iOS  
+We already know that we need to register our app somehow to let the os know about the existenceof our app, nad in iOS the wa to do this si vía the `Info.plist` file. When implementing this I struggled a bit because I think the docummentation a bit too vague.  
+  
+Any way, in your app, open the Info.plist file, and at the bottom part click on the `Advanced tab`, now, we have to fill in some information about the type of files we want to open in our app, for Markdown files we must add a new *Document Type* with the following values:  
+  
+ - **Name**: Markdown document
+ - **Types**: net.daringfireball.markdown  
+  
+Now, since `net.daringfireball.markdown` is not a known type for iOS, we have to register it in the same UI we declared the filetype association, click add in *Exported UTIs*, once available, put this values on the text fields:  
+  
+ - **Description**: Markdown document
+ - **Identifier**: net.daringfireball.markdown
+ - **Conforms To**: public.plain-text  
+
+There is a few lines we need to add in order to make this work, like adding `.md` as a file extension for the files... just to be sure, open the `Info.plist` with an XML editor and make sure it looks <a href="https://github.com/fferegrino/xf-file-receiver/blob/master/FileReceiver.iOS/Info.plist#L52" target="blank">somewhat like this</a>.  
+  
+Now, the most fun part, the code.  
+  
+As with the Windows version of our app, we need to separate the call to `LoadApplicaton` from the instatiation of the Forms app, again, create a Field inside the `AppDelegate` class of type `new YOUR_NAMESPACE.App`, like:
+
+{% highlight csharp %}
+FileReceiver.App _app;
+{% endhighlight %} 
+
+Now, inside the `FinishedLaunching` method, instantiate the `_app` field and call `LoadApplication` using it as a parameter:
+{% highlight csharp %}
+_app = new App ();
+LoadApplication(_app);
+{% endhighlight %}  
+
+When our app is launched to open a file, a method is called in the `AppDelegate` class, it's name is `OpenUrl`. In order to handle the icoming file, we must override it.
