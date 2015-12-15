@@ -27,20 +27,21 @@ Well, as classic as the "Hello world!" is to code a simple calculator, and for X
 This guide uses an interactive format, it comes with code that you can test and modify as you do the exercise. The code is divided in three or four folders:  
 
  - **start** is the starting point, contains a solution ready to be used to work with.
- - **parts** son todos y cada uno de los archivos necesarios para completar la guía, usualmente son provistos como referencia para que si te llegas a atorar con algo los revises y si es necesario copies el código para seguir avanzando con la guía. Este documento está dividido en partes y a cada una de ellas le corresponde una subcarpeta. 
- - **final** es el resultado final, al que queremos llegar con la guía. Esta carpeta, al igual que la carpeta `parts` es incluida como referencia, para mostrar el producto final.
- - **bonus** (opcional) muchas veces, al tratar de mostrar un concepto, es muy probable que se omitan algunas buenas prácticas, se evite el uso de librerías de terceros, etc. Por lo cual, esta carpeta contendrá una aplicación similar a la que se encuentra en `final` pero tomando en cuenta cosas que se pudieron haber omitido para favorecer el aprendizaje del tema tratado.  
+ - **parts** contains each and every needed file to complete the gud¡ide, usually these are provided for you to use them as reference if you ever get stuck on something, of course you can copy the code. As this document is divided in *parts* to which a subfolder corresponds.   
+ - **final** is the final result, the place we want to reach with this guide. This folder, as the last one, is included as reference, to show the result of this guide.  
+
+As I mentioned before, this guide is divided in several parts that cover the topics you're supposed to learn while developing your app. It is probable that in each part we work on a fragment of code
  
 Como se menciona antes, esta guía está dividida en varias partes que componen los temas que se verán a lo mientras comienzas a desarrollar tu propia app. Es muy probable que en cada parte se vea una porción de código y posteriormente se haga referencia a uno o varios archivos en los que se hace uso de lo mencionado, estos son los archivos que vas a encontrar dentro de la carpeta `parts`.  
-
-Si tienes dudas sobre el funcionamiento de la guía, házmelas saber a feregrino@thatcsharpguy.com o @io_exception en Twitter. 
 
 # La Sharpuladora
 
 ## Introducción  
-Dentro de esta guía se asume que ya tienes un entendimiento básico de cómo es que funciona Xamarin, si no, te invito a que consultes [Getting started with Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/). Mi post sobre [qué necesitas para desarrollar con Xamarin](http://thatcsharpguy.com/post/xamarin-como-empiezo/) o este otro sobre cómo ir [de la consola a apps móviles](http://thatcsharpguy.com/post/from-console-to-mobile/). O cualquier otro recurso de confianza.
+This guide asumes that you have a basic understanding of how Xamarin works, if you dont, I encourage you to take a look to [Getting started with Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/). My post on [what do you need to develop in Xamarin (in spanish)](http://thatcsharpguy.com/post/xamarin-como-empiezo/) or this other about [how to go from console to mobile](http://thatcsharpguy.com/post/from-console-to-mobile/).
 
-## Parte 1 - Familiarizándose con el código  
+## Parte 1 - Getting familiarized with the code
+As every single one IDE, both Xamarin Studio and Visual Studio have their own ways of managing the files that make our app work.
+  
 Como todos los entornos de desarrollo, tanto Xamarin Studio como Visual Studio tienen su propia manera de gestionar los archivos que componen nuestras aplicaciones, pero en breve te cuento que en estos entornos se dividen los proyectos por plataforma, siendo así que como queremos que nuestra calculadora esté disponible para tres distintas tendremos tres proyectos diferentes más uno, que es el núcleo de nuestra aplicación. Escribí un post sobre esto, para conocer más, visita [¿Cómo organiza mi código Visual Studio?](http://thatcsharpguy.com/post/organizacion-codigo-visual-studio/).  
   
 Es momento de empezar a meterle mano al código, abre la solución `Sharpuladora.sln` que está dentro de la carpeta `start` y mira el panel del explorador de soluciones. Para esta parte no hay código que agregar, solo ver. Una vez que hayas explorado lo suficiente, avanza a la parte 2.  
