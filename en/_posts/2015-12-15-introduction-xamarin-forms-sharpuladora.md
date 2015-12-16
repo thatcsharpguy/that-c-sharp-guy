@@ -32,110 +32,119 @@ This guide uses an interactive format, it comes with code that you can test and 
 
 As I mentioned before, this guide is divided in several parts that cover the topics you're supposed to learn while developing your app. It is probable that in each part we work on a fragment of code
  
-Como se menciona antes, esta guía está dividida en varias partes que componen los temas que se verán a lo mientras comienzas a desarrollar tu propia app. Es muy probable que en cada parte se vea una porción de código y posteriormente se haga referencia a uno o varios archivos en los que se hace uso de lo mencionado, estos son los archivos que vas a encontrar dentro de la carpeta `parts`.  
+Como se menciona antes, esta guía está dividida en varias Parts que componen los temas que se verán a lo mientras comienzas a desarrollar tu propia app. Es muy probable que en cada Part se vea una porción de Code y posteriormente se haga referencia a uno o varios archivos en los que se hace uso de lo mencionado, estos son los archivos que vas a encontrar dentro de la carpeta `parts`.  
 
 # La Sharpuladora
 
 ## Introducción  
 This guide asumes that you have a basic understanding of how Xamarin works, if you dont, I encourage you to take a look to [Getting started with Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/). My post on [what do you need to develop in Xamarin (in spanish)](http://thatcsharpguy.com/post/xamarin-como-empiezo/) or this other about [how to go from console to mobile](http://thatcsharpguy.com/post/from-console-to-mobile/).
 
-## Parte 1 - Getting familiarized with the code
-As every single one IDE, both Xamarin Studio and Visual Studio have their own ways of managing the files that make our app work.
+## Part 1 - Getting familiarized with the code  
+As every IDE does, both Xamarin Studio and Visual Studio have their own ways of managing the files that make our app work. But to sumarize: these environments divide the projects per platform, so, as we want our calculator to be available in the three main mobile platforms we will have three project plus another one which is the core of the app. I wrote a post about this, if you want to knoe more check: [How is my code organized in Visual Studio?](http://thatcsharpguy.com/post/code-organization-visual-studio/).  
   
-Como todos los entornos de desarrollo, tanto Xamarin Studio como Visual Studio tienen su propia manera de gestionar los archivos que componen nuestras aplicaciones, pero en breve te cuento que en estos entornos se dividen los proyectos por plataforma, siendo así que como queremos que nuestra calculadora esté disponible para tres distintas tendremos tres proyectos diferentes más uno, que es el núcleo de nuestra aplicación. Escribí un post sobre esto, para conocer más, visita [¿Cómo organiza mi código Visual Studio?](http://thatcsharpguy.com/post/organizacion-codigo-visual-studio/).  
+Now is time to get our hands into the code, open up the solution `Sharpuladora.sln` that is inside the `start` folder and look a the panel in the solution explorer. For this part of the guide there is no code to add but there is code to look. Go ahead and explore, browse the solution. Once you have had enough, move on to part 2.
+
+## Part 2 - The pages
+The graphic interface of the apps built with Xamarin.Forms are composed by a set of elements of type `Page`, you can build your own pages from scratch, however, Forms offers to us some pre-coded page templates that we can use to work with in our apps. You can see a full list of those template pages <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/pages/" target="_blank">here</a>.  
+
+The *Sharpuladora app* consists of only one page, created using a `ContenPage` since it is one of the easiest to use.  
+
+### Part 2.1 - Creating the main page  
+When it comes to create a new page, we have to decide wether we will create using pure C# code or use XAML, this time, we will use C#.  
   
-Es momento de empezar a meterle mano al código, abre la solución `Sharpuladora.sln` que está dentro de la carpeta `start` y mira el panel del explorador de soluciones. Para esta parte no hay código que agregar, solo ver. Una vez que hayas explorado lo suficiente, avanza a la parte 2.  
+Create a new folder and name it  `Pages` inside the project named  `Sharpuladora`, then create a new C# class named  `CalcPage` inside that new folder. Make your `CalcPage` derive from  `ContenPage`.  
 
-## Parte 2 - Las páginas  
-Las interfaces gráficas de las aplicaciones en Xamarin.Forms se compone de un conjunto de elementos del tipo `Page`, sin embargo, Forms nos ofrece algunas páginas pre-programadas que podemos usar para trabajar con muestras apps. Puedes consultar el listado completo <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/pages/" target="_blank">aquí</a>.  
+##### Code
+File: `CalcPage.cs` 
 
-La *Sharpuladora* únicamente consta de una sola pantalla, que creamos a partir de una `ContentPage` que es de las más sencillas de manejar.  
-
-### Parte 2.1 - Creando la página principal  
-Para crear una página nueva tenemos en realidad dos opciones: crearla en código C# o usar XAML para hacerlo. En este caso utilizaremos C#.  
+### Part 2.2 - Setting a start page    
+It is always important to set a start page for our app and in the case of Xamarin.Forms it has to be specified through a property. That property is named `MainPage` and can be found in the `App` class (inside `App.cs`).  
   
-Crea una nueva carpeta llamada `Pages` dentro del proyecto `Sharpuladora` y dentro, crea una nueva clase de C# llamada `CalcPage` que derive de `ContentPage`.  
-
-##### Código
-Archivo `CalcPage.cs`
-
-### Parte 2.2 - Estableciendo una página de inicio  
-Es importante establecer la pantalla de inicio de nuestra aplicación y para el caso de Xamarin.Forms se debe especificar a través de una propiedad. Dicha propiedad se llama `MainPage` y se encuentra en la clase `App` (dentro de `App.cs`).  
-  
-En la solución dentro de `start` la propiedad `MainPage` es inicializada con una página creada ahí mismo, debemos cambiarla por una referencia a nuestra `CalcPage`:  
+In the solution inside  `sart` the property `MainPage` is set witha page created in-place, we must change that for a reference to our `CalcPage`:  
 {% highlight csharp %}
 MainPage = new CalcPage();
 {% endhighlight %}
 
-##### Código
-Archivo `App.cs`
+##### Code
+File: `App.cs`
 
-## Parte 3 - El layout  
-Nuestra página actúa como un contenedor para los elementos de la interfaz, sin embargo, debemos agregarle un *layout* para indicarle la organización de dichos elementos. Al igual que con las páginas, Forms viene pre-cargado con una colección de *layouts* que puedes consultar en este <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/layouts/" target="_blank">enlace</a>.  
+## Part 3 - The layout  
+Our page acts as a container for the interface's elements, however we must add a layout to position those elements in the page. As with the pages, Forms has a set of layouts out of the box, <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/layouts/" target="_blank">see all here</a>.  
   
-### Parte 3.1 - El Grid  
-Una calculadora sencilla no requiere de mucho pensar, los botones están ordenados en filas y columnas, lo cual parece un trabajo para un `Grid`.  
+### Part 3.1 - The Grid
+A simple calculator does not require of a lot og thought, the buttons are sorted in rows and columns, and that seems like a job for a `Grid`.  
   
-Un `Grid` está compuesto de filas y columnas, las cuales en Xamarin.Forms se especifican a través de `RowDefinition` o `ColumnDefinition`. Mira el siguiente código:  
+A `Grid` is made of rows and colums which in Xamarin.Forms are specified in the form of `RowDefinition`s o `ColumnDefinition`s. Look at the following code:  
+  
 {% highlight csharp %}
 var layout = new Grid();
 
-// Filas:
+// Rows:
 layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(2, GridUnitType.Star) });
 layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
-// Columnas:
+// Columns:
 layout.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 layout.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 {% endhighlight %}
 
-En el código anterior se crea un nuevo `Grid` llamado `layout` y se le añaden dos columnas y dos filas. Algo importante a notar es que para las columnas se les establece la propiedad `Width` y para las filas a propiedad `Height`. El hecho de que se use `GridUnitType.Star` (o `*`) indica que el tamaño de las columnas será proporcional entre ellas.  
+In the code above we create a new `Grid` called `layout` and then it gets added a pair of rows and columns. Something to notice here is that a `Width` is specified for the columns and a `Height` is specified for the rows. The fact that we use `GridUnitType.Star` (or `*`) indicates that the size of the columns will be proportional to each other.  
   
-Para el ejercicio, crea un grid con filas y columnas que representen el siguiente gráfico: 
+For this excerise, create a grid with rows and columns that represent the following figure:   
 
 {% post_image grid.png "Grid" %}
   
-Una vez creado el *layout* es importante especificarle a nuestra página que debe usarlo como contenido, esto se hace normalmente al final del constructor de la página con la siguiente línea de código:  
+Once we have created the layout, it is important to tell our page to use it as a content, the way to do it is by specifying the property `Content` at the end of the page's constructor with the following line of code:  
+
 {% highlight csharp %}
 Content = _layout;
 {% endhighlight %}
 
-##### Código
-Archivo `CalcPage.cs`
+##### Code
+File: `CalcPage.cs`
 
-## Parte 4 - Los elementos de interfaz  
-Una vez creado el contenedor para nuestros elementos (nuestro *layout*), es momento de continuar con la creación de la interfaz.  
-Usaremos botones para los dígitos y los operadores y un *label* para mostrar el resultado.  
+## Part 4 - The interface element  
+Now that the container of our elements (the layout) has been created, it is the time to create the all the interface elements.  
 
-La inicialización de controles es bastante sencilla, por ejemplo, para crear el botón que será el '0' en nuestra calculadora tenemos que escribir el siguiente código:  
+We will use buttons for the digits and operators as well as alaber to show the result.  
+
+Initializing controls is pretty simple, for example, to create the button that will serve as the '0' in our calculator, we must write something like the following code:  
+ 
 {% highlight csharp %}
 _b0 = new Button { Text = "0" };
 {% endhighlight %}
 
-Una vez creado el control debemos añadirlo al *layout* contenedor para que se muestre en la pantalla. Recordemos que nuestro *layout* se compone de filas y columnas, así que debemos asignarle una fila y una columna en donde mostrarse a nuestro control, la clase `Grid` nos permite asignarlos con los métodos estáticos `SetColumn` y `SetRow`. En el código siguiente, se le asigna la columna 1 y la fila 4 al botón `_b0`:  
+Once the control has been created we must add it to the containing layout to be shown in the screen. Remember that in this case the layout is made of rows and columns, so we must set a column number and column number where it must appear on the screen,
+the `Grid` class allows us to set those values via the static `SetColumn` y `SetRow` methods. In the code below the first column and the fourth row are set to the button `_b0`:  
+  
 {% highlight csharp %}
 Grid.SetColumn(_b0, 1);
 Grid.SetRow(_b0, 4);
-{% endhighlight %}
-Para posteriormente añadirlo al *layout* con:  
+{% endhighlight %}  
+
+Next, we add it to the layout by using this line:  
+  
 {% highlight csharp %}
 _gridLayout.Children.Add(_b0);
 {% endhighlight %}
 
-Para el caso de la etiqueta en donde se mostrará el resultado, haremos uso del método `SetColumnSpan` para indicarle a nuestro control que debe usar más de una columna dentro del *layout* que lo contiene. En este caso, le estamos indicando a `_resultDisplay` que debe ocupar 4 columnas:  
+For the label where the result will be shown, we will use the `SetColumnSpan` methods to indicate that our control that it has to span across more than one column within the layout. In this case, we are setting ca column span of 4 to the `_resultDisplay` label:  
+  
 {% highlight csharp %}
 Grid.SetColumnSpan(_resultDisplay, 4);
 {% endhighlight %}
 
-También existe `SetRowSpan` si lo que deseamos es que el control ocupe más de una fila.
+We also can use `SetRowSpan` if we want a control to use more than one row.
 
-##### Código
-Archivo `CalcPage.cs`
+##### Code
+File: `CalcPage.cs`
 
-## parte 5 - Los eventos  
+## Part 5 - The events  
+In a calculator like the one we are doing, user interaction is required and in Xamarin.Forms such interactions are handled though events. Each of the controls we have added can have one or more events that are triggered by user interactions (or any other fragment of our code)
+
 En una calculadora como la que estamos haciendo se requiere de interacción de los usuarios y en Xamarin.Forms las interacciones son manejadas a través de eventos. Cada uno de los controles que añadimos a una página pueden tener uno o más eventos que son "lanzados" por interacciones con el usuario (o con otros elementos de nuestro programa), como programadores es necesario indicar qué eventos queremos manejar y cómo los vamos a manejar.  
   
-Para nuestra calculadora vamos a manejar el evento `Clicked` de los botones, dicho evento es lanzado cada vez que el usuario da "click" sobre el botón. Manejar eventos es cosa sencilla en C#, lo que tenemos que hacer es asignar (con el operador `+=`) un manejador al evento del control que deseamos. En el siguiente fragmento de código se especifica un manejador para el evento `Clicked` de `_b0`:  
+Para nuestra calculadora vamos a manejar el evento `Clicked` de los botones, dicho evento es lanzado cada vez que el usuario da "click" sobre el botón. Manejar eventos es cosa sencilla en C#, lo que tenemos que hacer es asignar (con el operador `+=`) un manejador al evento del control que deseamos. En el siguiente fragmento de Code se especifica un manejador para el evento `Clicked` de `_b0`:  
 {% highlight csharp %}
 _b0.Clicked += OnNumericButtonClicked;
 {% endhighlight %}
@@ -163,11 +172,11 @@ void OnNumericButtonClicked(object sender, EventArgs e)
 
 Los manejadores pueden ser compartidos entre muchos controles, así que no tienes que crear un manejador para cada control que uses en tu aplicación. Así que ahora es tu turno de crear toda la lógica de la calculadora usando los controles y los manejadores de eventos. Si te encuentras un poco perdido puedes echarle un ojo al archivo que te indico más abajo para comenzar.
 
-##### Código
+##### Code
 Archivo `CalcPage.cs`
 
-## Parte 6 - Un pequeño truco  
-Podrás pensar que nuestra calculadora está (casi) terminada, pero no. Si la echas a andar a como la tenemos hasta ahora te darás cuenta que la calculadora no ocupa la pantalla entera... un pequeño bug. Para resolverlo haremos uso de otro tipo de *layout* que envuelva a nuestro *layout* original. Para la ocasión haremos uso de un `RelativeLayout` que nos permite mayor flexibilidad a la hora de controlar cómo se muestran los elementos y por ende, requiere de mayor configuración. Reemplaza la asignación `Content = _layout;` por el siguiente fragmento de código:  
+## Part 6 - Un pequeño truco  
+Podrás pensar que nuestra calculadora está (casi) terminada, pero no. Si la echas a andar a como la tenemos hasta ahora te darás cuenta que la calculadora no ocupa la pantalla entera... un pequeño bug. Para resolverlo haremos uso de otro tipo de *layout* que envuelva a nuestro *layout* original. Para la ocasión haremos uso de un `RelativeLayout` que nos permite mayor flexibilidad a la hora de controlar cómo se muestran los elementos y por ende, requiere de mayor configuración. Reemplaza la asignación `Content = _layout;` por el siguiente fragmento de Code:  
 {% highlight csharp %}
 // Trick to make our calculater fullscreen
 var relativeLayout = new RelativeLayout();
