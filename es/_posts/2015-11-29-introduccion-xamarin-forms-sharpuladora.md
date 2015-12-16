@@ -142,7 +142,7 @@ El manejador `OnNumericButtonClicked` no es más que un método que tiene como t
  - `object sender` que es una referencia al control que lanzó el evento
  - `EventArgs e` que son algunos argumentos extra sobre el evento lanzado 
 
-Como ejemplo acá abajo está la implementación del método para los botones del teclado numérico de nuestra calculadora. En la primera línea se ase un *cast* de `sender` a `Button` lo cual es válido porque como comenté: en `sender` viene el control que lanzó el evento.   
+Como ejemplo acá abajo está la implementación del método para los botones del teclado numérico de nuestra calculadora. En la primera línea se hace un *cast* de `sender` a `Button` lo cual es válido porque como comenté: en `sender` viene el control que lanzó el evento.   
 {% highlight csharp %}
 void OnNumericButtonClicked(object sender, EventArgs e)
 {
