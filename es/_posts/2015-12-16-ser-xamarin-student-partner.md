@@ -1,15 +1,16 @@
 ---
 layout: post
 title:  "Ser un Xamarin Student Partner"
-date:   2015-07-11 18:31:38
+date:   2015-12-16 18:31:38
 author: Antonio Feregrino Bolaños
 categories: blog es
-excerpt: Hace un año apliqué para un programa de reciente creación llamado Xamarin Student Partners, había pertenecido a los Microsoft Student Partners así que ya tenía idea de lo que se trataba, pero fue mejor de lo que esperaba.
+excerpt: Que yo les hable tanto de Xamarin en este blog no es obra de la casualidad, y es que formo parte de los primeros Xamarin Student Partners, un grupo formado a principios de 2015 formado por estudiantes interesadoes en difundir el desarrollo móvil.
+featured_image: featured.png
 lang: es
 tags:
 - meta
 ---  
-Que yo les hable tanto de Xamarin en este blog no es obra de la casualidad, formo parte de los primeros *Xamarin Student Partners*, un grupo formado a principios de 2015 al que pertenecen estudiantes interesados en difundir el desarrollo móvil multiplataforma en varias universidades al rededor del mundo. En este post, te cuento de mi experiencia hasta ahora.  
+Que yo les hable tanto de Xamarin en este blog no es obra de la casualidad, y es que formo parte de los primeros *Xamarin Student Partners*, un grupo formado a principios de 2015 al que pertenecen estudiantes interesados en difundir el desarrollo móvil multiplataforma en varias universidades al rededor del mundo. En este post, te cuento de mi experiencia hasta ahora.  
   
 Sin duda, si 
 
@@ -18,7 +19,7 @@ Sin duda, si
  - Publicas y contribuyes a código en GitHub
  - Te gusta (o estás interesado) el desarrollo en C#
  - Te gusta enseñar a otros
- - **Plus** Tienes experiencia desarrollando para Android e iOS
+ - (**Plus**) Tienes experiencia desarrollando para Android o iOS
  
 Disfrutaras todo del programa que Xamarin ofrece para estudiantes.  
 

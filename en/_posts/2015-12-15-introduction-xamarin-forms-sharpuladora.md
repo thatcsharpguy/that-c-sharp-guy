@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Xamarin.Forms (Sharpuladora app)"
-date:   2015-12-16 21:00:00
+date:   2015-12-16 18:00:00
 author: Antonio Feregrino Bolaños
 categories: c-sharp
 excerpt: This guide will take you step by step to create your first Xamarin.Forms app.
@@ -40,12 +40,12 @@ Now is time to get our hands into the code, open up the solution `Sharpuladora.s
 ## Part 2 - The pages
 The graphic interface of the apps built with Xamarin.Forms are composed by a set of elements of type `Page`, you can build your own pages from scratch, however, Forms offers to us some pre-coded page templates that we can use to work with in our apps. You can see a full list of those template pages <a href="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/pages/" target="_blank">here</a>.  
 
-The *Sharpuladora app* consists of only one page, created using a `ContenPage` since it is one of the easiest to use.  
+The *Sharpuladora app* consists of only one page, created using a `ContentPage` since it is one of the easiest to use.  
 
 ### Part 2.1 - Creating the main page  
 When it comes to create a new page, we have to decide whether we will create using pure C# code or use XAML, this time, we will use C#.  
   
-Create a new folder and name it  `Pages` inside the project named  `Sharpuladora`, then create a new C# class named  `CalcPage` inside that new folder. Make your `CalcPage` derive from  `ContenPage`.  
+Create a new folder and name it  `Pages` inside the project named  `Sharpuladora`, then create a new C# class named  `CalcPage` inside that new folder. Make your `CalcPage` derive from  `ContentPage`.  
 
 ##### Code
 File: `CalcPage.cs` 
