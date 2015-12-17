@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="315.01129"
+     inkscape:cx="635.01129"
      inkscape:cy="105.62071"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="g4240"
      showgrid="false"
      units="px"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      borderlayer="true" />
   <metadata
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -101,65 +101,69 @@
        id="g3531"
        transform="translate(68.686556,0)">
       <g
-         transform="matrix(0.79133668,0,0,0.79133668,163.95485,-54.271036)"
-         id="g3387"
-         style="display:inline">
-        <rect
-           style="fill:#5599ff"
-           id="rect3355"
-           width="220.21326"
-           height="300.01529"
-           x="742.43152"
-           y="164.99232" />
-        <rect
-           style="fill:#1f241c"
-           id="rect3357"
-           width="140.41121"
-           height="27.274118"
-           x="787.91901"
-           y="128.96431" />
-        <rect
-           style="fill:#b7c8b7"
-           id="rect3359"
-           width="120.20815"
-           height="63.63961"
-           x="793.97992"
-           y="458.27405" />
+         id="g4240"
+         transform="translate(-75.84961,0)">
+        <g
+           style="display:inline"
+           id="g3387"
+           transform="matrix(0.79133668,0,0,0.79133668,163.95485,-54.271036)">
+          <rect
+             y="164.99232"
+             x="742.43152"
+             height="300.01529"
+             width="220.21326"
+             id="rect3355"
+             style="fill:#5599ff" />
+          <rect
+             y="128.96431"
+             x="787.91901"
+             height="27.274118"
+             width="140.41121"
+             id="rect3357"
+             style="fill:#1f241c" />
+          <rect
+             y="458.27405"
+             x="793.97992"
+             height="63.63961"
+             width="120.20815"
+             id="rect3359"
+             style="fill:#b7c8b7" />
+          <path
+             style="fill:#ffffff"
+             d="m 653.97461,99.9375 c -11.64922,0 -21.72929,4.25665 -30.24219,12.76953 -8.5129,8.51291 -12.76953,18.59297 -12.76953,30.24219 l 0,140.22881 32.25977,0 0,-86.46319 c 0,-2.91231 1.06317,-5.43232 3.1914,-7.56054 2.12821,-2.12822 4.64824,-3.19141 7.56055,-3.19141 l 172.05078,0 c 2.91231,0 5.43235,1.06319 7.56055,3.19141 2.12824,2.12822 3.1914,4.64823 3.1914,7.56054 l 0,236.57032 c 0,2.91236 -1.06316,5.4324 -3.1914,7.56054 -2.1282,2.12833 -4.64824,3.19141 -7.56055,3.19141 l -172.05078,0 c -2.91231,0 -5.43234,-1.06308 -7.56055,-3.19141 -2.12823,-2.12814 -3.1914,-4.64818 -3.1914,-7.56054 l 0,-86.43912 -32.25977,0 0,140.20474 c 0,11.64917 4.25663,21.72924 12.76953,30.24219 8.5129,8.51291 18.59297,12.76953 30.24219,12.76953 l 172.05078,0 c 11.64923,0 21.72929,-4.25662 30.24219,-12.76953 8.5129,-8.51295 12.76953,-18.59302 12.76953,-30.24219 l 0,-344.10156 c 0,-11.64922 -4.25663,-21.72928 -12.76953,-30.24219 -8.5129,-8.51288 -18.59296,-12.76953 -30.24219,-12.76953 z m 59.14258,43.01172 53.76562,0 c 3.58439,0 5.37696,1.79258 5.37696,5.37695 0,3.58437 -1.79257,5.37695 -5.37696,5.37695 l -53.76562,0 c -3.58433,0 -5.37696,-1.79258 -5.37696,-5.37695 0,-3.58437 1.79263,-5.37695 5.37696,-5.37695 z M 740,460.16797 c 7.39278,0 13.7218,2.63189 18.98633,7.89648 5.26457,5.26452 7.89648,11.59351 7.89648,18.98633 0,7.39277 -2.63191,13.7198 -7.89648,18.98438 -5.26453,5.26457 -11.59355,7.89843 -18.98633,7.89843 -7.39283,0 -13.72181,-2.63386 -18.98633,-7.89843 -5.26457,-5.26458 -7.89648,-11.59161 -7.89648,-18.98438 0,-7.39282 2.63191,-13.72181 7.89648,-18.98633 5.26452,-5.26459 11.5935,-7.89648 18.98633,-7.89648 z"
+             id="path3360"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="sssccssssssscsscsccssssssssssssssssssssssssss"
+             transform="translate(112.53814,-2.7550931e-5)" />
+        </g>
         <path
-           transform="translate(112.53814,-2.7550931e-5)"
-           sodipodi:nodetypes="sssccssssssscsscsccssssssssssssssssssssssssss"
            inkscape:connector-curvature="0"
-           id="path3360"
-           d="m 653.97461,99.9375 c -11.64922,0 -21.72929,4.25665 -30.24219,12.76953 -8.5129,8.51291 -12.76953,18.59297 -12.76953,30.24219 l 0,140.22881 32.25977,0 0,-86.46319 c 0,-2.91231 1.06317,-5.43232 3.1914,-7.56054 2.12821,-2.12822 4.64824,-3.19141 7.56055,-3.19141 l 172.05078,0 c 2.91231,0 5.43235,1.06319 7.56055,3.19141 2.12824,2.12822 3.1914,4.64823 3.1914,7.56054 l 0,236.57032 c 0,2.91236 -1.06316,5.4324 -3.1914,7.56054 -2.1282,2.12833 -4.64824,3.19141 -7.56055,3.19141 l -172.05078,0 c -2.91231,0 -5.43234,-1.06308 -7.56055,-3.19141 -2.12823,-2.12814 -3.1914,-4.64818 -3.1914,-7.56054 l 0,-86.43912 -32.25977,0 0,140.20474 c 0,11.64917 4.25663,21.72924 12.76953,30.24219 8.5129,8.51291 18.59297,12.76953 30.24219,12.76953 l 172.05078,0 c 11.64923,0 21.72929,-4.25662 30.24219,-12.76953 8.5129,-8.51295 12.76953,-18.59302 12.76953,-30.24219 l 0,-344.10156 c 0,-11.64922 -4.25663,-21.72928 -12.76953,-30.24219 -8.5129,-8.51288 -18.59296,-12.76953 -30.24219,-12.76953 z m 59.14258,43.01172 53.76562,0 c 3.58439,0 5.37696,1.79258 5.37696,5.37695 0,3.58437 -1.79257,5.37695 -5.37696,5.37695 l -53.76562,0 c -3.58433,0 -5.37696,-1.79258 -5.37696,-5.37695 0,-3.58437 1.79263,-5.37695 5.37696,-5.37695 z M 740,460.16797 c 7.39278,0 13.7218,2.63189 18.98633,7.89648 5.26457,5.26452 7.89648,11.59351 7.89648,18.98633 0,7.39277 -2.63191,13.7198 -7.89648,18.98438 -5.26453,5.26457 -11.59355,7.89843 -18.98633,7.89843 -7.39283,0 -13.72181,-2.63386 -18.98633,-7.89843 -5.26457,-5.26458 -7.89648,-11.59161 -7.89648,-18.98438 0,-7.39282 2.63191,-13.72181 7.89648,-18.98633 5.26452,-5.26459 11.5935,-7.89648 18.98633,-7.89648 z"
-           style="fill:#ffffff" />
-      </g>
-      <path
-         sodipodi:nodetypes="scccscsssssscssccs"
-         id="path3363"
-         d="m 844.44135,194.60439 c 0,1.25988 -0.44996,2.33977 -1.34987,3.23968 l -51.83507,47.78545 c -1.43985,1.25988 -3.01469,1.52986 -4.72454,0.80992 -1.70984,-0.80992 -2.56476,-2.1148 -2.56476,-3.91463 l 0,-30.23711 -310.90455,0 c -1.25988,0 -2.29478,-0.40497 -3.1047,-1.21489 -0.80993,-0.80993 -1.2149,-1.84482 -1.2149,-3.1047 l 0,-25.91753 c 0,-1.25988 0.40497,-2.29478 1.2149,-3.1047 0.80992,-0.80993 1.84482,-1.21489 3.1047,-1.21489 l 310.90455,0 0,-30.23711 c 0,-1.88982 0.85492,-3.19469 2.56476,-3.91463 1.70985,-0.71993 3.28469,-0.49495 4.72454,0.67493 l 51.83507,47.24549 c 0.89991,0.89992 1.34987,1.93483 1.34987,3.10472 z"
-         style="display:inline;fill:#ffffff"
-         inkscape:connector-curvature="0" />
-      <path
-         id="path3425"
-         d="m 398.86557,163.9473 0,-38.16896 q 1.77907,1.13214 2.91119,2.26426 l 32.9935,32.9935 q 1.13215,1.13213 2.26426,2.9112 l -38.16895,0 z m -10.3509,2.58772 q 0,3.23465 2.26426,5.49892 2.26425,2.26426 5.49892,2.26426 l 43.99133,0 0,85.39494 q 0,3.23465 -2.26425,5.49891 -2.26426,2.26426 -5.49892,2.26426 l -108.68448,0 q -3.23466,0 -5.49891,-2.26426 -2.26426,-2.26426 -2.26426,-5.49891 l 0,-129.38628 q 0,-3.23465 2.26426,-5.49891 2.26425,-2.26426 5.49891,-2.26426 l 64.69314,0 0,43.99133 z"
-         style="fill:#ffffff"
-         inkscape:connector-curvature="0" />
-      <flowRoot
-         xml:space="preserve"
-         id="flowRoot3493"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="translate(25.882818,-66.344529)"><flowRegion
-           id="flowRegion3495"><rect
-             id="rect3497"
-             width="1209.1526"
-             height="347.89655"
-             x="33.941124"
-             y="400.8974" /></flowRegion><flowPara
-           id="flowPara3499"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.00000763px;line-height:100%;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';fill:#d5fff6">Xamarin.Forms</flowPara><flowPara
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:100%;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';fill:#d5fff6"
-           id="flowPara3503">Opening files</flowPara><flowPara
-           id="flowPara3501"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:137.00000048%;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';fill:#d5fff6" /></flowRoot>    </g>
+           style="display:inline;fill:#ffffff"
+           d="m 844.44135,194.60439 c 0,1.25988 -0.44996,2.33977 -1.34987,3.23968 l -51.83507,47.78545 c -1.43985,1.25988 -3.01469,1.52986 -4.72454,0.80992 -1.70984,-0.80992 -2.56476,-2.1148 -2.56476,-3.91463 l 0,-30.23711 -310.90455,0 c -1.25988,0 -2.29478,-0.40497 -3.1047,-1.21489 -0.80993,-0.80993 -1.2149,-1.84482 -1.2149,-3.1047 l 0,-25.91753 c 0,-1.25988 0.40497,-2.29478 1.2149,-3.1047 0.80992,-0.80993 1.84482,-1.21489 3.1047,-1.21489 l 310.90455,0 0,-30.23711 c 0,-1.88982 0.85492,-3.19469 2.56476,-3.91463 1.70985,-0.71993 3.28469,-0.49495 4.72454,0.67493 l 51.83507,47.24549 c 0.89991,0.89992 1.34987,1.93483 1.34987,3.10472 z"
+           id="path3363"
+           sodipodi:nodetypes="scccscsssssscssccs" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff"
+           d="m 398.86557,163.9473 0,-38.16896 q 1.77907,1.13214 2.91119,2.26426 l 32.9935,32.9935 q 1.13215,1.13213 2.26426,2.9112 l -38.16895,0 z m -10.3509,2.58772 q 0,3.23465 2.26426,5.49892 2.26425,2.26426 5.49892,2.26426 l 43.99133,0 0,85.39494 q 0,3.23465 -2.26425,5.49891 -2.26426,2.26426 -5.49892,2.26426 l -108.68448,0 q -3.23466,0 -5.49891,-2.26426 -2.26426,-2.26426 -2.26426,-5.49891 l 0,-129.38628 q 0,-3.23465 2.26426,-5.49891 2.26425,-2.26426 5.49891,-2.26426 l 64.69314,0 0,43.99133 z"
+           id="path3425" />
+        <flowRoot
+           transform="translate(25.882818,-66.344529)"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           id="flowRoot3493"
+           xml:space="preserve"><flowRegion
+             id="flowRegion3495"><rect
+               y="400.8974"
+               x="33.941124"
+               height="347.89655"
+               width="1209.1526"
+               id="rect3497" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.00000763px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
+             id="flowPara3499">Xamarin.Forms</flowPara><flowPara
+             id="flowPara3503"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff">Opening files</flowPara><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:137.00000048%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
+             id="flowPara3501" /></flowRoot>      </g>
+    </g>
   </g>
 </svg>
