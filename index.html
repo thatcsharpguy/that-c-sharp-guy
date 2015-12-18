@@ -5,9 +5,10 @@ lang: es
 <div class="pure-g">
     {% for post in site.posts %}
         <div class="listed-post pure-u-1">
-            <div class="post-meta">{{post.author }} | {{ post.date | date: "%d/%m/%Y" }}</div>
+            <div class="post-meta">{{ post.author }} | {{ post.date | date: "%d/%m/%Y" }}</div>
             <h2 class="post-title">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                {% if post.is_tv %}<i class="sp sp-youtube"></i>{% endif %}
             </h2>
             <div class="post-excerpt">{{ post.excerpt }}</div>
         </div>

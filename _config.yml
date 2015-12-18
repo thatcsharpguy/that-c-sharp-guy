@@ -40,6 +40,17 @@ defaults:
       type: "posts"
     values:
       comments: false
+  -
+    scope:
+      path: "tv"
+      type: "posts"
+    values:
+        permalink: /tv/:title/
+        layout: "videopost"
+        is_tv: "true"
+        lang: "en"
+        author: "Antonio Feregrino Bolaños"
+
       
       
 t:
