@@ -4,7 +4,6 @@ layout: default
 
 <div class="home">
     {% for post in site.posts %}
-        {% if post.lang == "es" %}
       <div class="content-window" style="padding-bottom: 10px;">
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -14,6 +13,5 @@ layout: default
       </div>
       <br />
       <br />
-      {% endif %}
     {% endfor %}
 </div>
