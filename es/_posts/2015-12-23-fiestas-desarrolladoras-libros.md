@@ -10,7 +10,7 @@ lang: es
 tags:
 - meta
 ---  
-En este post no habrá nada de código... al menos escrito por mi. Aprovechando la época, mi intención es presentar algunos de los regalos que harán de un desarrollador alguien más feliz, más cómodo o más completo profesionalmente. Lo dividiré en secciones, esta primera es sobre libros, haré uno de accesorios y otro de software. 
+En este post no habrá nada de código... al menos escrito por mi. Aprovechando la época, mi intención es presentar algunos de los regalos que harán de un desarrollador alguien más feliz, más cómodo o más completo profesionalmente. Lo dividiré en secciones, esta primera es sobre libros y haré uno de accesorios. 
 
 ### Libros  
 Bah, ¿quién aprende de libros actualmente?  
