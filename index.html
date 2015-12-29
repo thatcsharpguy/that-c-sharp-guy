@@ -14,17 +14,30 @@ lang: es
         </div>
     {% endfor %}
     <!-- Pagination links -->
-<div class="listed-post pure-u-1">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+    
+    <div style="text-align:center;" class="pure-u-1-12">
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="previous">
+            <img src="/content/site/backwards.png" />
+        </a>
+    {% else %}
+        <img src="/content/site/backwards_disabled.png" />
+    {% endif %}
+    </div>
+    <div style="text-align:center;" class="pure-u-1-12">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+            <img src="/content/site/forward.png" />
+        </a>
+    {% else %}
+        <img src="/content/site/forward_disabled.png" />
+    {% endif %}
+    </div>
+    <div class="pure-u-20-24"></div>
+    <div style="text-align:center;" class="pure-u-4-24">
+        <p>
+            <h3>{{ paginator.page }} de {{ paginator.total_pages }}</h3>
+        </p>
+    </div>
+
 </div>
