@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Opening files in Xamarin.Forms
-date: 2015-12-06 21:00:00
+date: 2016-01-05 21:00:00
 author: Antonio Feregrino Bolaños
 excerpt: Learn how to enable your application to receive files from other apps in the same device.
 lang: en
 featured_image: featured.png
-github: https://github.com/fferegrino/Xevenshtein-UWP
+github: https://github.com/fferegrino/xf-file-receiver
 tags:
 - xamarin
 - xamarin-forms
@@ -235,7 +235,9 @@ application.IncomingFile = incomingFile;
 <br />
 
 ## iOS  
-We already know that we need to register our app somehow to let the os know about the existenceof our app, nad in iOS the wa to do this si vía the `Info.plist` file. When implementing this I struggled a bit because I think the docummentation a bit too vague.  
+**The iOS version of this app is not finished, however, I encourage you to keep on reading. Later in this section I talk where I'm stuck**  
+
+We already know that we need to register our app somehow to let the os know about the existenceof our app, nad in iOS the wa to do this si vía the `Info.plist` file. When I started  to implement this I struggled a bit because I think the docummentation a bit too vague.  
   
 Any way, in your app, open the Info.plist file, and at the bottom part click on the `Advanced tab`, now, we have to fill in some information about the type of files we want to open in our app, for Markdown files we must add a new *Document Type* with the following values:  
   
@@ -264,4 +266,8 @@ _app = new App ();
 LoadApplication(_app);
 {% endhighlight %}  
 
-When our app is launched to open a file, a method is called in the `AppDelegate` class, it's name is `OpenUrl`. In order to handle the icoming file, we must override it.
+When our app is launched to open a file, a method is called in the `AppDelegate` class, it's name is `OpenUrl`. In order to handle the icoming file, we must override it...  
+
+Now, here is where I'm stuck. I can't manage to open the file inside `OpenUrl`. even though that I get an *uri* pointing to the resource recently opened. If I use such *uri*  I get a weird exception. 
+  
+Are you familiar with opening fles in Xamairn.iOS? please help me to implement this feature in the sample code. 
