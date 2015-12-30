@@ -4,7 +4,7 @@ title: MrkViewer
 permalink: /mrkviewer/
 lang: en
 ---    
-MkrViewer is a simple yet powerful markdown viewer mobile (and desktop) platforms. 
+MkrViewer is a simple yet powerful markdown viewer for mobile (and desktop) platforms. 
 
 MrkViewer leverages all the capabilities provided by the CommonMark specification which is used in many other applications across the web (like Stack Overflow).  
 
