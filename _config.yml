@@ -48,7 +48,7 @@ defaults:
       type: "posts"
     values:
         permalink: /tv/:title/
-        layout: "videopost"
+        layout: "post-video"
         is_tv: "true"
         lang: "en"
         author: "Antonio Feregrino Bolaños"

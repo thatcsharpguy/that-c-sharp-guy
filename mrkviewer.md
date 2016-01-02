@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MrkViewer
-permalink: /mrkviewer/
+permalink: /MrkViewer/
 lang: en
 ---    
 MkrViewer is a simple yet powerful markdown viewer for mobile (and desktop) platforms. 
