@@ -1,5 +1,6 @@
 ---
 layout: default_video
+lang: es
 ---
 <div class="pure-g">
     {% for post in site.posts %}
@@ -7,11 +8,11 @@ layout: default_video
     <div class="pure-u-1-2 video">
         <div class="video-container">
             <a href="{{ post.url | prepend: site.baseurl }}">
-                <img src="http://placehold.it/384x216" />
+                <img class="featured-image" src="http://placehold.it/384x216" />
             </a>
-            <br />
             <h3 class="post-title">
                 {{ post.title }}
+                <small></small>
             </h3>
         </div>
     </div>

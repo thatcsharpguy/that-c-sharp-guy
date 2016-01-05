@@ -4,4 +4,9 @@
  .video-container {
      max-width: 384px;
      margin: 0 auto;
+     padding-bottom: 30px;
+     
+     .featured-image{
+         margin-bottom: 10px;
+     }
  }

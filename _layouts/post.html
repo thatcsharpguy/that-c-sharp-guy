@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="post-meta">
     <a href="#" rel="author">{{ page.author }}</a> | {{ page.date | date: "%d/%m/%Y" }} 
-{% if page.ideone %}| <a href="{{ page.ideone }}" target="_blank"><i class="sp sp-console"></i> Ver código de este post en ideone</a>{% endif %}
+{% if page.ideone %}| <a href="{{ page.ideone }}" target="_blank"><i class="sp sp-ideone"></i> Ver código de este post en ideone</a>{% endif %}
 {% if page.github %}| <a href="{{ page.github }}" target="_blank"><i class="sp sp-git"></i> Ver código de este post en GitHub</a>{% endif %}
 </div>
 <h1 class="post-title">{{ page.title }}</h1>
