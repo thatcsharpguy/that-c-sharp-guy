@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="featured.svg">
+   sodipodi:docname="featured.svg"
+   inkscape:export-filename="/home/fferegrino/Documents/github/that-c-sharp-guy/postimages/opening-files-xamarin-forms/featured.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,7 +32,7 @@
      inkscape:cx="635.01129"
      inkscape:cy="105.62071"
      inkscape:document-units="px"
-     inkscape:current-layer="g4240"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1301"
@@ -55,29 +58,28 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-422.36232)"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <rect
-       y="-111.62881"
-       x="-1072.3623"
-       height="1379.2577"
-       width="224.02002"
+       y="-65.907944"
+       x="-1106.3623"
+       height="1287.8159"
+       width="272.65973"
        id="rect3348"
        style="fill:#002255"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
        style="fill:#0044aa"
        id="rect3350"
-       width="243.34805"
-       height="1379.2577"
-       x="-848.36237"
-       y="-111.62881"
+       width="227.21461"
+       height="1287.8159"
+       x="-833.72131"
+       y="-65.907944"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
-       y="-111.62881"
-       x="-616.72235"
-       height="1379.2577"
-       width="218.70003"
+       y="-65.907944"
+       x="-617.43848"
+       height="1287.8159"
+       width="243.41621"
        id="rect3352"
        style="fill:#0066ff"
        transform="matrix(0,-1,1,0,0,0)" />
@@ -106,7 +108,7 @@
         <g
            style="display:inline"
            id="g3387"
-           transform="matrix(0.79133668,0,0,0.79133668,163.95485,-54.271036)">
+           transform="matrix(0.75082856,0,0,0.75082856,186.64246,-35.268836)">
           <rect
              y="164.99232"
              x="742.43152"
@@ -139,30 +141,29 @@
         <path
            inkscape:connector-curvature="0"
            style="display:inline;fill:#ffffff"
-           d="m 844.44135,194.60439 c 0,1.25988 -0.44996,2.33977 -1.34987,3.23968 l -51.83507,47.78545 c -1.43985,1.25988 -3.01469,1.52986 -4.72454,0.80992 -1.70984,-0.80992 -2.56476,-2.1148 -2.56476,-3.91463 l 0,-30.23711 -310.90455,0 c -1.25988,0 -2.29478,-0.40497 -3.1047,-1.21489 -0.80993,-0.80993 -1.2149,-1.84482 -1.2149,-3.1047 l 0,-25.91753 c 0,-1.25988 0.40497,-2.29478 1.2149,-3.1047 0.80992,-0.80993 1.84482,-1.21489 3.1047,-1.21489 l 310.90455,0 0,-30.23711 c 0,-1.88982 0.85492,-3.19469 2.56476,-3.91463 1.70985,-0.71993 3.28469,-0.49495 4.72454,0.67493 l 51.83507,47.24549 c 0.89991,0.89992 1.34987,1.93483 1.34987,3.10472 z"
+           d="m 832.2952,200.86678 c 0,1.19539 -0.42693,2.22 -1.28077,3.07385 l -49.18166,45.33933 c -1.36615,1.19539 -2.86037,1.45155 -4.48269,0.76846 -1.62232,-0.76846 -2.43348,-2.00654 -2.43348,-3.71424 l 0,-28.68929 -294.9895,0 c -1.19539,0 -2.17731,-0.38424 -2.94577,-1.1527 -0.76847,-0.76847 -1.15271,-1.75038 -1.15271,-2.94577 l 0,-24.59082 c 0,-1.19539 0.38424,-2.17731 1.15271,-2.94578 0.76846,-0.76847 1.75038,-1.1527 2.94577,-1.1527 l 294.9895,0 0,-28.68928 c 0,-1.79308 0.81116,-3.03116 2.43348,-3.71425 1.62232,-0.68307 3.11654,-0.46961 4.48269,0.64039 l 49.18166,44.82701 c 0.85384,0.85386 1.28077,1.83579 1.28077,2.94579 z"
            id="path3363"
            sodipodi:nodetypes="scccscsssssscssccs" />
         <path
            inkscape:connector-curvature="0"
            style="fill:#ffffff"
-           d="m 398.86557,163.9473 0,-38.16896 q 1.77907,1.13214 2.91119,2.26426 l 32.9935,32.9935 q 1.13215,1.13213 2.26426,2.9112 l -38.16895,0 z m -10.3509,2.58772 q 0,3.23465 2.26426,5.49892 2.26425,2.26426 5.49892,2.26426 l 43.99133,0 0,85.39494 q 0,3.23465 -2.26425,5.49891 -2.26426,2.26426 -5.49892,2.26426 l -108.68448,0 q -3.23466,0 -5.49891,-2.26426 -2.26426,-2.26426 -2.26426,-5.49891 l 0,-129.38628 q 0,-3.23465 2.26426,-5.49891 2.26425,-2.26426 5.49891,-2.26426 l 64.69314,0 0,43.99133 z"
+           d="m 409.52822,171.77901 0,-36.21511 q 1.688,1.07419 2.76216,2.14836 l 31.30458,31.30458 q 1.0742,1.07417 2.14836,2.76217 l -36.2151,0 z m -9.82105,2.45526 q 0,3.06907 2.14836,5.21743 2.14834,2.14836 5.21743,2.14836 l 41.73944,0 0,81.02361 q 0,3.06907 -2.14835,5.21743 -2.14835,2.14835 -5.21743,2.14835 l -103.12098,0 q -3.06908,0 -5.21742,-2.14835 -2.14836,-2.14836 -2.14836,-5.21743 l 0,-122.76306 q 0,-3.06907 2.14836,-5.21742 2.14834,-2.14836 5.21742,-2.14836 l 61.38153,0 0,41.73944 z"
            id="path3425" />
         <flowRoot
-           transform="translate(25.882818,-66.344529)"
-           style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-weight:normal;font-size:37.95241928px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            id="flowRoot3493"
            xml:space="preserve"><flowRegion
              id="flowRegion3495"><rect
-               y="400.8974"
-               x="33.941124"
-               height="347.89655"
-               width="1209.1526"
+               y="333.65137"
+               x="87.841957"
+               height="330.08789"
+               width="1147.2567"
                id="rect3497" /></flowRegion><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.00000763px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.39295197px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
              id="flowPara3499">Xamarin.Forms</flowPara><flowPara
              id="flowPara3503"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff">Opening files</flowPara><flowPara
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.00001526px;line-height:137.00000048%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:170.78590393px;line-height:100%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff">Opening files</flowPara><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:170.78590393px;line-height:137.00000048%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';fill:#ffffff"
              id="flowPara3501" /></flowRoot>      </g>
     </g>
   </g>
