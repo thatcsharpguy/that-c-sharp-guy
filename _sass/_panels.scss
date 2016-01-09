@@ -1,0 +1,23 @@
+.panel {
+    border: 1px solid #CCCEDB;
+    background-color: lighten(#CCCEDB, 10%);
+    
+    div.panel-title{
+        background-color: $accent-color;
+        background-image: url('/content/site/title-panel-dots.png');
+        background-position: center;
+        background-repeat:  repeat-x;
+        color: #fff;
+        padding: 1px 0;
+        font-size: $base-font-size - 2;
+         span.title {
+            background-color: $accent-color;
+            padding: 0 10px;
+         }
+         
+    }
+    
+    div.panel-content {
+        padding: 10px;
+    }
+}

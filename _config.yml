@@ -86,7 +86,7 @@ t:
                 title: "Tags"
                 url: "/tag"
             signup_m:
-                title: "Regístrate"
+                title: "Suscríbete"
                 url: "/unete"
         # Texto general:
         home: "Inicio"
